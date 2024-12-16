@@ -1,0 +1,64 @@
+Course name- Linux Administration: The Complete Linux Bootcamp.
+Taught By- Andrei Dumitrescu, Crystal Mind Academy.
+Total main modules- 46.
+Start date- 10-12-2024. 
+
+
+>> Module 1- Getting started: 
+    > Course outline.
+    > How to get the most out of the course?
+
+>> Module 2- Setting up the environment:
+    > Linux distributions.
+    > Installing ubuntu.
+    > Things to do after installing.
+    > Migrating to Linux.
+
+>> Module 3- The linux terminal:
+    > Terminal, Console, Shell and Commands:
+        -> Terminal: The tool used to type the Commands.
+        -> Console: The environment in which the terminal runs. 
+        -> Shell: The brain that interprets & runs the commands.
+        -> Commands: Instructions given to the shell, to perform different tasks or operations.
+    > Linux command structure:
+        -> Command name.
+        -> Options.
+        -> Arguments.
+    > Getting help:
+        -> man command.
+        -> Provides detailed information about any specific command.
+    > Learning the terminal:
+        -> Tab key: Auto-complete commands.
+        -> clear command.
+        -> cat command.
+        -> rm command.
+    > Learning the terminal- Keyboard shortcuts:
+        -> ctrl + l: Clear the terminal.
+        -> ctrl + d: Exit the terminal.
+        -> ctrl + a: Move the cursor to the beginning of the line.
+        -> ctrl + e: Move the cursor to the end of the line.
+        -> ctrl + u: Delete everything before the cursor.
+        -> ctrl + c: Stop the currently running command.
+        -> ctrl + z: Suspend the currently running command.
+    > Learning the terminal- Bash history:
+        -> Bash shell starts in the user's home directory.
+        -> .bash_history file stores the history of commands.
+        -> HISTFILESIZE is an environment variable that sets the number of commands to store.
+        -> To print the value of variable: echo $<file-name>.
+        -> By default, the value of HISTFILESIZE is 2000 (Ubuntu 24.04.1 LTS).
+        -> history command: Displays the history of commands from the .bash_history file.
+        -> HISTSIZE is an environment variable that sets the number of commands to store in the memory.
+        -> By default, the value of HISTSIZE is 1000 (Ubuntu 24.04.1 LTS).
+        -> The history in .bash_history is only saved when the terminal is closed.
+        -> !<command_indexNumber>: Re-run the command with the specified index number.
+        -> !!: Re-run the last command.
+        -> !-n: Re-run the nth command from the last command.
+        -> ctrl + p: Move to the previous command.
+        -> ctrl + n: Move to the next command.
+        -> ctrl + r: Search the command history. 
+        -> history -d <command_indexNumber>: Delete the command with the specified index number.
+        -> history -c: Clear the history of commands.
+    > Runnind commands withoug leaving a trace:
+        -> Giving a space before entering a command prevents it from being saved in the history.
+        -> HISTCONTROL is an environment variable that sets the commands to ignore in the history.
+        -> By default, the value of HISTCONTROL is ignoredups:ignorespace.
