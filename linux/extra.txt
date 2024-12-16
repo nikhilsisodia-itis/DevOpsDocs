@@ -1,0 +1,11 @@
+Q.1- Why an ICMP is sent successfully to 127.0.0.1 using ping -c 1 127.0.0.1, even when I don't have an active internet connection?
+Ans.- The IP address 127.0.0.1 is the loopback address, which is used to test network software without physically transmitting packets over a network. When you ping 127.0.0.1, the ICMP packet is sent to your own machine, not over the internet. This allows you to test your network stack and software locally, even without an active internet connection.
+
+Q.2- What is a command, options in commands and arguments in commands?
+Ans.-   > Command- A command is an instruction given to a computer program to perform a specific task or function.
+        > Options- Modifiers that change the behavior of the command. They usually start with a dash (-) or double dash (--).
+        > Arguments- The targets or inputs for the command, such as files, directories, or other data.
+        > For example, in the command ping -c 1 8.8.8.8:
+            Command: ping
+            Option: -c 1 (where -c specifies the count and 1 is the value).
+            Argument: 8.8.8.8 (the IP address to ping).
