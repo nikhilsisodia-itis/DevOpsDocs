@@ -90,4 +90,16 @@ Start date- 10-12-2024.
         -> sudo passwd <username>: Change the password of a specific user.
         -> su <username>: Switch to a specific user.
         -> su: Switch to the root user.
-        
+    
+>> Module 5- The Linux file system:
+        -> A file system is a way to organize, store and retrieve data on a storage device in a structured and logical manner.
+        -> On a Linux System, everything is treated as a file, including all external devices like: USB, HardDrive, etc.
+        -> If something is not a file, it is a process.
+        -> In Linux, the file system is a hierarchical structure- arranged in a Truee-like architecture.
+        -> The root directory is the top-level directory in the file system or the base level.
+        -> The root directory is represented by a forward slash (/).
+        -> All other directories and files are spreaded from the root or '/'/' directory.
+        -> Linux folows a FHS (Filesystem Hierarchy Standard) to maintain the file system.
+        -> The FHS provides a strandard layout for the directories and files, which ensures consistency across different Linux distributions.
+        -> The directories or files present on different partitions or disks are also shown or mounted under the root directory.
+        -> Mounting a file system means making the files and directories in the file system accessible to the user.
