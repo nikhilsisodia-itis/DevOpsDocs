@@ -65,6 +65,15 @@ Shell Commands:
 >> history -c : > Clear the history of commands.
                 > It deletes all the commands from the history.
 
+>> sudo su : > Switch to the root user.
+             > It allows the current user to switch to the root user.
+             > The root user has full access to the system.
+
+>> sudo su - : > Switch to the root user with the root user's environment.
+               > It allows the current user to switch to the root user with the root user's environment.
+
+>> sudo <command> : > Run a command with superuser privileges.
+                    > It executes the specified command with superuser privileges.
 
 
 Command Options:
