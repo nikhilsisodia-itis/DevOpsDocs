@@ -82,5 +82,9 @@ Start date- 10-12-2024.
             -> All normal users prompt ends with $.
             -> Root user prompt ends with #.
             -> sudo <command>: Run a command with root privileges.
+            -> Enter the password when prompted.
             -> Once, the root access is gained using the root credentials, the root credentials are cached for 15 minutes.
-        
+        -> sudo -v command: Refresh the sudo credentials.
+        -> sudo -k command: Expire the sudo credentials.
+        -> passwd command: Change the password.
+        -> sudo passwd <username>: Change the password of a specific user.
