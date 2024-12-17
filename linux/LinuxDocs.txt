@@ -62,3 +62,15 @@ Start date- 10-12-2024.
         -> Giving a space before entering a command prevents it from being saved in the history.
         -> HISTCONTROL is an environment variable that sets the commands to ignore in the history.
         -> By default, the value of HISTCONTROL is ignoredups:ignorespace.
+
+>> Module 4- The Linux terminal in depth:
+    > Recording the date & time for each line in history:
+        -> HISTTIMEFORMAT is an environment variable that sets the format of the date & time.
+        -> By default, the value of HISTTIMEFORMAT is %F %T.
+        -> %F: Full date.
+        -> %T: Time.
+    > Root vs Unprivileged user(s):
+        -> Unprivileged user: A user with limited access to the system.
+        -> Root user: A user with full access to the system. 
+                      Also know as the Superuser or the Administrator.
+        
