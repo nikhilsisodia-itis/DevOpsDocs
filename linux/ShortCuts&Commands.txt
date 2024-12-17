@@ -78,6 +78,10 @@ Shell Commands:
 >> passwd : > Change the password.
             > It allows the user to change their password.
 
+>> sudo passwd <username> : > Change the password of another user.
+                            > It allows the root user to change the password of another user.
+
+
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
            > It provides detailed information about the files and directories, such as permissions, owner, size, and modification date.

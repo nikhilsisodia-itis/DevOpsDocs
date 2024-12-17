@@ -88,3 +88,6 @@ Start date- 10-12-2024.
         -> sudo -k command: Expire the sudo credentials.
         -> passwd command: Change the password.
         -> sudo passwd <username>: Change the password of a specific user.
+        -> su <username>: Switch to a specific user.
+        -> su: Switch to the root user.
+        
