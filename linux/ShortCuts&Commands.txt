@@ -75,6 +75,8 @@ Shell Commands:
 >> sudo <command> : > Run a command with superuser privileges.
                     > It executes the specified command with superuser privileges.
 
+>> passwd : > Change the password.
+            > It allows the user to change their password.
 
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
