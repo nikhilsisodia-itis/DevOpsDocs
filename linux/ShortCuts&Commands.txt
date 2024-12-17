@@ -81,6 +81,8 @@ Shell Commands:
 >> sudo passwd <username> : > Change the password of another user.
                             > It allows the root user to change the password of another user.
 
+>> df -h : > Display disk space usage in human-readable format.
+           > It shows the amount of disk space used and available on the filesystems in a human-readable format.
 
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
