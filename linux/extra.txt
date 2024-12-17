@@ -9,3 +9,10 @@ Ans.-   > Command- A command is an instruction given to a computer program to pe
             Command: ping
             Option: -c 1 (where -c specifies the count and 1 is the value).
             Argument: 8.8.8.8 (the IP address to ping).
+
+Q.3- Can the timeout of the sudo command be increased?
+Ans.- > Yes, the timeout of the sudo command can be increased by modifying the sudoers file. You can use the visudo command to edit the sudoers file and change the default timeout value. However, it is important to be cautious when modifying the sudoers file, as incorrect changes can lead to security vulnerabilities.
+      > Process to change: 
+        > Open a terminal and run the command sudo visudo.
+        > Find the line that starts with Defaults env_reset and add the following line below it:
+            > Defaults timestamp_timeout=<new_timeout_value>

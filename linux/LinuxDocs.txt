@@ -70,7 +70,17 @@ Start date- 10-12-2024.
         -> %F: Full date.
         -> %T: Time.
     > Root vs Unprivileged user(s):
-        -> Unprivileged user: A user with limited access to the system.
+        -> Unprivileged user: A user with limited access to the system. 
+                              Also known as the Regular user. 
+                              They can only work within their home directory.
         -> Root user: A user with full access to the system. 
                       Also know as the Superuser or the Administrator.
+        -> Gain root access:
+            -> sudo su command: Superuser do and switch user.
+            -> Enter the password when prompted.
+            -> The terminal prompt changes to # when the root access is gained.
+            -> All normal users prompt ends with $.
+            -> Root user prompt ends with #.
+            -> sudo <command>: Run a command with root privileges.
+            -> Once, the root access is gained using the root credentials, the root credentials are cached for 15 minutes.
         
