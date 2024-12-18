@@ -84,6 +84,10 @@ Shell Commands:
 >> df -h : > Display disk space usage in human-readable format.
            > It shows the amount of disk space used and available on the filesystems in a human-readable format.
 
+>> cat /proc/cpuinfo: Display the CPU information.
+
+>> cat /proc/meminfo: Display the memory information.
+
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
            > It provides detailed information about the files and directories, such as permissions, owner, size, and modification date.

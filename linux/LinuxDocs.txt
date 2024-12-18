@@ -92,16 +92,67 @@ Start date- 10-12-2024.
         -> su: Switch to the root user.
     
 >> Module 5- The Linux file system:
-        -> A file system is a way to organize, store and retrieve data on a storage device in a structured and logical manner.
-        -> On a Linux System, everything is treated as a file, including all external devices like: USB, HardDrive, etc.
-        -> If something is not a file, it is a process.
-        -> In Linux, the file system is a hierarchical structure- arranged in a Truee-like architecture.
-        -> The root directory is the top-level directory in the file system or the base level.
-        -> The root directory is represented by a forward slash (/).
-        -> All other directories and files are spreaded from the root or '/'/' directory.
-        -> Linux folows a FHS (Filesystem Hierarchy Standard) to maintain the file system.
-        -> The FHS provides a strandard layout for the directories and files, which ensures consistency across different Linux distributions.
-        -> The directories or files present on different partitions or disks are also shown or mounted under the root directory.
-        -> Mounting a file system means making the files and directories in the file system accessible to the user.
-        -> Mount point is the directory where the file system is mounted.
-        -> df -h command: Display the disk space usage.
+        > Intro to the linux file system:
+            -> A file system is a way to organize, store and retrieve data on a storage device in a structured and logical manner.
+            -> On a Linux System, everything is treated as a file, including all external devices like: USB, HardDrive, etc.
+            -> If something is not a file, it is a process.
+            -> In Linux, the file system is a hierarchical structure- arranged in a Truee-like architecture.
+            -> The root directory is the top-level directory in the file system or the base level.
+            -> The root directory is represented by a forward slash (/).
+            -> All other directories and files are spreaded from the root or '/'/' directory.
+            -> Linux folows a FHS (Filesystem Hierarchy Standard) to maintain the file system.
+            -> The FHS provides a strandard layout for the directories and files, which ensures consistency across different Linux distributions.
+            -> The directories or files present on different partitions or disks are also shown or mounted under the root directory.
+            -> Mounting a file system means making the files and directories in the file system accessible to the user.
+            -> Mount point is the directory where the file system is mounted.
+            -> df -h command: Display the disk space usage.
+        > The FileSystem Hierarchy Standard:
+            -> /bin directory: Consisit of essential user command binaries(executable programs- ls, rm, cat, etc). These commands are available to all users and play a crucial role in the basic system functionality.
+            -> /sbin directory: Consists of essential system command binaries(executable programs- fdisk, mkfs, etc). These commands are available to the root user and play a crucial role in the system administration.
+            -> /boot directory: Boot directory consist of all the files, that are required to start the system.
+            -> /home directory: This directory consist of all the user's data.
+                                Each user has its own personal directory within /home.
+                                Every user's directory consist of user's personal files, configuration settings, and directories.
+                                /home directory ensures that each user's files and settings are kept separate from others.
+
+                                *Note: ~ is a shortcut for the current user's home directory.
+                                       'cd ~' is same as 'cd /home/<username>'.
+            -> /root directory: The root user's home directory.
+                                The root user is the superuser or the administrator of the system.
+                                The root user has full access to the system and can perform any operation.
+            -> /dev directory: Device directory consist of all the device files.
+                               Device files are special files that represent hardware devices like hard drives, USB drives, etc.
+                               Device files are used to interact with the hardware devices.
+                               Device files are created by the kernel when the system boots up.
+                               Device files are used to read and write data to the hardware devices.
+            -> Special files: Files that represents hardware devices or provides a mechanism for inter process communication.
+            -> /etc directory: Etc directory consist of all the system configuration files.
+                               System configuration files are used to configure the system settings.
+                               System configuration files are used to set up the system according to the user's requirements.
+                               System configuration files are used to configure the system services.
+            -> /lib directory: Library directory consist of all the shared libraries.
+                               Shared libraries are used by the system and the applications to perform various functions.
+                               Shared libraries are loaded into the memory when the system boots up.
+                               Shared libraries are used to provide common functions to the system and the applications.
+            -> /media directory: Media directory consist of all the removable media devices.
+                                 External devices like USB drives, CD/DVD drives, etc. are mounted under the /media directory.
+            -> /mnt directory: Mount directory consist of all the temporary mount points.
+                               Temporary mount points are used to mount external devices or network shares temporarily.
+                               Temporary mount points are used to access the data on the external devices or network shares.
+            -> /tmp directory: Temporary directory consist of all the temporary files.
+                               Temporary files are created by the system and the applications for temporary use.
+                               Temporary files are deleted when the system reboots.
+            -> /proc directory: Process directory consist of all the process information.
+                                Process information is stored in the /proc directory.
+                                Process information is used by the system and the applications to manage the processes.
+                                Process information is stored in the form of files and directories.
+            -> cat /proc/cpuinfo: Display the CPU information.
+            -> cat /proc/meminfo: Display the memory information.
+            -> /sys directory: Sys directory consist of all the system information.
+                               System information is stored in the /sys directory.
+                               System information is used by the system and the applications to manage the system resources.
+                               System information is stored in the form of files and directories.
+            -> /srv directory: Service directory consist of all the service data.
+                               Service data is stored in the /srv directory.
+                               Service data is used by the system and the applications to provide services.
+                               Service data is stored in the form of files and directories.

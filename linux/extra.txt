@@ -16,3 +16,11 @@ Ans.- > Yes, the timeout of the sudo command can be increased by modifying the s
         > Open a terminal and run the command sudo visudo.
         > Find the line that starts with Defaults env_reset and add the following line below it:
             > Defaults timestamp_timeout=<new_timeout_value>
+
+Q.4- What's the difference between /bin and /sbin?
+Ans.- > /bin: Contains essential user commands and binaries that are available to all users. 
+              It consist of executable programs like- cd, ls, cat, rm, etc.
+              Helps in effecitve functioning of the system.
+        /sbin: Consist of essential commands and binaries that are only available to the root user.
+               A container for executable programs like- fdisk, mkfs, etc.
+               Supports effecitve system administration.
