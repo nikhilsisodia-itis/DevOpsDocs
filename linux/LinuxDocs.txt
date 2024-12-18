@@ -156,3 +156,12 @@ Start date- 10-12-2024.
                                Service data is stored in the /srv directory.
                                Service data is used by the system and the applications to provide services.
                                Service data is stored in the form of files and directories.
+            -> /run directory: Run directory consist of all the runtime data.
+                               Runtime data is stored in the /run directory.
+                               Runtime data is used by the system and the applications during the system runtime.
+                               Runtime data is stored in the form of files and directories.
+            -> /usr directory: User directory consist of all the user data.
+                               User data is used by the system and the applications to provide user-specific data.
+                               User data is stored in the form of files and directories.
+            -> /var directory: Variable directory consist of all the variable data.
+                               Variable data is used by the system and the applications to store variable data.
