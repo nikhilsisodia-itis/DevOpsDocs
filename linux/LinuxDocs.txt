@@ -165,3 +165,18 @@ Start date- 10-12-2024.
                                User data is stored in the form of files and directories.
             -> /var directory: Variable directory consist of all the variable data.
                                Variable data is used by the system and the applications to store variable data.
+        > Absolute vs Relative paths:
+            -> pwd command: Print the current working directory.
+            -> Absoulte paths: The full path of a file or directory from the root directory.
+                               It used forward slash (/) as the separator.
+                               Use '/' after every directory name.
+                               Example: /home/username/Documents/file.txt.
+                               Absolute paths are more reliable.
+            -> Relative paths: The path of a file or directory relative to the current working directory.
+                                 It does not start with a forward slash (/).
+                                 Use '.' to represent the current directory.
+                                 Use '..' to represent the parent directory.
+                                 Example: cd Documents.
+                                         cd ..
+            -> -a option: Display the hidden files.
+            -> tree command: Display the directory structure in a tree-like format.
