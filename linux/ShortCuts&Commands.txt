@@ -88,6 +88,10 @@ Shell Commands:
 
 >> cat /proc/meminfo: Display the memory information.
 
+>> pwd : > Print the current working directory.
+        > It shows the full path of the current working directory.
+
+>> tree : > Display the directory structure in a tree format.
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
            > It provides detailed information about the files and directories, such as permissions, owner, size, and modification date.
@@ -97,4 +101,12 @@ Command Options:
            > It displays file sizes in a format that is easier for humans to read, such as KB, MB.
 >> -i : > Display the inode number of each file.
         > An inode is a data structure that stores information about a file or directory, such as permissions, size, and location on disk.
+>> -a : > List all files, including hidden files.
+        > Hidden files are those whose filenames start with a dot (.).
+
+>> -d : > List directories only.
+        > It displays only directories in the current directory.
+
+>> -f : > Do not sort the output.
+        > It displays the files and directories in the order they appear in the filesystem.
         
