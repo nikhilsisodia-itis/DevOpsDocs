@@ -101,6 +101,11 @@ Shell Commands:
 
 >> stat: Display detailed file information.
 
+>> tail command: Display the last 10 lines of a file.
+
+>> head command: Display the first 10 lines of a file.
+
+>> watch command: Execute a command repeatedly and display the output.
 
 
 Command Options:
@@ -152,3 +157,12 @@ Command Options:
 
 >> ls -r : > Reverse the order of the output.
 
+>> tail -n <number> <file_name>: Display the last n lines of a file.
+
+>> head -n <number> <file_name>: Display the first n lines of a file.
+
+>> tail -f <file_name>: Display the last 10 lines of a file and continue to display new lines as they are added to the file.
+
+>> watch -n <interval> <command>: Execute a command repeatedly at a specified interval and display the output.
+
+>> watch -d <command>: Highlight the differences between successive outputs of the command.
