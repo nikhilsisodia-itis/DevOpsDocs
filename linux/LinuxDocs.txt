@@ -206,3 +206,10 @@ Start date- 10-12-2024.
             -> ls -lu: Display the access time.
             -> ls -lt: Display the modification time.
             -> ls -lc: Display the change time.   
+            -> Use touch <file_name> command to update the timestamps.
+            -> touch -a <file_name>: Update the access time.
+            -> touch -m <file_name>: Update the modification time.
+            -> touch -c <file_name>: Update the change time.
+            -> touch -t <timestamp> <file_name>: Update the timestamp to the specified value.
+            -> ls -lt: Sort the files by modification time.
+            -> ls -r option: Reverse the order of the output.
