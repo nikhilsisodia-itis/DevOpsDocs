@@ -253,4 +253,15 @@ Start date- 10-12-2024.
             -> N: Move to the previous occurrence of the pattern.
             -> q: Quit the less command.
             -> ? <pattern>: Search backward for a pattern.
+        > Viewing file(part 3):
+            -> tail command: Display the last 10 lines of a file.
+            -> tail -n <number> <file_name>: Display the last n lines of a file.
+            -> tail -f <file_name>: Display the last 10 lines of a file and keep the file open for new lines.
+            -> head command: Display the first 10 lines of a file.
+            -> head -n <number> <file_name>: Display the first n lines of a file.
+            -> watch command: Run a command repeatedly and display the output.
+            -> watch -n <interval> <command>: Run a command repeatedly at the specified interval.
+            -> watch -d <command>: Highlight the differences between the outputs.
+            -> watch -n 1 -d ifconfig: Display the network interface information.
+
                 
