@@ -180,3 +180,19 @@ Start date- 10-12-2024.
                                          cd ..
             -> -a option: Display the hidden files.
             -> tree command: Display the directory structure in a tree-like format.
+        > The 'ls' commands in depth:
+            -> -S option: Sort the files by size.
+            -> du command: Display the disk usage of files and directories.
+            -> du -sh <directory_name>: Display the disk usage of a directory in human-readable format.
+            -> ls -X: Sort the files by extension.
+            -> ls --hide option: Hide the specified files or directories.
+            -> ls -R option: List the files recursively. Recursively means to list the files and directories inside the subdirectories.
+            -> The ls aliased have a default color coding for different types of files:
+                -> Blue: Directory.
+                -> Green: Executable file.
+                -> Red: Archive file.
+                -> Cyan: Symbolic link.
+                -> Yellow: Device file.
+                -> Magenta: Image file.
+                -> White: Text file.
+            -> The original listing commands without the alias is- \ls.
