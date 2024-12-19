@@ -234,3 +234,23 @@ Start date- 10-12-2024.
             -> ' ' indicates a regular file.
             -> file command: Display the file type.
             -> file /<directory_name>/*: Display the file type of all the files in the directory.
+        > Viewing files:
+            -> cat command: Display the contents of a file.
+            -> cat -n option: Display the line numbers.
+            -> Concatinating files using cat:
+                -> cat file1 file2 > newfile: Concatenate file1 and file2 into newfile.
+        > Viewing file(part 2):
+            -> less command: Display the contents of a file page by page.
+            -> less -N option: Display the line numbers.
+            -> less -X option: Clear the screen before displaying the file.
+            -> less -S option: Truncate long lines.
+            -> ctrl + f: Move forward one page.
+            -> ctrl + b: Move backward one page.
+            -> g or <: Move to the beginning of the file.
+            -> G or >: Move to the end of the file.
+            -> / <pattern>: Search for a pattern.
+            -> n: Move to the next occurrence of the pattern.
+            -> N: Move to the previous occurrence of the pattern.
+            -> q: Quit the less command.
+            -> ? <pattern>: Search backward for a pattern.
+                

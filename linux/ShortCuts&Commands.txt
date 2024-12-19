@@ -24,6 +24,9 @@ Keyboard Shortcuts:
 
 >> ctrl + r : Search the command history in the terminal. Input the search term and press enter to execute the command.
 
+>> ctrl +f : Move forward one page.
+
+>> ctrl + b : Move backward one page.
 
 
 Shell Commands: 
