@@ -138,3 +138,14 @@ Command Options:
 >> ls -lt : > List files by modification time.
 
 >> ls -lc : > List files by change time.
+
+>> touch -a <file_name> : > Change the access time of a file.
+                          > It updates the access time of the specified file to the current time.
+
+>> touch -m <file_name> : > Change the modification time of a file.
+
+>> ls -t : > Sort files by modification time.
+          > It displays the files and directories in descending order of modification time.
+
+>> ls -r : > Reverse the order of the output.
+
