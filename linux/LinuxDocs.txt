@@ -196,3 +196,13 @@ Start date- 10-12-2024.
                 -> Magenta: Image file.
                 -> White: Text file.
             -> The original listing commands without the alias is- \ls.
+>> Module 6- The Linux file system(Part 2):
+        > Linux files timestamp: 
+            -> Linux has three different file timestamps:
+                1. Access time (atime): The last time the file was accessed.
+                2. Modification time (mtime): The last time the file's content was modified.
+                3. Change time (ctime): The last time the file's metadata was changed. 
+            -> stat command: Display the file's timestamps.
+            -> ls -lu: Display the access time.
+            -> ls -lt: Display the modification time.
+            -> ls -lc: Display the change time.   

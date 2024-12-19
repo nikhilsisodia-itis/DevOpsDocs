@@ -96,6 +96,8 @@ Shell Commands:
 >> du : > Display disk usage of files and directories.
         > It shows the amount of disk space used by files and directories.
 
+>> stat: Display detailed file information.
+
 
 
 Command Options:
@@ -129,3 +131,10 @@ Command Options:
                         > It excludes files and directories that match the specified pattern from the output.
 
 >> ls -R : > List files recursively.
+
+>> ls -lu : > List files by access time.
+           > It displays the files and directories based on their last access time.
+
+>> ls -lt : > List files by modification time.
+
+>> ls -lc : > List files by change time.
