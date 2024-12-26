@@ -286,3 +286,4 @@ Start date- 10-12-2024.
             -> echo *: Display all files and directories in the current directory.
             -> echo .*: Display all hidden files and directories in the current directory.
             -> exho <pattern>*: Display all files and directories that match the pattern.
+            -> exho <pattern>?: Display all files and directories that match the pattern.
