@@ -269,4 +269,5 @@ Start date- 10-12-2024.
             -> cp <source> <destination>: Copy files and directories.
             -> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copid file source and destination path.
             -> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
+            -> cp -p <source> <destination>: Copy files and directories with the original timestamps. The -p flag or option preserves the original timestamps.
                 
