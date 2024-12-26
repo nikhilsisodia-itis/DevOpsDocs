@@ -270,4 +270,8 @@ Start date- 10-12-2024.
             -> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copid file source and destination path.
             -> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
             -> cp -p <source> <destination>: Copy files and directories with the original timestamps. The -p flag or option preserves the original timestamps.
-                
+        > Moving and renaming directories and files:
+            -> mv <source> <destination>: Move or rename files and directories.
+            -> mv -i <source> <destination>: Move or rename files and directories interactively. The -i flag or option prompts before overwriting the destination file.
+            -> mv -n <source> <destination>: Move or rename files and directories without overwriting the destination file. The -n flag or option prevents overwriting the destination file.
+            -> mv -v <source> <destination>: Move or rename files and directories verbosely. The -v flag or option shows the moved file source and destination path.

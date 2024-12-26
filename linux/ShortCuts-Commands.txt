@@ -29,6 +29,7 @@ Keyboard Shortcuts:
 >> ctrl + b : Move backward one page.
 
 
+
 Shell Commands: 
 >> ping -c 1 8.8.8.8 :  > Command is used to check the connectivity.
                         > Send an ICMP(Internet Control Message Protocol).
@@ -113,6 +114,12 @@ Shell Commands:
 >> cp <source_file> <destination_file> : > Copy a file.
                                          > It copies the source file to the destination file.
 
+>> mv <source_file> <destination_file> : > Move a file.
+                                         > It moves the source file to the destination file.
+                                         > It also renames the file if the destination is a different name.
+
+
+
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
            > It provides detailed information about the files and directories, such as permissions, owner, size, and modification date.
@@ -181,3 +188,9 @@ Command Options:
 >> cp -p <source_file> <destination_file>: Copy a file and preserve the file attributes.
 
 >> cp -r <source_directory> <destination_directory>: Copy a directory recursively.
+
+>> mv -i <source_file> <destination_file>: Move a file and prompt before overwriting an existing file.
+
+>> mv -n <source_file> <destination_file>: Move a file and do not overwrite an existing file.
+
+>> mv -u <source_file> <destination_file>: Move a file only if the source file is newer than the destination file.
