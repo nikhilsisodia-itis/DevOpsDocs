@@ -287,3 +287,33 @@ Start date- 10-12-2024.
             -> echo .*: Display all hidden files and directories in the current directory.
             -> exho <pattern>*: Display all files and directories that match the pattern.
             -> exho <pattern>?: Display all files and directories that match the pattern.
+        > Working with pipes:
+            -> Pipes are used to redirect the output of one command as the input to another command.
+            -> Pipes are represented by the '|' symbol.
+            -> Every linux command or program we run has three data streams connected to it:
+                1. Standard input (stdin): The input stream that carries data into the program.
+                2. Standard output (stdout): The output stream that carries data out of the program.
+                3. Standard error (stderr): The error stream that carries error messages out of the program.
+            -> Data stream numbers:
+                0: Standard input.
+                1: Standard output.
+                2: Standard error.
+            -> grep command: Search for a pattern in a file.
+            -> grep -a <pattern> <file_name>: Search for a pattern in a file.
+            -> wc command: Stands for word count.
+            Count the number of lines, words, and characters in a file.
+        > Command redirection: 
+            -> Redirection is used to change the standard input, output, or error streams of a command.
+            -> Redirection operators:
+                1. >: Redirect the standard output to a file.
+                2. >>: Append the standard output to a file.
+                3. <: Redirect the standard input from a file.
+                4. 2>: Redirect the standard error to a file.
+                5. 2>>: Append the standard error to a file.
+                6. &>: Redirect both standard output and standard error to a file.
+                7. &>>: Append both standard output and standard error to a file.
+            -> tty command: Display the terminal device.
+            -> cut command: Extract sections from each line of a file.
+            -> cut -d <delimiter> -f <field_number> <file_name>: Extract a specific field from a file.
+            -> tee command: Read from standard input and write to standard output and files.
+            -> tee -a <file_name>: Append the standard output to a file.

@@ -121,6 +121,18 @@ Shell Commands:
 >> rm -r <directory_name> : > Remove a directory and its contents recursively.
                            > It deletes the specified directory and all its contents.
 
+>> grep <pattern> <file_name> : > Search for a pattern in a file.
+                                > It searches for the specified pattern in the file and displays the matching lines.
+
+>> wc <file_name> : > Count the number of lines, words, and characters in a file.
+                    > It displays the number of lines, words, and characters in the specified file.
+
+>> cut -d <delimiter> -f <field_number> <file_name> : > Extract a specific field from a file.
+                                                      > It extracts the specified field from the file based on the delimiter.
+
+>> tee <file_name> : > Redirect output to a file and the terminal.
+                     > It writes the output to the specified file and also displays it on the terminal.
+
 
 
 Command Options:
@@ -207,3 +219,7 @@ Command Options:
 >> rm -r -f <directory_name>: Remove a directory and its contents recursively without prompting.
 
 >> rm -v <file_name>: Remove a file and display the progress.
+
+>> grep -a <pattern> <file_name>: Search for a pattern in a file.
+
+>> tee -a <file_name>: Append output to a file.
