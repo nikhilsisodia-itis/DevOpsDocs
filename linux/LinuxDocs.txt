@@ -264,6 +264,9 @@ Start date- 10-12-2024.
             -> watch -d <command>: Highlight the differences between the outputs.
             -> watch -n 1 -d ifconfig: Display the network interface information.
         > Creating directories & files: 
-            -> 
-
+            -> mkdir <directory_name>: Create a new directory.
+            -> mkdir -p <directory_name>: Create a new directory and its parent directories.
+            -> cp <source> <destination>: Copy files and directories.
+            -> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copid file source and destination path.
+            -> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
                 
