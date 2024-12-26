@@ -96,10 +96,10 @@ Start date- 10-12-2024.
             -> A file system is a way to organize, store and retrieve data on a storage device in a structured and logical manner.
             -> On a Linux System, everything is treated as a file, including all external devices like: USB, HardDrive, etc.
             -> If something is not a file, it is a process.
-            -> In Linux, the file system is a hierarchical structure- arranged in a Truee-like architecture.
+            -> In Linux, the file system is a hierarchical structure- arranged in a Tree-like architecture.
             -> The root directory is the top-level directory in the file system or the base level.
             -> The root directory is represented by a forward slash (/).
-            -> All other directories and files are spreaded from the root or '/'/' directory.
+            -> All other directories and files are spreaded from the root or '/' directory.
             -> Linux folows a FHS (Filesystem Hierarchy Standard) to maintain the file system.
             -> The FHS provides a strandard layout for the directories and files, which ensures consistency across different Linux distributions.
             -> The directories or files present on different partitions or disks are also shown or mounted under the root directory.
@@ -126,7 +126,7 @@ Start date- 10-12-2024.
                                Device files are created by the kernel when the system boots up.
                                Device files are used to read and write data to the hardware devices.
             -> Special files: Files that represents hardware devices or provides a mechanism for inter process communication.
-            -> /etc directory: Etc directory consist of all the system configuration files.
+            -> /etc directory: Etc directory consist of all the system configuration files. Full form- etcetera.
                                System configuration files are used to configure the system settings.
                                System configuration files are used to set up the system according to the user's requirements.
                                System configuration files are used to configure the system services.
@@ -263,5 +263,7 @@ Start date- 10-12-2024.
             -> watch -n <interval> <command>: Run a command repeatedly at the specified interval.
             -> watch -d <command>: Highlight the differences between the outputs.
             -> watch -n 1 -d ifconfig: Display the network interface information.
+        > Creating directories & files: 
+            -> 
 
                 
