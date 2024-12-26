@@ -107,6 +107,11 @@ Shell Commands:
 
 >> watch command: Execute a command repeatedly and display the output.
 
+>> mkdir <directory_name> : > Create a new directory.
+                            > It creates a new directory with the specified name.
+
+>> cp <source_file> <destination_file> : > Copy a file.
+                                         > It copies the source file to the destination file.
 
 Command Options:
 >> ls -l : > List the contents of a directory in long format.
@@ -166,3 +171,9 @@ Command Options:
 >> watch -n <interval> <command>: Execute a command repeatedly at a specified interval and display the output.
 
 >> watch -d <command>: Highlight the differences between successive outputs of the command.
+
+>> mkdir -p <directory_path>: Create a directory and its parent directories if they do not exist.
+
+>> cp -v <source_file> <destination_file>: Copy a file and display the progress.
+
+>> cp -i <source_file> <destination_file>: Copy a file and prompt before overwriting an existing file.
