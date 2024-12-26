@@ -283,3 +283,6 @@ Start date- 10-12-2024.
             -> rm -v <file_name>: Remove files verbosely. The -v flag or option shows the removed file name.
             -> rm -rf <directory_name>: Force remove directories recursively. The -r flag or option is used to remove directories recursively.
             -> rm -rf <directory_name>/*: Force remove all files and directories inside a directory.
+            -> echo *: Display all files and directories in the current directory.
+            -> echo .*: Display all hidden files and directories in the current directory.
+            -> exho <pattern>*: Display all files and directories that match the pattern.
