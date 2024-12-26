@@ -177,3 +177,7 @@ Command Options:
 >> cp -v <source_file> <destination_file>: Copy a file and display the progress.
 
 >> cp -i <source_file> <destination_file>: Copy a file and prompt before overwriting an existing file.
+
+>> cp -p <source_file> <destination_file>: Copy a file and preserve the file attributes.
+
+>> cp -r <source_directory> <destination_directory>: Copy a directory recursively.
