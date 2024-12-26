@@ -275,3 +275,11 @@ Start date- 10-12-2024.
             -> mv -i <source> <destination>: Move or rename files and directories interactively. The -i flag or option prompts before overwriting the destination file.
             -> mv -n <source> <destination>: Move or rename files and directories without overwriting the destination file. The -n flag or option prevents overwriting the destination file.
             -> mv -v <source> <destination>: Move or rename files and directories verbosely. The -v flag or option shows the moved file source and destination path.
+        > Removing directories and files:
+            -> rm <file_name>: Remove files.
+            -> rm -r <directory_name>: Remove directories recursively.
+            -> rm -f <file_name>: Force remove files.
+            -> rm -i <file_name>: Remove files interactively. The -i flag or option prompts before removing the file.
+            -> rm -v <file_name>: Remove files verbosely. The -v flag or option shows the removed file name.
+            -> rm -rf <directory_name>: Force remove directories recursively. The -r flag or option is used to remove directories recursively.
+            -> rm -rf <directory_name>/*: Force remove all files and directories inside a directory.

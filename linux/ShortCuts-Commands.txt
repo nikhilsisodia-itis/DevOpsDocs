@@ -118,6 +118,9 @@ Shell Commands:
                                          > It moves the source file to the destination file.
                                          > It also renames the file if the destination is a different name.
 
+>> rm -r <directory_name> : > Remove a directory and its contents recursively.
+                           > It deletes the specified directory and all its contents.
+
 
 
 Command Options:
@@ -194,3 +197,13 @@ Command Options:
 >> mv -n <source_file> <destination_file>: Move a file and do not overwrite an existing file.
 
 >> mv -u <source_file> <destination_file>: Move a file only if the source file is newer than the destination file.
+
+>> rm -i <file_name>: Remove a file and prompt before deleting.
+
+>> rm -f <file_name>: Remove a file without prompting.
+
+>> rm -r -i <directory_name>: Remove a directory and its contents recursively and prompt before deleting.
+
+>> rm -r -f <directory_name>: Remove a directory and its contents recursively without prompting.
+
+>> rm -v <file_name>: Remove a file and display the progress.
