@@ -1,0 +1,272 @@
+Course name- Linux Administration: The Complete Linux Bootcamp.
+Taught By- Andrei Dumitrescu, Crystal Mind Academy.
+Total main modules- 46.
+Start date - 03-Feb-2025. 
+
+
+>> Module 1- Getting started: 
+    > Course outline.
+    > How to get the most out of the course?
+
+>> Module 2- Setting up the environment:
+    > Linux distributions.
+    > Installing ubuntu.
+    > Things to do after installing.
+    > Migrating to Linux.
+
+>> Module 3- The linux terminal:
+    > Terminal, Console, Shell and Commands:
+        -> Terminal: The tool used to type the Commands.
+        -> Console: The environment in which the terminal runs. 
+        -> Shell: The brain that interprets & runs the commands.
+        -> Commands: Instructions given to the shell, to perform different tasks or operations.
+    > Linux command structure:
+        -> Command name.
+        -> Options.
+        -> Arguments.
+    > Getting help:
+        -> man command.
+        -> Provides detailed information about any specific command.
+    > Learning the terminal:
+        -> Tab key: Auto-complete commands.
+        -> clear command.
+        -> cat command.
+        -> rm command.
+    > Learning the terminal- Keyboard shortcuts:
+        -> ctrl + l: Clear the terminal.
+        -> ctrl + d: Exit the terminal.
+        -> ctrl + a: Move the cursor to the beginning of the line.
+        -> ctrl + e: Move the cursor to the end of the line.
+        -> ctrl + u: Delete everything before the cursor.
+        -> ctrl + c: Stop the currently running command.
+        -> ctrl + z: Suspend the currently running command.
+    > Learning the terminal- Bash history:
+        -> Bash shell starts in the user's home directory.
+        -> .bash_history file stores the history of commands.
+        -> HISTFILESIZE is an environment variable that sets the number of commands to store.
+        -> To print the value of variable: echo $<file-name>.
+        -> By default, the value of HISTFILESIZE is 2000 (Ubuntu 24.04.1 LTS).
+        -> history command: Displays the history of commands from the .bash_history file.
+        -> HISTSIZE is an environment variable that sets the number of commands to store in the memory.
+        -> By default, the value of HISTSIZE is 1000 (Ubuntu 24.04.1 LTS).
+        -> The history in .bash_history is only saved when the terminal is closed.
+        -> !<command_indexNumber>: Re-run the command with the specified index number.
+        -> !!: Re-run the last command.
+        -> !-n: Re-run the nth command from the last command.
+        -> ctrl + p: Move to the previous command.
+        -> ctrl + n: Move to the next command.
+        -> ctrl + r: Search the command history. 
+        -> history -d <command_indexNumber>: Delete the command with the specified index number.
+        -> history -c: Clear the history of commands.
+    > Runnind commands withoug leaving a trace:
+        -> Giving a space before entering a command prevents it from being saved in the history.
+        -> HISTCONTROL is an environment variable that sets the commands to ignore in the history.
+        -> By default, the value of HISTCONTROL is ignoredups:ignorespace.
+
+>> Module 4- The Linux terminal in depth:
+    > Recording the date & time for each line in history:
+        -> HISTTIMEFORMAT is an environment variable that sets the format of the date & time.
+        -> By default, the value of HISTTIMEFORMAT is %F %T.
+        -> %F: Full date.
+        -> %T: Time.
+    > Root vs Unprivileged user(s):
+        -> Unprivileged user: A user with limited access to the system. 
+                              Also known as the Regular user. 
+                              They can only work within their home directory.
+        -> Root user: A user with full access to the system. 
+                      Also know as the Superuser or the Administrator.
+        -> Gain root access:
+            -> sudo su command: Superuser do and switch user.
+            -> Enter the password when prompted.
+            -> The terminal prompt changes to # when the root access is gained.
+            -> All normal users prompt ends with $.
+            -> Root user prompt ends with #.
+            -> sudo <command>: Run a command with root privileges.
+            -> Enter the password when prompted.
+            -> Once, the root access is gained using the root credentials, the root credentials are cached for 15 minutes.
+        -> sudo -v command: Refresh the sudo credentials.
+        -> sudo -k command: Expire the sudo credentials.
+        -> passwd command: Change the password.
+        -> sudo passwd <username>: Change the password of a specific user.
+        -> su <username>: Switch to a specific user.
+        -> su: Switch to the root user.
+    
+>> Module 5- The Linux file system:
+        > Intro to the linux file system:
+            -> A file system is a way to organize, store and retrieve data on a storage device in a structured and logical manner.
+            -> On a Linux System, everything is treated as a file, including all external devices like: USB, HardDrive, etc.
+            -> If something is not a file, it is a process.
+            -> In Linux, the file system is a hierarchical structure- arranged in a Tree-like architecture.
+            -> The root directory is the top-level directory in the file system or the base level.
+            -> The root directory is represented by a forward slash (/).
+            -> All other directories and files are spreaded from the root or '/' directory.
+            -> Linux folows a FHS (Filesystem Hierarchy Standard) to maintain the file system.
+            -> The FHS provides a strandard layout for the directories and files, which ensures consistency across different Linux distributions.
+            -> The directories or files present on different partitions or disks are also shown or mounted under the root directory.
+            -> Mounting a file system means making the files and directories in the file system accessible to the user.
+            -> Mount point is the directory where the file system is mounted.
+            -> df -h command: Display the disk space usage.
+        > The FileSystem Hierarchy Standard:
+            -> /bin directory: Consisit of essential user command binaries(executable programs- ls, rm, cat, etc). These commands are available to all users and play a crucial role in the basic system functionality.
+            -> /sbin directory: Consists of essential system command binaries(executable programs- fdisk, mkfs, etc). These commands are available to the root user and play a crucial role in the system administration.
+            -> /boot directory: Boot directory consist of all the files, that are required to start the system.
+            -> /home directory: This directory consist of all the user's data.
+                                Each user has its own personal directory within /home.
+                                Every user's directory consist of user's personal files, configuration settings, and directories.
+                                /home directory ensures that each user's files and settings are kept separate from others.
+
+                                *Note: ~ is a shortcut for the current user's home directory.
+                                       'cd ~' is same as 'cd /home/<username>'.
+            -> /root directory: The root user's home directory.
+                                The root user is the superuser or the administrator of the system.
+                                The root user has full access to the system and can perform any operation.
+            -> /dev directory: Device directory consist of all the device files.
+                               Device files are special files that represent hardware devices like hard drives, USB drives, etc.
+                               Device files are used to interact with the hardware devices.
+                               Device files are created by the kernel when the system boots up.
+                               Device files are used to read and write data to the hardware devices.
+            -> Special files: Files that represents hardware devices or provides a mechanism for inter process communication.
+            -> /etc directory: Etc directory consist of all the system configuration files. Full form- etcetera.
+                               System configuration files are used to configure the system settings.
+                               System configuration files are used to set up the system according to the user's requirements.
+                               System configuration files are used to configure the system services.
+            -> /lib directory: Library directory consist of all the shared libraries.
+                               Shared libraries are used by the system and the applications to perform various functions.
+                               Shared libraries are loaded into the memory when the system boots up.
+                               Shared libraries are used to provide common functions to the system and the applications.
+            -> /media directory: Media directory consist of all the removable media devices.
+                                 External devices like USB drives, CD/DVD drives, etc. are mounted under the /media directory.
+            -> /mnt directory: Mount directory consist of all the temporary mount points.
+                               Temporary mount points are used to mount external devices or network shares temporarily.
+                               Temporary mount points are used to access the data on the external devices or network shares.
+            -> /tmp directory: Temporary directory consist of all the temporary files.
+                               Temporary files are created by the system and the applications for temporary use.
+                               Temporary files are deleted when the system reboots.
+            -> /proc directory: Process directory consist of all the process information.
+                                Process information is stored in the /proc directory.
+                                Process information is used by the system and the applications to manage the processes.
+                                Process information is stored in the form of files and directories.
+            -> cat /proc/cpuinfo: Display the CPU information.
+            -> cat /proc/meminfo: Display the memory information.
+            -> /sys directory: Sys directory consist of all the system information.
+                               System information is stored in the /sys directory.
+                               System information is used by the system and the applications to manage the system resources.
+                               System information is stored in the form of files and directories.
+            -> /srv directory: Service directory consist of all the service data.
+                               Service data is stored in the /srv directory.
+                               Service data is used by the system and the applications to provide services.
+                               Service data is stored in the form of files and directories.
+            -> /run directory: Run directory consist of all the runtime data.
+                               Runtime data is stored in the /run directory.
+                               Runtime data is used by the system and the applications during the system runtime.
+                               Runtime data is stored in the form of files and directories.
+            -> /usr directory: User directory consist of all the user data.
+                               User data is used by the system and the applications to provide user-specific data.
+                               User data is stored in the form of files and directories.
+            -> /var directory: Variable directory consist of all the variable data.
+                               Variable data is used by the system and the applications to store variable data.
+        > Absolute vs Relative paths:
+            -> pwd command: Print the current working directory.
+            -> Absoulte paths: The full path of a file or directory from the root directory.
+                               It used forward slash (/) as the separator.
+                               Use '/' after every directory name.
+                               Example: /home/username/Documents/file.txt.
+                               Absolute paths are more reliable.
+            -> Relative paths: The path of a file or directory relative to the current working directory.
+                                 It does not start with a forward slash (/).
+                                 Use '.' to represent the current directory.
+                                 Use '..' to represent the parent directory.
+                                 Example: cd Documents.
+                                         cd ..
+            -> -a option: Display the hidden files.
+            -> tree command: Display the directory structure in a tree-like format.
+        > The 'ls' commands in depth:
+            -> -S option: Sort the files by size.
+            -> du command: Display the disk usage of files and directories.
+            -> du -sh <directory_name>: Display the disk usage of a directory in human-readable format.
+            -> ls -X: Sort the files by extension.
+            -> ls --hide option: Hide the specified files or directories.
+            -> ls -R option: List the files recursively. Recursively means to list the files and directories inside the subdirectories.
+            -> The ls aliased have a default color coding for different types of files:
+                -> Blue: Directory.
+                -> Green: Executable file.
+                -> Red: Archive file.
+                -> Cyan: Symbolic link.
+                -> Yellow: Device file.
+                -> Magenta: Image file.
+                -> White: Text file.
+            -> The original listing commands without the alias is- \ls.
+>> Module 6- The Linux file system(Part 2):
+        > Linux files timestamp: 
+            -> Linux has three different file timestamps:
+                1. Access time (atime): The last time the file was accessed.
+                2. Modification time (mtime): The last time the file's content was modified.
+                3. Change time (ctime): The last time the file's metadata was changed. 
+            -> stat command: Display the file's timestamps.
+            -> ls -lu: Display the access time.
+            -> ls -lt: Display the modification time.
+            -> ls -lc: Display the change time.   
+            -> Use touch <file_name> command to update the timestamps.
+            -> touch -a <file_name>: Update the access time.
+            -> touch -m <file_name>: Update the modification time.
+            -> touch -c <file_name>: Update the change time.
+            -> touch -t <timestamp> <file_name>: Update the timestamp to the specified value.
+            -> ls -lt: Sort the files by modification time.
+            -> ls -r option: Reverse the order of the output.
+        > File types in Linux:
+            -> .log files: Log files.
+            -> .txt files: Text files.
+            -> .conf files: Configuration files.
+            -> .sh files: Shell script files.
+            -> '-' denotes a regular file.
+            -> 'd' denotes a directory.
+            -> 'l' denotes a symbolic link.
+            -> 'c' denotes a character device file.
+            -> 'b' denotes a block device file.
+            -> 's' denotes a socket file.
+            -> 'p' denotes a named pipe file.
+            -> ls -F option: Display the file types.
+            -> '/' indicates a directory.
+            -> '@' indicates a symbolic link.
+            -> '|' indicates a named pipe file.
+            -> '*' indicates an executable file.
+            -> '=' indicates a socket file.
+            -> ' ' indicates a regular file.
+            -> file command: Display the file type.
+            -> file /<directory_name>/*: Display the file type of all the files in the directory.
+        > Viewing files:
+            -> cat command: Display the contents of a file.
+            -> cat -n option: Display the line numbers.
+            -> Concatinating files using cat:
+                -> cat file1 file2 > newfile: Concatenate file1 and file2 into newfile.
+        > Viewing file(part 2):
+            -> less command: Display the contents of a file page by page.
+            -> less -N option: Display the line numbers.
+            -> less -X option: Clear the screen before displaying the file.
+            -> less -S option: Truncate long lines.
+            -> ctrl + f: Move forward one page.
+            -> ctrl + b: Move backward one page.
+            -> g or <: Move to the beginning of the file.
+            -> G or >: Move to the end of the file.
+            -> / <pattern>: Search for a pattern.
+            -> n: Move to the next occurrence of the pattern.
+            -> N: Move to the previous occurrence of the pattern.
+            -> q: Quit the less command.
+            -> ? <pattern>: Search backward for a pattern.
+        > Viewing file(part 3):
+            -> tail command: Display the last 10 lines of a file.
+            -> tail -n <number> <file_name>: Display the last n lines of a file.
+            -> tail -f <file_name>: Display the last 10 lines of a file and keep the file open for new lines.
+            -> head command: Display the first 10 lines of a file.
+            -> head -n <number> <file_name>: Display the first n lines of a file.
+            -> watch command: Run a command repeatedly and display the output.
+            -> watch -n <interval> <command>: Run a command repeatedly at the specified interval.
+            -> watch -d <command>: Highlight the differences between the outputs.
+            -> watch -n 1 -d ifconfig: Display the network interface information.
+        > Creating directories & files: 
+            -> mkdir <directory_name>: Create a new directory.
+            -> mkdir -p <directory_name>: Create a new directory and its parent directories.
+            -> cp <source> <destination>: Copy files and directories.
+            -> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copid file source and destination path.
+            -> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
+                

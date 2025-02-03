@@ -1,0 +1,179 @@
+Keyboard Shortcuts:
+
+>> ctrl + alt + t : Open the terminal.
+
+>> tab : Auto-complete commands and attributes.
+
+>> ctrl + l : Clear the terminal.
+
+>> ctrl + d : Exit the terminal.
+
+>> ctrl + a : Move the cursor to the beginning of the line in the terminal.
+
+>> ctrl + e : In a terminal press ctrl + e to move the cursor to the end of the line.
+
+>> ctrl + u : Delete everything before the cursor in the terminal.
+
+>> ctrl + c : In the terminal, press ctrl + c to stop the currently running command or operation.
+
+>> ctrl + z : Suspend the currently running command in the terminal.
+
+>> ctrl + p : Move to the previous command in the terminal. Works the same as the up arrow key.
+
+>> ctrl + n : Move to the next command in the terminal. Works the same as the down arrow key.
+
+>> ctrl + r : Search the command history in the terminal. Input the search term and press enter to execute the command.
+
+>> ctrl +f : Move forward one page.
+
+>> ctrl + b : Move backward one page.
+
+
+Shell Commands: 
+>> ping -c 1 8.8.8.8 :  > Command is used to check the connectivity.
+                        > Send an ICMP(Internet Control Message Protocol).
+                        > IP Address 8.8.8.8 is one of Google's public DNS server.
+                        > The -c 1 option specifies that only one packet should be sent.                    
+
+>> ls : > List the contents of a directory.
+        > It lists the files and directories in the current directory.
+
+>> df : > Display disk space usage.
+        > It shows the amount of disk space used and available on the filesystems.
+
+>> man <command_name> : > Display the manual page for a command.
+                        > It provides detailed information about the command, including its usage, options, and examples.
+>> clear : > Clear the terminal screen.
+
+>> cat <file_name> : > Display the contents of a file.
+                     > It prints the contents of a file to the terminal.
+
+>> rm <file_name> : > Remove a file.
+                    > It deletes the specified file from the filesystem.
+
+>> history : > Display the history of commands.
+             > It shows a list of previously executed commands.
+
+>> !<command_indexNumber> : > Re-run a command with a specific index number from the history.
+                            > It executes the command with the specified index number from the history.
+
+>> !! : > Re-run the last command.
+
+>> !-n : > Re-run the nth command from the last command.
+        > It executes the command with the specified index number from the history.
+
+>> history -d <command_indexNumber> : > Delete a specific command from the history.
+                                      > It removes the command with the specified index number from the history.
+                                
+>> history -c : > Clear the history of commands.
+                > It deletes all the commands from the history.
+
+>> sudo su : > Switch to the root user.
+             > It allows the current user to switch to the root user.
+             > The root user has full access to the system.
+
+>> sudo su - : > Switch to the root user with the root user's environment.
+               > It allows the current user to switch to the root user with the root user's environment.
+
+>> sudo <command> : > Run a command with superuser privileges.
+                    > It executes the specified command with superuser privileges.
+
+>> passwd : > Change the password.
+            > It allows the user to change their password.
+
+>> sudo passwd <username> : > Change the password of another user.
+                            > It allows the root user to change the password of another user.
+
+>> df -h : > Display disk space usage in human-readable format.
+           > It shows the amount of disk space used and available on the filesystems in a human-readable format.
+
+>> cat /proc/cpuinfo: Display the CPU information.
+
+>> cat /proc/meminfo: Display the memory information.
+
+>> pwd : > Print the current working directory.
+        > It shows the full path of the current working directory.
+
+>> tree : > Display the directory structure in a tree format.
+
+>> du : > Display disk usage of files and directories.
+        > It shows the amount of disk space used by files and directories.
+
+>> stat: Display detailed file information.
+
+>> tail command: Display the last 10 lines of a file.
+
+>> head command: Display the first 10 lines of a file.
+
+>> watch command: Execute a command repeatedly and display the output.
+
+>> mkdir <directory_name> : > Create a new directory.
+                            > It creates a new directory with the specified name.
+
+>> cp <source_file> <destination_file> : > Copy a file.
+                                         > It copies the source file to the destination file.
+
+Command Options:
+>> ls -l : > List the contents of a directory in long format.
+           > It provides detailed information about the files and directories, such as permissions, owner, size, and modification date.
+>> ls -a : > List all files, including hidden files.
+           > Hidden files are those whose filenames start with a dot (.).
+>> ls -h : > List the contents of a directory with human-readable file sizes.
+           > It displays file sizes in a format that is easier for humans to read, such as KB, MB.
+>> -i : > Display the inode number of each file.
+        > An inode is a data structure that stores information about a file or directory, such as permissions, size, and location on disk.
+>> -a : > List all files, including hidden files.
+        > Hidden files are those whose filenames start with a dot (.).
+
+>> -d : > List directories only.
+        > It displays only directories in the current directory.
+
+>> -f : > Do not sort the output.
+        > It displays the files and directories in the order they appear in the filesystem.
+
+>> ls -S : > Sort files by size.
+           > It displays the files and directories in descending order of size.
+
+>> du -sh <directory_name> : > Display the disk usage of a directory in human-readable format.
+                             > It shows the amount of disk space used by the specified directory in a human-readable format.
+        
+>> ls -X : > Sort files by extension.
+           > It displays the files and directories sorted by their file extensions.
+
+>> ls --hide <pattern> : > Hide files and directories that match the specified pattern.
+                        > It excludes files and directories that match the specified pattern from the output.
+
+>> ls -R : > List files recursively.
+
+>> ls -lu : > List files by access time.
+           > It displays the files and directories based on their last access time.
+
+>> ls -lt : > List files by modification time.
+
+>> ls -lc : > List files by change time.
+
+>> touch -a <file_name> : > Change the access time of a file.
+                          > It updates the access time of the specified file to the current time.
+
+>> touch -m <file_name> : > Change the modification time of a file.
+
+>> ls -t : > Sort files by modification time.
+          > It displays the files and directories in descending order of modification time.
+
+>> ls -r : > Reverse the order of the output.
+
+>> tail -n <number> <file_name>: Display the last n lines of a file.
+
+>> head -n <number> <file_name>: Display the first n lines of a file.
+
+>> tail -f <file_name>: Display the last 10 lines of a file and continue to display new lines as they are added to the file.
+
+>> watch -n <interval> <command>: Execute a command repeatedly at a specified interval and display the output.
+
+>> watch -d <command>: Highlight the differences between successive outputs of the command.
+
+>> mkdir -p <directory_path>: Create a directory and its parent directories if they do not exist.
+
+>> cp -v <source_file> <destination_file>: Copy a file and display the progress.
+
+>> cp -i <source_file> <destination_file>: Copy a file and prompt before overwriting an existing file.
