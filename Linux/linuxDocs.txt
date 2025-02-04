@@ -316,3 +316,22 @@ Start date - 03-Feb-2025.
             -> updatedb -U <directory>: Update the database for the specified directory.
             -> updatedb -v: Update the database verbosely.
             -> updatedb -h: Display the help message.
+            -> find command: Find files by name, type, size, etc.
+            -> find <directory> -name <file_name>: Find files by name.
+            -> find <directory> -iname <file_name>: Find files by name case-insensitively.
+            -> find <directory> -type <file_type>: Find files by type.
+            -> find <directory> -size <file_size>: Find files by size.
+            -> find <directory> -empty: Find empty files.
+            -> find <directory> -user <username>: Find files by user.
+            -> find <directory> -group <groupname>: Find files by group.
+            -> find <directory> -mtime <days>: Find files by modification time.
+            -> find <directory> -mmin <minutes>: Find files by modification time in minutes.
+            -> find <directory> -ctime <days>: Find files by change time.
+            -> find <directory> -cmin <minutes>: Find files by change time in minutes.
+            -> find <directory> -atime <days>: Find files by access time.
+            -> find <directory> -amin <minutes>: Find files by access time in minutes.
+            -> find <directory> -exec <command>: Execute a command on the found files.
+            -> find <directory> -delete: Delete the found files.
+            -> find <directory> -print: Print the found files.
+            -> find <directory> -ls: List the found files.
+            
