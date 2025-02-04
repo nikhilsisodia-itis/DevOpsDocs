@@ -404,3 +404,25 @@ Start date - 03-Feb-2025.
         -> ls -l <file_name>: Display the number of links of a file.
         -> ls -l: Display the number of links of all the files in the directory.    
         -> stat <file_name>: Display the inode number.   
+>> Module 11- User account management: 
+    > Basic understanding:
+        -> /etc/passwd: User account information.
+        -> /etc/shadow: User password information.
+        -> There are seven fields in each line in /etc/passwd directory:
+            ->> Field 1- User's login name.
+            ->> Field 2- User's password. Encrypted password or 'x' for shadow password. If the second field is empty, that means the user does not have to enter any password to log in.
+            ->> Field 3- User's ID number. 
+            ->> Field 4- User's group ID number.
+            ->> Field 5- User's full name or comment.
+            ->> Field 6- User's home directory.
+            ->> Field 7- User's login shell.
+        -> There are nine fields in each line in /etc/shadow directory:
+            ->> Field 1- User's login name.
+            ->> Field 2- Encrypted password.
+            ->> Field 3- Number of days since the password was last changed.
+            ->> Field 4- Number of days before the password may be changed.
+            ->> Field 5- Number of days after which the password must be changed.
+            ->> Field 6- Number of days before the password expires that the user is warned.
+            ->> Field 7- Number of days after the password expires that the account is disabled.
+            ->> Field 8- Number of days since January 1, 1970, that the account has been disabled.
+            ->> Field 9- Reserved field.
