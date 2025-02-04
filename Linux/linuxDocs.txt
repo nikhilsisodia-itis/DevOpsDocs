@@ -426,3 +426,21 @@ Start date - 03-Feb-2025.
             ->> Field 7- Number of days after the password expires that the account is disabled.
             ->> Field 8- Number of days since January 1, 1970, that the account has been disabled.
             ->> Field 9- Reserved field.
+        -> Groups: A group is a collection of users.
+        -> /etc/group: Group information.
+        -> There are two types of groups:
+            ->> Primary group: The group that is associated with the user when the user is created.
+            ->> Secondary group: The groups that are associated with the user after the user is created.
+        -> Adding or creating new users:
+            ->> useradd <username>: Add a new user.
+            ->> useradd -m <username>: Add a new user with a home directory.
+            ->> useradd -d <directory> <username>: Add a new user with a specific home directory.
+            ->> useradd -c <comment> <username>: Add a new user with a comment.
+            ->> useradd -g <groupname> <username>: Add a new user to a specific group.
+            ->> useradd -G <groupname> <username>: Add a new user to a secondary group.
+            ->> useradd -s <shell> <username>: Add a new user with a specific shell.
+            ->> useradd -p <password> <username>: Add a new user with a password.
+            ->> useradd -u <uid> <username>: Add a new user with a specific user ID.
+            ->> useradd -e <expiry_date> <username>: Add a new user with an expiry date.
+            ->> useradd -f <inactive_days> <username>: Add a new user with an inactive days.
+            ->> useradd -e <expiry_date> -f <inactive_days> -p <password> <username>: Add a new user with an expiry date, inactive days, and password.
