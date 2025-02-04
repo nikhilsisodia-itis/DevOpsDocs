@@ -269,4 +269,12 @@ Start date - 03-Feb-2025.
             -> cp <source> <destination>: Copy files and directories.
             -> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copid file source and destination path.
             -> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
+>> Module 7- The Linux file system(Part 3): 
+        > Move & rename directories and files:
+            -> mv <source> <destination>: Move or rename files and directories.
+            -> mv -v <source> <destination>: Move or rename files and directories verbosely. The -v flag or option shows the moved file source and destination path.
+            -> mv -i <source> <destination>: Move or rename files and directories interactively. The -i flag or option prompts before overwriting the destination file.
+            -> mv -n <source> <destination>: Move or rename files and directories without overwriting the destination file.
+            -> mv -u <source> <destination>: Move or rename files and directories only if the source is newer than the destination.
+
                 
