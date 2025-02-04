@@ -285,4 +285,19 @@ Start date - 03-Feb-2025.
             -> rm -rf <directory_name>: Remove directories and their contents forcefully and recursively.
             -> rm -rfi <directory_name>: Remove directories and their contents forcefully, recursively, and interactively.
             -> rm -rfv <directory_name>: Remove directories and their contents forcefully, recursively, and verbosely.
+        > Pipes & redirection:
+            -> Pipes: Pipes are used to redirect the output of one command as the input to another command.
+            -> Redirection: Redirection is used to redirect the output of a command to a file or another command.
+            -> |: Pipe symbol.
+            -> >: Redirect the output to a file. If the file does not exist, it will be created. If the file exists, it will be overwritten.
+            -> >>: Append the output to a file. If the file does not exist, it will be created. If the file exists, the output will be appended.
+            -> <: Redirect the input from a file.
+            -> 2>: Redirect the error output to a file.
+            -> 2>&1: Redirect the error output to the standard output.
+            -> tee command: Read from standard input and write to standard output and files.
+            -> tee -a <file_name>: Append the output to a file.
+            -> tee -i <file_name>: Ignore the interrupt signal.
+            -> tee -p <file_name>: Preserve the permissions of the file.
+            -> tee -v <file_name>: Display the output verbosely.
+            -> tee -a -i -p -v <file_name>: Append the output to a file, ignore the interrupt signal, preserve the permissions of the file, and display the output verbosely.
                 
