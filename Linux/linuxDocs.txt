@@ -300,4 +300,9 @@ Start date - 03-Feb-2025.
             -> tee -p <file_name>: Preserve the permissions of the file.
             -> tee -v <file_name>: Display the output verbosely.
             -> tee -a -i -p -v <file_name>: Append the output to a file, ignore the interrupt signal, preserve the permissions of the file, and display the output verbosely.
-                
+        > Data streams:
+            -> Standard input (stdin): The input stream that carries data into a command.
+            -> Standard output (stdout): The output stream that carries data out of a command.
+            -> Standard error (stderr): The error stream that carries error messages out of a command.
+            -> grep command: Search for a pattern in a file.
+            -> cut command: Cut out the sections from each line of a file.
