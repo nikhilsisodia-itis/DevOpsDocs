@@ -306,3 +306,13 @@ Start date - 03-Feb-2025.
             -> Standard error (stderr): The error stream that carries error messages out of a command.
             -> grep command: Search for a pattern in a file.
             -> cut command: Cut out the sections from each line of a file.
+>> Module 8- The Linux file system(Part 4):
+        > Locate files:
+            -> locate command: Find files by name.
+            -> locate -i <file_name>: Find files by name case-insensitively.
+            -> locate -r <pattern>: Find files by a regular expression.
+            -> updatedb command: Update the database used by the locate command.
+            -> updatedb -l 0: Update the database without logging.
+            -> updatedb -U <directory>: Update the database for the specified directory.
+            -> updatedb -v: Update the database verbosely.
+            -> updatedb -h: Display the help message.
