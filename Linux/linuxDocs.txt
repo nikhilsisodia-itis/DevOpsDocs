@@ -512,3 +512,14 @@ Start date - 03-Feb-2025.
             ->> w denotes write permission.
             ->> x denotes execute permission.
             ->> - denotes no permission.
+    > Octal Numeric Notation:
+        -> The octal numeric notation is a way to represent the file permissions using numbers.
+        -> Each permission is represented by a number:
+            ->> Read (r): 4.
+            ->> Write (w): 2.
+            ->> Execute (x): 1.
+            ->> No permission (-): 0.
+        -> The octal numeric notation is calculated by adding the numbers of the permissions:
+            ->> Read and write: 4 + 2 = 6.
+            ->> Read, write, and execute: 4 + 2 + 1 = 7.
+        -> stat command: Display the file's permissions.
