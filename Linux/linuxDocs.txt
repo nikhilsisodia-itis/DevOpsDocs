@@ -485,3 +485,11 @@ Start date - 03-Feb-2025.
             ->> sudo -u <username> <command>: Run a command as a user.
             ->> sudo -l: List the user's sudo privileges.
             ->> sudo -l -U <username>: List the user's sudo privileges for a specific user.
+        -> RUID vs EUID: 
+            ->> RUID: Real User ID. The user who is running the process.
+            ->> EUID: Effective User ID. The user who owns the process.
+            ->> whoami command: Display the current user.
+            ->> who command: Display the users who are logged in.
+            ->> id command: Display the user's information.
+            ->> w command: Display the users who are logged in and their processes.
+            ->> last command: Display the last logged in users.
