@@ -493,3 +493,22 @@ Start date - 03-Feb-2025.
             ->> id command: Display the user's information.
             ->> w command: Display the users who are logged in and their processes.
             ->> last command: Display the last logged in users.
+>> Module 12- File permissions:
+    > File permissions or modes specify the access rights to files and directories.
+        -> By default, the owner of the file has read, write, and execute permissions.
+        -> The group of the file has read and execute permissions.
+        -> chown command: Change the owner and group of a file.
+        -> chgrp command: Change the group of a file.
+        -> A file(s) has three permission modes:
+            ->> Read (r): The file can be read.
+            ->> Write (w): The file can be written.
+            ->> Execute (x): The file can be executed.
+            ->> Every file has 9 permission bits:
+                ->> Owner permissions: Read, write, and execute(First 3 characters, after the first character).
+                ->> Group permissions: Read, write, and execute(Middle 3 characters).
+                ->> Others permissions: Read, write, and execute(Last 3 characters).
+        -> r, w, x, - denotes the permissions.
+            ->> r denotes read permission.
+            ->> w denotes write permission.
+            ->> x denotes execute permission.
+            ->> - denotes no permission.
