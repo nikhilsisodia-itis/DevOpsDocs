@@ -444,3 +444,44 @@ Start date - 03-Feb-2025.
             ->> useradd -e <expiry_date> <username>: Add a new user with an expiry date.
             ->> useradd -f <inactive_days> <username>: Add a new user with an inactive days.
             ->> useradd -e <expiry_date> -f <inactive_days> -p <password> <username>: Add a new user with an expiry date, inactive days, and password.
+        -> Adding or creating new group(s):
+            ->> groupadd <groupname>: Add a new group.
+            ->> groupadd -g <gid> <groupname>: Add a new group with a specific group ID.
+        -> Modifying user(s):
+            ->> usermod <username>: Modify a user.
+            ->> usermod -l <new_username> <username>: Modify a user's login name.
+            ->> usermod -c <comment> <username>: Modify a user's comment.
+            ->> usermod -d <directory> <username>: Modify a user's home directory.
+            ->> usermod -g <groupname> <username>: Modify a user's primary group.
+            ->> usermod -G <groupname> <username>: Modify a user's secondary group.
+            ->> usermod -s <shell> <username>: Modify a user's shell.
+            ->> usermod -p <password> <username>: Modify a user's password.
+            ->> usermod -u <uid> <username>: Modify a user's user ID.
+            ->> usermod -e <expiry_date> <username>: Modify a user's expiry date.
+            ->> usermod -f <inactive_days> <username>: Modify a user's inactive days.
+            ->> usermod -e <expiry_date> -f <inactive_days> -p <password> <username>: Modify a user's expiry date, inactive days, and password.
+        -> Modifying group(s):
+            ->> groupmod <groupname>: Modify a group.
+            ->> groupmod -g <gid> <groupname>: Modify a group's group ID.
+        -> Deleting user(s):   
+            ->> userdel <username>: Delete a user.
+            ->> userdel -r <username>: Delete a user and its home directory.
+        -> Deleting group(s):
+            ->> groupdel <groupname>: Delete a group.
+        -> Viewing user(s):
+            ->> id <username>: Display the user's information.
+            ->> id -u <username>: Display the user's user ID.
+            ->> id -g <username>: Display the user's group ID.
+            ->> id -G <username>: Display the user's secondary groups.
+            ->> id -n <uid>: Display the user's name.
+            ->> id -un <gid>: Display the group's name.
+        -> Viewing group(s):
+            ->> groups <username>: Display the user's groups.
+            ->> groups <groupname>: Display the group's users.
+            ->> getent group <groupname>: Display the group's information.
+        -> Switching user(s):
+            ->> su <username>: Switch to a user.
+            ->> su - <username>: Switch to a user with the user's environment.
+            ->> sudo -u <username> <command>: Run a command as a user.
+            ->> sudo -l: List the user's sudo privileges.
+            ->> sudo -l -U <username>: List the user's sudo privileges for a specific user.
