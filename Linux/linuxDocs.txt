@@ -523,3 +523,23 @@ Start date - 03-Feb-2025.
             ->> Read and write: 4 + 2 = 6.
             ->> Read, write, and execute: 4 + 2 + 1 = 7.
         -> stat command: Display the file's permissions.
+    > Change file(s) permission(s)"
+        -> chmod command: Change the file permissions.
+        -> chmod <mode> <file_name>: Change the file permissions.
+        -> chmod -R <mode> <directory_name>: Change the file permissions recursively.
+        -> chmod -v <mode> <file_name>: Change the file permissions verbosely.
+        -> chmod -c <mode> <file_name>: Change the file permissions and display the changes.
+        -> chmod -f <mode> <file_name>: Change the file permissions forcefully.
+        -> chmod -R -v -c -f <mode> <directory_name>: Change the file permissions recursively, verbosely, and display the changes.
+        -> chmod a <operator> <permission> <file_name>: Change the file permissions for all users.
+        -> chmod --reference <reference_file> <file_name>: Change the file permissions to match the reference file.
+        -> User category:
+            ->> u: User.
+            ->> g: Group.
+            ->> o: Others.
+            ->> a: All.
+        -> Operations:
+            ->> +: Add the permission.
+            ->> -: Remove the permission.
+            ->> =: Set the permission.
+        
