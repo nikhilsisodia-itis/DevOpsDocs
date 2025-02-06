@@ -598,4 +598,46 @@ Start date - 03-Feb-2025.
         -> lsattr -d <directory_name>: Display the file attributes of a directory.
         -> lsattr -R <directory_name>: Display the file attributes recursively.
         -> lsattr -a -d -R <file_name>: Display the file attributes of a file, directory, and recursively.
-        
+>> Module 14- Process Management:
+    > Processes:
+        -> A running instance of a program is called a process.
+        -> Process is an active entity.
+        -> If a shell built-in command is executed, a new process is not created.
+        -> Process properties:
+            ->> Process ID (PID): A unique number assigned to each process.
+            ->> Parent Process ID (PPID): The ID of the parent process.
+            ->> User ID (UID): The ID of the user who owns the process.
+            ->> Group ID (GID): The ID of the group who owns the process.
+            ->> Process Status: The current state of the process.
+            ->> Process Priority: The priority of the process.
+            ->> Process Nice Value: The nice value of the process.
+            ->> Process CPU Usage: The CPU usage of the process.
+            ->> Process Memory Usage: The memory usage of the process.
+            ->> Process Start Time: The time when the process started.
+            ->> Process Command: The command that started the process.
+        -> Types of processes: 
+            ->> Foreground process: A process that runs in the foreground.
+            ->> Background process: A process that runs in the background.
+            ->> Zombie process: A process that has completed its execution but still has an entry in the process table.
+            ->> Orphan process: A process whose parent process has terminated.
+        -> Threads: 
+            ->> Threads are sub-processes of a process(s).
+            ->> Threads share the same memory space.
+            ->> Threads are used to perform multiple tasks simultaneously.
+            ->> Threads are created using the pthread library.
+        -> Process commands: 
+            ->> ps command: Display the process status.
+            ->> ps -e: Display all the processes.
+            ->> ps -f: Display the full format.
+            ->> ps -l: Display the long format.
+            ->> ps -u: Display the user format.
+            ->> ps -aux: Display all the processes in a user-readable format.
+            ->> top command: Display the dynamic real-time view of the system.
+            ->> htop command: Display the dynamic real-time view of the system.
+            ->> pstree command: Display the process tree.
+            ->> pgrep command: Display the process ID of a process.
+            ->> pkill command: Kill a process by its name.
+            ->> kill command: Kill a process by its ID.
+            ->> kill -9 <PID>: Kill a process forcefully
+            
+         
