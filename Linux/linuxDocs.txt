@@ -552,4 +552,22 @@ Start date - 03-Feb-2025.
         -> Only root can change the owner and group of a file.
         -> A non-privileged user can only change the group of a file to a group that the user is a member of.
         -> lscpu command: Display the CPU information.
-        
+    > Special permissions:
+        -> Special permissions are used to provide additional access to files and directories.
+        -> Special permissions are set using the octal numeric notation.
+        -> Setuid (SUID): Set the user ID.
+        -> Setgid (SGID): Set the group ID.
+        -> Sticky bit: Restrict the deletion of files in a directory by other users.
+        -> chmod u+s <file_name>: Set the user ID.
+        -> chmod g+s <file_name>: Set the group ID.
+        -> chmod +t <directory_name>: Set the sticky bit.
+        -> chmod -s <file_name>: Remove the special permissions.
+        -> chmod -t <directory_name>: Remove the sticky bit.
+        -> 4, 2, 1, 0 denotes the special permissions.
+            ->> Setuid (SUID): 4(Followed by permission's octal value).
+            ->> Setgid (SGID): 2(Followed by permission's octal value).
+            ->> Sticky bit: 1(Followed by permission's octal value).
+            ->> No special permission: 0.
+        -> ls -l: Display the special permissions of all the files in the directory.
+        -> ls -ld: Display the special permissions of all the directories in the directory.
+        -> find -perm -4000: Find files with the setuid permission.
