@@ -581,3 +581,21 @@ Start date - 03-Feb-2025.
         -> umask -p: Display the umask value in octal notation.
         -> umask -S <value>: Set the umask value in symbolic notation.
         -> umask -p <value>: Set the umask value in octal notation.
+    > File attributes:
+        -> chattr command: Change the file attributes.
+        -> chattr +i <file_name>: Set the immutable attribute.
+        -> chattr -i <file_name>: Remove the immutable attribute.
+        -> chattr +a <file_name>: Set the append-only attribute.
+        -> chattr -a <file_name>: Remove the append-only attribute.
+        -> chattr +d <file_name>: Set the no dump attribute.
+        -> chattr -d <file_name>: Remove the no dump attribute.
+        -> chattr +c <file_name>: Set the compressed attribute.
+        -> chattr -c <file_name>: Remove the compressed attribute.
+        -> chattr +u <file_name>: Set the undeletable attribute.
+        -> chattr -u <file_name>: Remove the undeletable attribute.
+        -> lsattr command: Display the file attributes.
+        -> lsattr -a <file_name>: Display the file attributes of a file.
+        -> lsattr -d <directory_name>: Display the file attributes of a directory.
+        -> lsattr -R <directory_name>: Display the file attributes recursively.
+        -> lsattr -a -d -R <file_name>: Display the file attributes of a file, directory, and recursively.
+        
