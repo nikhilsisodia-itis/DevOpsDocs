@@ -543,3 +543,13 @@ Start date - 03-Feb-2025.
             ->> -: Remove the permission.
             ->> =: Set the permission.
         -> Parent directory permission are given priority over the child directory permission.
+>> Module 13- File permissions(Part-2):
+    > Changing file ownership:
+        -> chown command: Change the owner and group of a file.
+        -> chown <owner>:<group> <file_name>: Change the owner and group of a file.
+        -> chown -R <owner>:<group> <directory_name>: Change the owner and group of a directory recursively.
+        -> chown id <owner>:<group> <file_name>: Change the owner and group of a file by ID.
+        -> Only root can change the owner and group of a file.
+        -> A non-privileged user can only change the group of a file to a group that the user is a member of.
+        -> lscpu command: Display the CPU information.
+        
