@@ -542,4 +542,4 @@ Start date - 03-Feb-2025.
             ->> +: Add the permission.
             ->> -: Remove the permission.
             ->> =: Set the permission.
-        
+        -> Parent directory permission are given priority over the child directory permission.
