@@ -632,6 +632,7 @@ Start date - 03-Feb-2025.
             ->> ps -l: Display the long format.
             ->> ps -u: Display the user format.
             ->> ps -aux: Display all the processes in a user-readable format.
+            ->> ps -f -u <username>: Display the processes of a user in the full format.
             ->> top command: Display the dynamic real-time view of the system.
             ->> htop command: Display the dynamic real-time view of the system.
             ->> pstree command: Display the process tree.
