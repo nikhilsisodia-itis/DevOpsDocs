@@ -640,5 +640,6 @@ Start date - 03-Feb-2025.
             ->> pkill command: Kill a process by its name.
             ->> kill command: Kill a process by its ID.
             ->> kill -9 <PID>: Kill a process forcefully
-            
-         
+            ->> pgrep -u <username>: Display the process ID of a user.
+            ->> pstree -p: Display the process tree with the process ID.
+            ->> pstree -c -p: Display the process tree with the command and process ID.
