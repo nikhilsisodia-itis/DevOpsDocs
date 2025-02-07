@@ -633,13 +633,24 @@ Start date - 03-Feb-2025.
             ->> ps -u: Display the user format.
             ->> ps -aux: Display all the processes in a user-readable format.
             ->> ps -f -u <username>: Display the processes of a user in the full format.
-            ->> top command: Display the dynamic real-time view of the system.
-            ->> htop command: Display the dynamic real-time view of the system.
             ->> pstree command: Display the process tree.
             ->> pgrep command: Display the process ID of a process.
-            ->> pkill command: Kill a process by its name.
-            ->> kill command: Kill a process by its ID.
-            ->> kill -9 <PID>: Kill a process forcefully
             ->> pgrep -u <username>: Display the process ID of a user.
             ->> pstree -p: Display the process tree with the process ID.
             ->> pstree -c -p: Display the process tree with the command and process ID.
+>> Module 15- Process Management(Part 2):
+    > Top commands:
+        -> top command: Display the dynamic real-time view of the system.
+        -> htop command: Display the dynamic real-time view of the system.
+        -> uptime command: Display the system uptime.
+        -> w command: Display the system uptime and the users who are logged in.
+        -> who command: Display the users who are logged in.
+        -> whoami command: Display the current user.
+        -> last command: Display the last logged in users.
+        -> last -n <number>: Display the last n logged in users.
+        -> last -u <username>: Display the last logged in users of a user.
+        -> last -f <file_name>: Display the last logged in users from a file.
+        -> last -t <time>: Display the last logged in users since a specific time.
+        -> last -x: Display the system shutdown and reboot times.
+        -> last -x -f <file_name>: Display the system shutdown and reboot times from a file.
+        -> last -x -t <time>: Display the system shutdown and reboot times since a specific time.
