@@ -675,10 +675,14 @@ Start date - 03-Feb-2025.
     > Foreground & background processes:
         -> Foreground process: A process that runs in the foreground.
         -> Background process: A process that runs in the background.
-        -> bg command: Move a process to the background.
-        -> fg command: Move a process to the foreground.
         -> Use & in the end of the command to run the command in the background.
+>> Module 16- Process Management(Part 3):
         -> jobs command: Display the background jobs.
+        -> bg command: Move a process to the background.
+        -> bg %<job_number>: Move a process to the background using the job number.
+        -> fg command: Move a process to the foreground.
+        -> fg %<job_number>: Move a process to the foreground using the job number.
         -> ctrl + z: Suspend a process.
         -> ctrl + c: Terminate a process.
         -> ctrl + d: Exit the shell.
+        -> nohup <command>: Run a command that does not terminate when the shell is closed.
