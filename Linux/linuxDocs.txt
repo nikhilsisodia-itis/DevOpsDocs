@@ -672,3 +672,13 @@ Start date - 03-Feb-2025.
         -> pkill -15 <process_name>: Kill a process by name gracefully.
         -> pkill -SIGKILL <process_name>: Kill a process by name using the signal name.
         -> pkill -SIGTERM <process_name>: Kill a process by name using the signal name.
+    > Foreground & background processes:
+        -> Foreground process: A process that runs in the foreground.
+        -> Background process: A process that runs in the background.
+        -> bg command: Move a process to the background.
+        -> fg command: Move a process to the foreground.
+        -> Use & in the end of the command to run the command in the background.
+        -> jobs command: Display the background jobs.
+        -> ctrl + z: Suspend a process.
+        -> ctrl + c: Terminate a process.
+        -> ctrl + d: Exit the shell.
