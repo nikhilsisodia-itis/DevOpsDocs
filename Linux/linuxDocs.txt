@@ -695,3 +695,7 @@ Start date - 03-Feb-2025.
         -> Networking is used to access the internet.
         -> /etc/netplan: Network configuration directory.
         -> Network manager is used to manage the network configuration.
+    > Commands: 
+        -> systemctl status NetworkManager: Display the status of the NetworkManager service.
+        -> systemctl start NetworkManager: Start the NetworkManager service.
+        -> systemctl stop NetworkManager: Stop the NetworkManager service.
