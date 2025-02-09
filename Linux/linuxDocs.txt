@@ -699,3 +699,29 @@ Start date - 03-Feb-2025.
         -> systemctl status NetworkManager: Display the status of the NetworkManager service.
         -> systemctl start NetworkManager: Start the NetworkManager service.
         -> systemctl stop NetworkManager: Stop the NetworkManager service.
+        -> systemctl restart NetworkManager: Restart the NetworkManager service.
+    > YAML (Yet Another Markup Language):
+        -> YAML is a human-readable data serialization language.
+        -> YAML is used to write configuration files.
+        -> YAML is used to write data structures.
+        -> YAML is used to write data exchange formats.
+        -> YAML is used to write configuration management files.
+        -> YAML is used to write data-oriented languages.
+        -> YAML is used to write data serialization languages.
+    > Network file configuration using YAML format:
+        -> Network configuration files are written in the YAML format.
+        -> Network configuration files are stored in the /etc/netplan directory.
+        -> Network configuration files have the .yaml extension.
+        -> Network configuration files have the following structure:
+            ->> network: The network configuration.
+            ->> version: The version of the network configuration.
+            ->> renderer: The renderer of the network configuration.
+            ->> ethernets: The ethernet configuration.
+            ->> enp0s3: The ethernet interface.
+            ->> dhcp4: The DHCP configuration.
+            ->> dhcp6: The DHCP configuration.
+            ->> addresses: The static IP address configuration.
+            ->> gateway4: The gateway configuration.
+            ->> nameservers: The DNS configuration.
+            ->> search: The search domain configuration.
+    
