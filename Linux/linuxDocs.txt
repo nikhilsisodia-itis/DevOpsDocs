@@ -724,4 +724,10 @@ Start date - 03-Feb-2025.
             ->> gateway4: The gateway configuration.
             ->> nameservers: The DNS configuration.
             ->> search: The search domain configuration.
+>> Module 18- Networking management(Part 2):
+    > systemctl command:
+        -> systemctl status <service_name>: Display the status of the <service_name> service.
+        -> systemctl start <service_name>: Start the <service_name> service.
+        -> systemctl stop <service_name>: Stop the <service_name> service.
+        -> systemctl restart <service_name>: Restart the <service_name> service.
     
