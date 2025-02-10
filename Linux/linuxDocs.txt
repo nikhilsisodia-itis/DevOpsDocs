@@ -730,4 +730,16 @@ Start date - 03-Feb-2025.
         -> systemctl start <service_name>: Start the <service_name> service.
         -> systemctl stop <service_name>: Stop the <service_name> service.
         -> systemctl restart <service_name>: Restart the <service_name> service.
-    
+    > scp:
+        -> scp command: Securely copy files between hosts.
+        -> scp is a part of the openssh package.
+        -> scp <source> <destination>: Copy files between hosts.
+        -> scp -r <source> <destination>: Copy directories between hosts.
+        -> scp -v <source> <destination>: Copy files between hosts verbosely.
+        -> scp -P <port> <source> <destination>: Copy files between hosts using a specific port.
+        -> scp -i <identity_file> <source> <destination>: Copy files between hosts using an identity file.
+        -> scp -l <limit> <source> <destination>: Copy files between hosts using a bandwidth limit.
+        -> scp -C <source> <destination>: Copy files between hosts using compression.
+        -> scp -p <source> <destination>: Copy files between hosts preserving the file attributes.
+        -> scp -q <source> <destination>: Copy files between hosts quietly.
+        -> scp -r -v -P -i -l -C -p -q <source> <destination>: Copy files between hosts recursively, verbosely, using a specific port, using an identity file, using a bandwidth limit, using compression, preserving the file attributes, and quietly. 
