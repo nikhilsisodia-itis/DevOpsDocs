@@ -766,3 +766,7 @@ Start date - 03-Feb-2025.
         -> rsync -l <source> <destination>: Copy files between hosts using symbolic links.
         -> rsync -t <source> <destination>: Copy files between hosts preserving the modification times.
         -> rsync -r -v -z -a -P -l -t <source> <destination>: Copy files between hosts recursively, verbosely, using compression, preserving the file attributes, using partial transfer, using symbolic links, and preserving the modification times.
+    > Using rysn over the network:
+        -> rsync -avz -e "ssh -p <port>" <source> <username>@<hostname>:<destination>: Copy files between hosts using rsync over the network.
+        -> rsync -avz -e "ssh -p <port>" <username>@<hostname>:<source> <destination>: Copy files between hosts using rsync over the network.
+        -> rsync -avz -e "ssh -p <port>" <username>@<hostname>:<source> <username>@<hostname>:<destination>: Copy files between hosts using rsync over the network.
