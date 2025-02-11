@@ -770,3 +770,5 @@ Start date - 03-Feb-2025.
         -> rsync -avz -e "ssh -p <port>" <source> <username>@<hostname>:<destination>: Copy files between hosts using rsync over the network.
         -> rsync -avz -e "ssh -p <port>" <username>@<hostname>:<source> <destination>: Copy files between hosts using rsync over the network.
         -> rsync -avz -e "ssh -p <port>" <username>@<hostname>:<source> <username>@<hostname>:<destination>: Copy files between hosts using rsync over the network.
+        -> rsync -avz -e "ssh -p <port>" --delete <source> <username>@<hostname>:<destination>: Copy files between hosts using rsync over the network and delete the files that are not in the source.
+    ** Use Superuser privileges to run the commands.
