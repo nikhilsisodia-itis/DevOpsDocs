@@ -743,3 +743,14 @@ Start date - 03-Feb-2025.
         -> scp -p <source> <destination>: Copy files between hosts preserving the file attributes.
         -> scp -q <source> <destination>: Copy files between hosts quietly.
         -> scp -r -v -P -i -l -C -p -q <source> <destination>: Copy files between hosts recursively, verbosely, using a specific port, using an identity file, using a bandwidth limit, using compression, preserving the file attributes, and quietly. 
+    > sftp:
+        -> sftp command: Securely transfer files between hosts.
+        -> sftp is a part of the openssh package.
+        -> sftp <username>@<hostname>: Connect to a host.
+        -> sftp -P <port> <username>@<hostname>: Connect to a host using a specific port.
+        -> sftp -i <identity_file> <username>@<hostname>: Connect to a host using an identity file.
+        -> sftp -b <batch_file> <username>@<hostname>: Connect to a host using a batch file.
+        -> sftp -v <username>@<hostname>: Connect to a host verbosely.
+        -> sftp -q <username>@<hostname>: Connect to a host quietly.
+        -> sftp -r <source> <destination>: Transfer files between hosts recursively.
+        -> sftp -P -i -b -v -q -r <port> <identity_file> <batch_file> <username>@<hostname>: Connect to a host using a specific port, using an identity file, using a batch file, verbosely, quietly, and transfer files between hosts recursively.
