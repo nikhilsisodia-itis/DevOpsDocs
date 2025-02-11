@@ -761,4 +761,8 @@ Start date - 03-Feb-2025.
         -> rsync -a <source> <destination>: Copy files between hosts preserving the file attributes.
         -> rsync -r <source> <destination>: Copy directories between hosts.
         -> rsync -v <source> <destination>: Copy files between hosts verbosely.
-        
+        -> rsync -z <source> <destination>: Copy files between hosts using compression.
+        -> rsync -P <source> <destination>: Copy files between hosts using partial transfer.
+        -> rsync -l <source> <destination>: Copy files between hosts using symbolic links.
+        -> rsync -t <source> <destination>: Copy files between hosts preserving the modification times.
+        -> rsync -r -v -z -a -P -l -t <source> <destination>: Copy files between hosts recursively, verbosely, using compression, preserving the file attributes, using partial transfer, using symbolic links, and preserving the modification times.
