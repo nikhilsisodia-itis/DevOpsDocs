@@ -754,3 +754,7 @@ Start date - 03-Feb-2025.
         -> sftp -q <username>@<hostname>: Connect to a host quietly.
         -> sftp -r <source> <destination>: Transfer files between hosts recursively.
         -> sftp -P -i -b -v -q -r <port> <identity_file> <batch_file> <username>@<hostname>: Connect to a host using a specific port, using an identity file, using a batch file, verbosely, quietly, and transfer files between hosts recursively.
+    > rsync command:
+        -> rsync command: Securely copy files between hosts.
+        -> rsync is a part of the rsync package.
+        
