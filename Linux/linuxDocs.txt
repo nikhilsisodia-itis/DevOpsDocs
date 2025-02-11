@@ -757,4 +757,8 @@ Start date - 03-Feb-2025.
     > rsync command:
         -> rsync command: Securely copy files between hosts.
         -> rsync is a part of the rsync package.
+        -> rsync <source> <destination>: Copy files between hosts.
+        -> rsync -a <source> <destination>: Copy files between hosts preserving the file attributes.
+        -> rsync -r <source> <destination>: Copy directories between hosts.
+        -> rsync -v <source> <destination>: Copy files between hosts verbosely.
         
