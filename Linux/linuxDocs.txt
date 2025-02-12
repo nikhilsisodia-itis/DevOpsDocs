@@ -789,3 +789,19 @@ Start date - 03-Feb-2025.
         -> wget -A <pattern> <URL>: Download files recursively with a specific pattern.
         -> wget -R <pattern> <URL>: Download files recursively without a specific pattern.
         -> wget -i <file_name>: Download files from a file.
+    > ifconfig & ip:
+        -> ifconfig command: Display the network configuration.
+        -> ifconfig -a: Display all the network configuration.
+        -> ip command: Display the network configuration.
+        -> ip addr show: Display the network configuration.
+        -> ip -4 addr show: Display the IPv4 network configuration.
+        -> ip -6 addr show: Display the IPv6 network configuration.
+        -> ifconfig <interface_name>: Display the network configuration of an interface.
+        -> ip addr show dev <interface_name>: Display the network configuration of an interface.
+    > Getting the default gateway and DNS server:
+        -> route command: Display the routing table.
+        -> route -n: Display the routing table numerically.
+        -> ip route show: Display the routing table.
+        -> ip route show default: Display the default gateway.
+        -> cat /etc/resolv.conf: Display the DNS configuration.
+        -> Capital G in flags of route command indicates the default gateway.
