@@ -885,3 +885,17 @@ Start date - 03-Feb-2025.
         -> apt is a package manager for Debian-based systems.
         -> apt is used to install, update, and remove packages.
         -> PPAs - Personal Package Archives.
+    > Important apt commnads:
+        -> sudo apt update: Update the package list.
+        -> sudo apt install <package-name>: Install a package.
+        -> sudo apt remove <package-name>: Only removes a package.
+        -> sudo apt purge <package-name>: Removes a package and the package's configuration files.
+        -> sudo apt upgrade: Upgrade the packages.
+        -> sudo apt full-upgrade: Upgrade the packages with the removal of obsolete packages.
+        -> sudo apt autoremove: Remove the obsolete packages.
+        -> sudo apt search <package-name>: Search for a package.
+        -> sudo apt show <package-name>: Display the information of a package.
+        -> sudo apt list --installed: List the installed packages.
+        -> sudo apt list --upgradable: List the upgradable packages.
+        -> sudo apt install <path-to-the-file>: Install a package from a file.
+        -> sudo apt clean: Clean the package cache.
