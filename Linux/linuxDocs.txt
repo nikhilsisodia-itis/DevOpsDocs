@@ -923,3 +923,29 @@ Start date - 03-Feb-2025.
         -> crontab -u <username> -e: Edit the crontab file of a user.
         -> crontab -u <username> -l: List the crontab file of a user.
         -> crontab -u <username> -r: Remove the crontab file of a user.
+    > crontab file format:
+        -> The crontab file has six fields:
+            ->> Minute: The minute when the task will run.
+            ->> Hour: The hour when the task will run.
+            ->> Day of the month: The day of the month when the task will run.
+            ->> Month: The month when the task will run.
+            ->> Day of the week: The day of the week when the task will run.
+            ->> Command: The command that will run.
+        -> The crontab file has the following format:
+            ->> *: All the values.
+            ->> -: Range of values.
+            ->> ,: List of values.
+            ->> /: Step values.
+            ->> @reboot: Run the task at reboot.
+            ->> @yearly: Run the task yearly.
+            ->> @annually: Run the task annually.
+            ->> @monthly: Run the task monthly.
+            ->> @weekly: Run the task weekly.
+            ->> @daily: Run the task daily.
+            ->> @midnight: Run the task at midnight.
+            ->> @hourly: Run the task hourly.
+        -> The crontab file has the following special characters:
+            ->> *: All the values.
+            ->> -: Range of values.
+            ->> ,: List of values.
+            ->> /: Step values.
