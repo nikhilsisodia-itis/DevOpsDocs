@@ -880,3 +880,8 @@ Start date - 03-Feb-2025.
         -> dpkg -c <package_name>: Display the contents of a package.
         -> dpkg -X <package_name> <directory>: Extract the contents of a package.
         -> dpkg -e <package_name>: Extract the control files of a package. 
+    > Introduction to apt:
+        -> apt - Advanced Package Tool.
+        -> apt is a package manager for Debian-based systems.
+        -> apt is used to install, update, and remove packages.
+        -> PPAs - Personal Package Archives.
