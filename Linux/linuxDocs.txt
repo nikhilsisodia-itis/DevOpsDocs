@@ -805,3 +805,17 @@ Start date - 03-Feb-2025.
         -> ip route show default: Display the default gateway.
         -> cat /etc/resolv.conf: Display the DNS configuration.
         -> Capital G in flags of route command indicates the default gateway.
+    > Configuring the network:
+        -> ifconfig <interface_name> down: Disable an interface.
+        -> ifconfig <interface_name> up: Enable an interface.
+        -> ip link set <interface_name> down: Disable an interface.
+        -> ip link set <interface_name> up: Enable an interface.
+        -> ip address add <ip_address> dev <interface_name>: Add an IP address to an interface.
+        -> ip address del <ip_address> dev <interface_name>: Delete an IP address from an interface.
+        -> ifconfig <interface_name> <ip_address>: Add an IP address to an interface.
+        -> route del default gw <ip_address>: Delete the default gateway.
+        -> route add default gw <ip_address>: Add the default gateway.
+        -> ip route del default: Delete the default gateway.
+        -> ip route add default via <ip_address>: Add the default gateway.
+        -> ifconfig <interface> hw ether <mac_address>: Change the MAC address.
+        -> ip link set <interface> address <mac_address>: Change the MAC address.
