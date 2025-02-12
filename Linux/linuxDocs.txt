@@ -789,4 +789,3 @@ Start date - 03-Feb-2025.
         -> wget -A <pattern> <URL>: Download files recursively with a specific pattern.
         -> wget -R <pattern> <URL>: Download files recursively without a specific pattern.
         -> wget -i <file_name>: Download files from a file.
-        -> wget -c -b -q -O -P -r -np -m -k -l -A -R -i <URL>: Download files from the internet, resume the download, download files in the background, download files quietly, download files with a specific name, download files to a specific directory, download files recursively, download files recursively without going to the parent directory, download files recursively with mirroring, download files recursively and convert the links, download files recursively up to a specific level, download files recursively with a specific pattern, download files recursively without a specific pattern, and download files from a file.
