@@ -830,4 +830,12 @@ Start date - 03-Feb-2025.
         -> ss -tuln | grep <port_number>: Display the listening ports of a specific port.
         -> 0.0.0.0 in the local address of netstat command indicates all the IPv4 interfaces.
         -> ::: in the local address of netstat command indicates all the IPv6 interfaces.
-        
+    > lsof: 
+        -> lsof: List open files.
+        -> lsof -i: List open files with the network connections.
+        -> lsof -u <username>: List open files of a user.
+        -> lsof -u ^<username>: List open files of all the users except a user.
+        -> lsof -i -u <username>: List open files with the network connections of a user.
+        -> lsof -i -u ^<username>: List open files with the network connections of all the users except a user.
+        -> lsof -i -P: List open files with the network connections using port numbers.
+    
