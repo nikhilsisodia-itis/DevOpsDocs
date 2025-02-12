@@ -981,3 +981,11 @@ Start date - 03-Feb-2025.
         -> dd if=<ISO_file> of=<device> bs=4M status=progress: Create a bootable device.
         -> bs is the block size.
         -> Use sync command to synchronize the file system.
+    > Getting System's Hardware information:
+        -> lscpu command: Display the CPU information.
+        -> lsblk command: Display the block devices.
+        -> lspci command: Display the PCI devices.
+        -> lsusb command: Display the USB devices.
+        -> lshw command: Display the hardware information.
+        -> lshw -short: Display the hardware information in a short format.
+        
