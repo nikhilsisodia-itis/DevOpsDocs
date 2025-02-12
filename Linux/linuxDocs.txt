@@ -949,3 +949,18 @@ Start date - 03-Feb-2025.
             ->> -: Range of values.
             ->> ,: List of values.
             ->> /: Step values.
+    > Mounting & Unmounting:
+        -> mount command: Mount a file system.
+        -> mount <device-name> <mount-point-path>: Mount a file system.
+        -> mount -t <file_system> <device> <mount_point>: Mount a file system.
+        -> mount -o <options> <device> <mount_point>: Mount a file system with options.
+        -> mount -a: Mount all the file systems.
+        -> mount -l: List all the mounted file systems.
+        -> umount command: Unmount a file system.
+        -> umount <mount_point>: Unmount a file system.
+        -> umount -l <mount_point>: Lazy unmount a file system.
+        -> umount -f <mount_point>: Forcefully unmount a file system.
+        -> umount -a: Unmount all the file systems.
+        -> umount -a -t <file_system>: Unmount all the file systems of a specific file system.
+        -> dmesg command: Display the kernel messages.
+        -> lsblk command: Display the block devices.
