@@ -819,3 +819,15 @@ Start date - 03-Feb-2025.
         -> ip route add default via <ip_address>: Add the default gateway.
         -> ifconfig <interface> hw ether <mac_address>: Change the MAC address.
         -> ip link set <interface> address <mac_address>: Change the MAC address.
+    > Checking for listening ports: 
+        -> netstat command: Display the network statistics.
+        -> netstat -tuln: Display the listening ports.
+        -> netstat -tupan: Display the listening ports with the process ID.
+        -> netstat -tuln | grep <port_number>: Display the listening ports of a specific port.
+        -> netstat -tupan | grep <port_number>: Display the listening ports of a specific port with the process ID.
+        -> ss command: Display the network statistics.
+        -> ss -tuln: Display the listening ports.
+        -> ss -tuln | grep <port_number>: Display the listening ports of a specific port.
+        -> 0.0.0.0 in the local address of netstat command indicates all the IPv4 interfaces.
+        -> ::: in the local address of netstat command indicates all the IPv6 interfaces.
+        
