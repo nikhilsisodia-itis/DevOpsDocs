@@ -899,7 +899,7 @@ Start date - 03-Feb-2025.
         -> sudo apt list --upgradable: List the upgradable packages.
         -> sudo apt install <path-to-the-file>: Install a package from a file.
         -> sudo apt clean: Clean the package cache.
->> Module 21- Task automation and scheduling:
+>> Module 21- System Administration(Part 1):
     > Task automation and scheduling:
         -> Task automation and scheduling is the process of automating and scheduling tasks.
         -> Task automation and scheduling is used to automate repetitive tasks.
@@ -964,3 +964,20 @@ Start date - 03-Feb-2025.
         -> umount -a -t <file_system>: Unmount all the file systems of a specific file system.
         -> dmesg command: Display the kernel messages.
         -> lsblk command: Display the block devices.
+>> Module 22- System Administration(Part 2):
+    > Working with device files dd command:
+        -> dd command: Convert and copy files.
+        -> dd if=<input_file> of=<output_file>: Copy a file.
+        -> if and of are the input and output files.
+    > Creating a bootable device using dd command:
+        -> Download the ISO file.
+        -> Insert the USB drive.
+        -> Identify the USB drive.
+        -> Unmount the USB drive.
+        -> Format the USB drive.
+        -> Use mkfs command to format the USB drive.
+        -> mkfs -t <file_system> <device>: Format the USB drive.
+        -> Use dd command to create a bootable device.
+        -> dd if=<ISO_file> of=<device> bs=4M status=progress: Create a bootable device.
+        -> bs is the block size.
+        -> Use sync command to synchronize the file system.
