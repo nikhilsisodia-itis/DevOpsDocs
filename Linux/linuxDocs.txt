@@ -910,4 +910,16 @@ Start date - 03-Feb-2025.
         -> cron is used to automate repetitive tasks.
         -> cron is used to run tasks in the background.
         -> cron is used to run tasks at specific intervals.
-   
+    > System-wide VS individual user cron jobs:
+        -> System-wide cron jobs are stored in the /etc/cron.d directory.
+        -> Individual user cron jobs are stored in the /var/spool/cron/crontabs directory.
+        -> System-wide cron jobs are run as root.
+        -> Individual user cron jobs are run as the user.
+    > crontab:
+        -> crontab command: Schedule tasks using cron.
+        -> crontab -e: Edit the crontab file.
+        -> crontab -l: List the crontab file.
+        -> crontab -r: Remove the crontab file.
+        -> crontab -u <username> -e: Edit the crontab file of a user.
+        -> crontab -u <username> -l: List the crontab file of a user.
+        -> crontab -u <username> -r: Remove the crontab file of a user.
