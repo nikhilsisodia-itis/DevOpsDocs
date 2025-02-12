@@ -838,4 +838,28 @@ Start date - 03-Feb-2025.
         -> lsof -i -u <username>: List open files with the network connections of a user.
         -> lsof -i -u ^<username>: List open files with the network connections of all the users except a user.
         -> lsof -i -P: List open files with the network connections using port numbers.
-    
+    > telnet:
+        -> telnet command: Connect to a host.
+        -> telnet <hostname>: Connect to a host.
+        -> telnet <hostname> <port>: Connect to a host using a specific port.
+        -> telnet -l <username> <hostname>: Connect to a host using a specific username.
+        -> telnet -a <hostname>: Connect to a host using the IPv4 address.
+        -> telnet -6 <hostname>: Connect to a host using the IPv6 address.
+        -> telnet -d <hostname>: Display the debugging information.
+        -> telnet -e <character> <hostname>: Set the escape character.
+        -> telnet -K <hostname>: Enable the Kerberos authentication.
+        -> telnet -L <hostname>: Enable the SSL authentication.
+        -> telnet -n <hostname>: Disable the name lookup.
+        -> telnet -r <hostname>: Enable the record option.
+        -> telnet -X <hostname>: Enable the X display location.
+        -> telnet -x <hostname>: Enable the X display location.
+        -> telnet -v <hostname>: Display the verbose output.
+        -> telnet -V <hostname>: Display the version information.
+        -> telnet -z <hostname>: Display the telnet status.
+    > nmap command:
+        -> nmap command: Network exploration tool and security scanner.
+        -> nmap <hostname>: Scan a host.
+        -> nmap <ip_address>: Scan an IP address.
+        -> nmap -p <port_number> <hostname>: Scan a host using a specific port.
+        -> nmap -p <port_number> <hostname> -sV: Scan a host using a specific port and display the version information.
+        
