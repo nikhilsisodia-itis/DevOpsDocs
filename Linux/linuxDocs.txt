@@ -899,3 +899,15 @@ Start date - 03-Feb-2025.
         -> sudo apt list --upgradable: List the upgradable packages.
         -> sudo apt install <path-to-the-file>: Install a package from a file.
         -> sudo apt clean: Clean the package cache.
+>> Module 21- Task automation and scheduling:
+    > Task automation and scheduling:
+        -> Task automation and scheduling is the process of automating and scheduling tasks.
+        -> Task automation and scheduling is used to automate repetitive tasks.
+        -> Task automation and scheduling is used to schedule tasks at specific times.
+    > cron:
+        -> cron is a time-based job scheduler.
+        -> cron is used to schedule tasks at specific times.
+        -> cron is used to automate repetitive tasks.
+        -> cron is used to run tasks in the background.
+        -> cron is used to run tasks at specific intervals.
+   
