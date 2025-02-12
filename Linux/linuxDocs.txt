@@ -1000,3 +1000,17 @@ Start date - 03-Feb-2025.
         -> free -h: Display the memory information.
         -> df -h: Display the disk space information.
         -> uptime: Display the system uptime.
+>> Module 13- System Administration(Part 3):
+    > systemd:
+        -> systemd is a system and service manager.
+        -> systemd is used to manage the system services.
+        -> systemd is used to manage the system processes.
+        -> systemd is used to manage the system resources.
+        -> systemctl command: Manage the system services.
+        -> systemctl status <service_name>: Display the status of a service.
+        -> systemctl start <service_name>: Start a service.
+        -> systemctl stop <service_name>: Stop a service.
+        -> systemctl restart <service_name>: Restart a service.
+        -> systemctl enable <service_name>: Enable a service.
+        -> systemctl disable <service_name>: Disable a service.
+        -> systemctl list-units: List all the units.
