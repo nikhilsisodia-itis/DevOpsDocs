@@ -862,4 +862,21 @@ Start date - 03-Feb-2025.
         -> nmap <ip_address>: Scan an IP address.
         -> nmap -p <port_number> <hostname>: Scan a host using a specific port.
         -> nmap -p <port_number> <hostname> -sV: Scan a host using a specific port and display the version information.
-        
+>> Module 20- Software management:
+    > Software management:
+        -> Software management is the process of installing, updating, and removing software.
+    > dpkg:
+        -> dpkg command: Install, remove, and manage Debian packages.
+        -> dpkg --get-selections: Display the installed packages.        
+        -> dpkg -i <package_name>: Install a package.
+        -> dpkg -r <package_name>: Remove a package.
+        -> dpkg -P <package_name>: Purge a package.
+        -> dpkg -l: List all the packages.
+        -> dpkg -l <package_name>: List a specific package.
+        -> dpkg -s <package_name>: Display the status of a package.
+        -> dpkg -L <package_name>: List the files of a package.
+        -> dpkg -S <file_name>: Display the package that owns the file.
+        -> dpkg -I <package_name>: Display the information of a package.
+        -> dpkg -c <package_name>: Display the contents of a package.
+        -> dpkg -X <package_name> <directory>: Extract the contents of a package.
+        -> dpkg -e <package_name>: Extract the control files of a package. 
