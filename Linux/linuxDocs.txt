@@ -1075,5 +1075,10 @@ Start date - 03-Feb-2025.
         -> set command: Display all the variables.
         -> unset <variable_name>: Remove a variable.
         -> declare -r <variable_name>: Declare a read-only variable.
-
-         
+    > Environment & Shell variables:
+        -> Environment variables are global variables.
+        -> Environment variables are used by the shell and other programs.
+        -> Shell variables are local variables.
+        -> Shell variables can be used only by the current shell only.
+        -> printenv command: Display the environment variables.
+        -> set <variable_name>=<value>: Create a variable.
