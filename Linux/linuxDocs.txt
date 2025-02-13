@@ -1041,4 +1041,22 @@ Start date - 03-Feb-2025.
         -> #!/bin/bash: Shebang line.
         -> # is used to write comments.
         -> Comments are used to explain the code.
+    > Running Scripts:
+        -> Method 1: 
+            ->> Giving the file execute permission using chmod.
+            ->> Running the script using:
+                ->>> Relative path: ./<script_name>.
+                ->>> Absolute path: <path>/<script_name>.
+        -> Method 2:
+            ->> Running the script using the interpreter:
+                ->>> bash <script_name>.
+                ->>> python3 <script_name>.
+        -> Method 3:
+            ->> Running the script using the source command:
+                ->>> source <script_name>.
+                ->>> . <script_name>.
+        -> Difference between Method 1 & Method 2:
+            ->> Method 1: Runs the script in a sub-shell.
+            ->> Method 2: Runs the script in the current shell.
+
          
