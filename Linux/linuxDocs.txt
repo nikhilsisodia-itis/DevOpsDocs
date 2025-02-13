@@ -1014,4 +1014,6 @@ Start date - 03-Feb-2025.
         -> systemctl enable <service_name>: Enable a service.
         -> systemctl disable <service_name>: Disable a service.
         -> systemctl list-units: List all the units.
+>> Module 24- Bash Scripting(Part 1):
+
         
