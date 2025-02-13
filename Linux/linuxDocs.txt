@@ -1082,3 +1082,7 @@ Start date - 03-Feb-2025.
         -> Shell variables can be used only by the current shell only.
         -> printenv command: Display the environment variables.
         -> set <variable_name>=<value>: Create a variable.
+    > Getting user's input: 
+        -> read command: Read the user input.
+        -> read <variable_name>: Read the user input.
+        -> read -p <prompt> <variable_name>: Read the user input with a prompt.
