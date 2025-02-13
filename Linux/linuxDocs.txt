@@ -1093,3 +1093,36 @@ Start date - 03-Feb-2025.
         -> $#: The number of positional parameters.
         -> $@: All the positional parameters.
         -> $*: All the positional parameters.
+    > If, elif, and else statements:
+        -> if statement: Execute a command based on a condition.
+        -> if [ condition ]; then
+                command
+            fi
+        -> elif statement: Execute a command based on another condition.
+        -> elif [ condition ]; then
+                command
+            fi
+        -> else statement: Execute a command if the condition is false.
+        -> else
+                command
+            fi
+        -> [ condition ]: The condition.
+        -> [ -eq ]: Equal to.
+        -> [ -ne ]: Not equal to.
+        -> [ -gt ]: Greater than.
+        -> [ -lt ]: Less than.
+        -> [ -ge ]: Greater than or equal to.
+        -> [ -le ]: Less than or equal to.
+        -> [ -z ]: Zero length.
+        -> [ -n ]: Non-zero length.
+        -> [ -e ]: File exists.
+        -> [ -f ]: File is a regular file.
+        -> [ -d ]: File is a directory.
+        -> [ -r ]: File has read permission.
+        -> [ -w ]: File has write permission.
+        -> [ -x ]: File has execute permission.
+        -> [ -s ]: File is not empty.
+        -> [ -t ]: File descriptor is open.
+        -> [ -o ]: File descriptor is open and connected to a terminal.
+        -> [ -a ]: Logical AND.
+        -> [ -o ]: Logical OR.
