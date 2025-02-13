@@ -1086,3 +1086,10 @@ Start date - 03-Feb-2025.
         -> read command: Read the user input.
         -> read <variable_name>: Read the user input.
         -> read -p <prompt> <variable_name>: Read the user input with a prompt.
+>> Module 25- Bash Scripting(Part 2):
+    > Special variables:
+        -> $0: The name of the script.
+        -> $1, $2, $3, ..., $9: The positional parameters.
+        -> $#: The number of positional parameters.
+        -> $@: All the positional parameters.
+        -> $*: All the positional parameters.
