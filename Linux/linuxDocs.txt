@@ -1027,5 +1027,13 @@ Start date - 03-Feb-2025.
         -> unalias command: Remove an alias.
         -> unalias <alias_name>: Remove an alias.
         -> unalias -a: Remove all the aliases.
-
-        
+    > Intro to Bash shell Scripting:
+        -> echo $0: Display the shell name.
+        -> cat /etc/shells: Display the available shells.
+        -> cat /etc/passwd: Find the default shell of user(s) in the last cloumn.
+        -> Shell script:
+            ->> An executable text file.
+            ->> Contains shell commands and other components: variables, functions, loops, etc.
+        -> Shell Scripting is also known as Repetative Task Automation.
+        -> .sh is the extension of a shell script.
+        -> echo $PATH: Display the PATH variable.        
