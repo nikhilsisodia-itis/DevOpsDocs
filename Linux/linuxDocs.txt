@@ -1036,4 +1036,9 @@ Start date - 03-Feb-2025.
             ->> Contains shell commands and other components: variables, functions, loops, etc.
         -> Shell Scripting is also known as Repetative Task Automation.
         -> .sh is the extension of a shell script.
-        -> echo $PATH: Display the PATH variable.        
+        -> echo $PATH: Display the PATH variable.
+    > The Bash Shebang & Comments:
+        -> #!/bin/bash: Shebang line.
+        -> # is used to write comments.
+        -> Comments are used to explain the code.
+         
