@@ -1015,5 +1015,17 @@ Start date - 03-Feb-2025.
         -> systemctl disable <service_name>: Disable a service.
         -> systemctl list-units: List all the units.
 >> Module 24- Bash Scripting(Part 1):
+    > Bash aliases:
+        -> Bash aliases are used to create shortcuts for commands.
+        -> Bash aliases are used to create custom commands.
+        -> Bash aliases are used to create abbreviations for commands.
+        -> Bash aliases are stored in the ~/.bashrc file.
+        -> alias command: Create an alias.
+        -> alias <alias_name>=<command>: Create an alias.
+        -> alias <alias_name>="<command>": Create an alias.
+        -> alias -p: Display all the aliases.
+        -> unalias command: Remove an alias.
+        -> unalias <alias_name>: Remove an alias.
+        -> unalias -a: Remove all the aliases.
 
         
