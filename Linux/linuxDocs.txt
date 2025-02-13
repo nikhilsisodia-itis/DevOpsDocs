@@ -1058,5 +1058,22 @@ Start date - 03-Feb-2025.
         -> Difference between Method 1 & Method 2:
             ->> Method 1: Runs the script in a sub-shell.
             ->> Method 2: Runs the script in the current shell.
+    > Variables in bash:
+        -> Variables are used to store data.
+        -> Create a varible:
+            ->> Syntax: variable_name=value.
+        -> Access a variable:
+            ->> Syntax: $variable_name.
+            ->> Use double qoutes, when the variable value contains spaces.
+            ->> Use double qoutes, when adding two or more variables.
+        -> Rules for creating variables:
+            ->> Variable names are case-sensitive.
+            ->> Variable names can contain letters, numbers, and underscores.
+            ->> Variable names cannot start with a number.
+            ->> Variable names cannot contain spaces.
+            ->> Variable names cannot contain special characters.
+        -> set command: Display all the variables.
+        -> unset <variable_name>: Remove a variable.
+        -> declare -r <variable_name>: Declare a read-only variable.
 
          
