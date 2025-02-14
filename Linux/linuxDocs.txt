@@ -1126,3 +1126,14 @@ Start date - 03-Feb-2025.
         -> [ -o ]: File descriptor is open and connected to a terminal.
         -> [ -a ]: Logical AND.
         -> [ -o ]: Logical OR.
+    > Multiple conditions and nested if statements:
+        -> Multiple conditions:
+            ->> [ condition1 ] && [ condition2 ]: Logical AND.
+            ->> [ condition1 ] || [ condition2 ]: Logical OR.
+        -> Nested if statements:
+            ->> if [ condition1 ]; then
+                    if [ condition2 ]; then
+                        command
+                    fi
+                fi
+        
