@@ -1151,3 +1151,36 @@ Start date - 03-Feb-2025.
         -> for variable in $(command); do
                 command
             done
+    > While loops:
+        -> while loop: Execute a command until a condition is true.
+        -> while [ condition ]; do
+                command
+            done
+    > Functions in bash:
+        -> Functions are used to group commands.
+        -> Functions are used to reuse code.
+        -> Functions are used to make the code more readable.
+        -> function_name() {
+                command
+            }
+        -> function_name() {
+                command
+            }
+        -> function_name() {
+                command
+            }
+        -> function_name: Call a function.
+        -> function_name: Call a function.
+        -> function_name: Call a function.
+    > Variable scope in functions:
+        -> Local variables are used within a function.
+        -> Global variables are used outside a function.
+        -> local variable_name=value: Declare a local variable.
+        -> global variable_name=value: Declare a global variable.
+    > Menus in bash scripts:
+        -> Menus are used to display options.
+        -> Menus are used to select an option.
+        -> Menus are used to execute a command.
+        -> select variable_name in list; do
+                command
+            done
