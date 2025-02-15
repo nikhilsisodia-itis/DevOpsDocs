@@ -1193,5 +1193,17 @@ Start date - 03-Feb-2025.
         -> Access all the elements: ${array_name[*]}.
         -> Access the length: ${#array_name[@]}.
         -> Access the index: ${!array_name[@]}.
-        -> change the value of an element: array_name[index]=value.
-        -> unset array_name[index]: Remove an element.
+        -> Change the value of an element: array_name[index]=value.
+        -> Unset array_name[index]: Remove an element.
+        -> array_name+=(value): Add an element.
+        -> array_name[index]=value: Append an element.
+        -> array_name+=(value1 value2 value3): Append multiple elements.
+    > Associative arrays:
+        -> Associative arrays are used to store key-value pairs.
+        -> Syntax: declare -A array_name.
+        -> array_name[key]=value: Add a key-value pair.
+        -> Access a value: ${array_name[key]}.
+        -> Access all the keys: ${!array_name[@]}.
+        -> Access all the values: ${array_name[@]}.
+        -> Access the length: ${#array_name[@]}.
+        -> Unset array_name[key]: Remove a key-value pair.
