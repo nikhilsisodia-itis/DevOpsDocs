@@ -1184,3 +1184,14 @@ Start date - 03-Feb-2025.
         -> select variable_name in list; do
                 command
             done
+    > Intro to bash arrays:
+        -> Arrays can store multiple values.
+        -> Arrays are used to store a list of values.
+        -> Syntax: array_name=(value1 value2 value3).
+        -> Access an array: ${array_name[index]}.
+        -> Access all the elements: ${array_name[@]}.
+        -> Access all the elements: ${array_name[*]}.
+        -> Access the length: ${#array_name[@]}.
+        -> Access the index: ${!array_name[@]}.
+        -> change the value of an element: array_name[index]=value.
+        -> unset array_name[index]: Remove an element.
