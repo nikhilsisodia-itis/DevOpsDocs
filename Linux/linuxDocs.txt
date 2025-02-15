@@ -1207,3 +1207,16 @@ Start date - 03-Feb-2025.
         -> Access all the values: ${array_name[@]}.
         -> Access the length: ${#array_name[@]}.
         -> Unset array_name[key]: Remove a key-value pair.
+    > readarray: 
+        -> readarray command: Read the input into an array.
+        -> readarray array_name: Read the input into an array.
+        -> readarray -t array_name: Read the input into an array without the trailing newline.
+        -> readarray -d delimiter array_name: Read the input into an array using a delimiter.
+    > Ittierate over an array:
+        -> for variable in ${array_name[@]}; do
+                command
+            done
+    > Ittierate over an associative array:
+        -> for key in ${!array_name[@]}; do
+                command
+            done
