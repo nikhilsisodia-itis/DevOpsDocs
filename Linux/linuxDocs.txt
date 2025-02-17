@@ -1220,3 +1220,10 @@ Start date - 03-Feb-2025.
         -> for key in ${!array_name[@]}; do
                 command
             done
+>> Module 26- SSH Public key authentication:
+    > PKA: Public Key Authentication:
+        -> Public Key Authentication is a method of logging into an SSH/SFTP account using a private/public key pair.
+        -> Public Key Authentication is more secure than password authentication.
+        -> Public Key Authentication is used to authenticate the user.
+        -> Public Key Authentication is used to encrypt the data.
+        -> Public Key Authentication is used to establish a secure connection.
