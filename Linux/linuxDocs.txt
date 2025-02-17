@@ -1,6 +1,6 @@
 Course name- Linux Administration: The Complete Linux Bootcamp.
 Taught By- Andrei Dumitrescu, Crystal Mind Academy.
-Total main modules- 46.
+Total main modules- 26.
 Start date - 03-Feb-2025. 
 
 
@@ -21,17 +21,18 @@ Start date - 03-Feb-2025.
         -> Shell: The brain that interprets & runs the commands.
         -> Commands: Instructions given to the shell, to perform different tasks or operations.
     > Linux command structure:
-        -> Command name.
-        -> Options.
-        -> Arguments.
+        -> Command name: The name of the command.
+        -> Options: Modify the behavior of the command.
+        -> Arguments: The input to the command.
+        -> Example: ls -l /home/username.
     > Getting help:
         -> man command.
         -> Provides detailed information about any specific command.
     > Learning the terminal:
         -> Tab key: Auto-complete commands.
-        -> clear command.
-        -> cat command.
-        -> rm command.
+        -> clear command: Clears the terminal.
+        -> cat command: Dislay the content of a file.
+        -> rm command: Remove files or directories.
     > Learning the terminal- Keyboard shortcuts:
         -> ctrl + l: Clear the terminal.
         -> ctrl + d: Exit the terminal.

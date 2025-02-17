@@ -1,55 +1,37 @@
--> watch -n <interval> <command>: Run a command repeatedly at the specified interval.
--> watch -d <command>: Highlight the differences between the outputs.
--> watch -n 1 -d ifconfig: Display the network interface information.
--> mkdir <directory_name>: Create a new directory.
--> mkdir -p <directory_name>: Create a new directory and its parent directories.
--> cp <source> <destination>: Copy files and directories.
--> cp -v <source> <destination>: Copy files and directories verbosely. The -v flag or option shows the copied file source and destination path.
--> cp -i <source> <destination>: Copy files and directories interactively. The -i flag or option prompts before overwriting the destination file.
--> mv <source> <destination>: Move or rename files and directories.
--> rm <file_name>: Remove a file.
--> rm -r <directory_name>: Remove a directory and its contents recursively.
--> rm -rf <directory_name>: Remove a directory and its contents forcefully and recursively.
--> rm -rfi <directory_name>: Remove directories and their contents forcefully, recursively, and interactively.
--> rm -rfv <directory_name>: Remove directories and their contents forcefully, recursively, and verbosely.
--> |: Pipe symbol.
--> >: Redirect the output to a file. If the file does not exist, it will be created. If the file exists, it will be overwritten.
--> >>: Append the output to a file. If the file does not exist, it will be created. If the file exists, the output will be appended.
--> <: Redirect the input from a file.
--> 2>: Redirect the error output to a file.
--> 2>&1: Redirect the error output to the standard output.
--> tee command: Read from standard input and write to standard output and files.
--> tee -a <file_name>: Append the output to a file.
--> tee -i <file_name>: Ignore the interrupt signal.
--> tee -p <file_name>: Preserve the permissions of the file.
--> tee -v <file_name>: Display the output verbosely.
--> tee -a -i -p -v <file_name>: Append the output to a file, ignore the interrupt signal, preserve the permissions of the file, and display the output verbosely.
--> tar -cvf <archive_name> <file_name>: Create a tar archive.
--> tar -xvf <archive_name>: Extract a tar archive.
--> tar -tvf <archive_name>: List the contents of a tar archive.
--> tar -czvf <archive_name> <file_name>: Create a compressed tar archive.
--> tar -xzvf <archive_name>: Extract a compressed tar archive.
--> tar -tzvf <archive_name>: List the contents of a compressed tar archive.
--> ln <source> <destination>: Create a hard link.
--> ln -v <source> <destination>: Create a hard link verbosely.
--> ln -i <source> <destination>: Create a hard link interactively.
--> ln -s <source> <destination>: Create a symbolic link.
--> ln -sv <source> <destination>: Create a symbolic link verbosely.
--> ln -si <source> <destination>: Create a symbolic link interactively.
--> ls -l: Display the number of links.
--> ls -l <file_name>: Display the number of links of a file.
--> groupadd <groupname>: Add a new group.
--> groupadd -g <gid> <groupname>: Add a new group with a specific group ID.
--> getent group <groupname>: Check if a group exists.
--> userdel <username>: Delete a user.
--> userdel -r <username>: Delete a user and their home directory.
--> getent passwd <username>: Check if a user exists.
--> find / -user <username>: Find remaining files owned by a user.
--> whoami command: Display the current user.
--> who command: Display the users who are logged in.
--> id command: Display the user's information.
--> w command: Display the users who are logged in and their processes.
--> last command: Display the last logged in users.
--> chown command: Change the owner and group of a file.
--> chgrp command: Change the group of a file.
--> stat command: Display the file's permissions.
+Commands:
+  > pwd : Print the working directory.  
+  > ls : List the contents of the current directory.
+      ->> ls -l : List the contents of the current directory in long format.
+      ->> ls -a : List all files including hidden files.
+      ->> ls -lh : List the contents of the current directory in long format with human readable file sizes.
+      ->> ls -R : List all files in the current directory and all subdirectories.
+      ->> ls -t : List the contents of the current directory sorted by modification time.
+      ->> ls -S : List the contents of the current directory sorted by file size.
+      ->> ls -r : List the contents of the current directory in reverse order.
+      ->> ls -lu : List the contents of the current directory sorted by access time.
+      ->> ls -lt : List the contents of the current directory in long format sorted by modification time.
+      ->> ls -lc : List the contents of the current directory sorted by change time.
+      ->> Original ls command without the alias: \ls.
+  > cd : Change the current directory.
+  > du : Display the disk usage of files and directories.
+      ->> du -h : Display the disk usage of files and directories in human readable format.
+      ->> du -s : Display the total disk usage of the specified files and directories.
+      ->> du -a : Display the disk usage of individual files and directories.
+      ->> du -sh : Display the total disk usage of the specified files and directories in human readable format.
+  > df : Display the amount of disk space available on the file system.
+  
+
+
+KeyBoard Shortcuts:
+  > ctrl + alt + t : Opens terminal.
+  > ctrl + c : Stops the current command.
+  > ctrl + z : Puts the current command in background OR suspends the currently running command.
+  > ctrl + d : Logs out of current session OR closes the terminal.
+  > ctrl + r : Searches the command history.
+  > ctrl + l : Clears the screen.
+  > ctrl + a : Moves the cursor to the beginning of the line.
+  > ctrl + e : Moves the cursor to the end of the line.
+  > ctrl + u : Deletes the characters to the left of the cursor.
+  > ctrl + k : Deletes the characters to the right of the cursor.
+  > ctrl + w : Deletes the word before the cursor.
+  > ctrl + y : Pastes the most recently deleted text.
