@@ -1227,3 +1227,13 @@ Start date - 03-Feb-2025.
         -> Public Key Authentication is used to authenticate the user.
         -> Public Key Authentication is used to encrypt the data.
         -> Public Key Authentication is used to establish a secure connection.
+    > Generating SSH Key Pair:
+        -> ssh-keygen command: Generate an SSH key pair.
+        -> ssh-keygen -b <bits> -t <type> -C <comment>: Generate an SSH key pair.
+        -> Example: ssh-keygen -b 4096 -t rsa -C "user@hostname".
+        -> -b: The number of bits in the key.  
+        -> -t: The type of the key.
+        -> -C: The comment.
+        -> ~/.ssh: SSH directory.
+        -> id_rsa: Private key.
+        -> id_rsa.pub: Public key.
