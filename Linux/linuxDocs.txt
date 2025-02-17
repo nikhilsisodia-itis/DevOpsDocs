@@ -1237,3 +1237,13 @@ Start date - 03-Feb-2025.
         -> ~/.ssh: SSH directory.
         -> id_rsa: Private key.
         -> id_rsa.pub: Public key.
+    > Configuring the SSH public key authentication:
+        -> Copy the public key to the remote server.
+        -> ssh-copy-id command: Copy the public key to the remote server.
+        -> ssh-copy-id -i <identity_file> <username>@<hostname>: Copy the public key to the remote server.
+        -> ssh-copy-id -p <port> <username>@<hostname>: Copy the public key to the remote server.
+        -> ssh-copy-id -f <username>@<hostname>: Copy the public key to the remote server.
+        -> Disabling password authentication:
+            ->> PasswordAuthentication no: Disable password authentication.
+            ->> PermitRootLogin no: Disable root login.
+            ->> systemctl restart sshd: Restart the SSH service.
