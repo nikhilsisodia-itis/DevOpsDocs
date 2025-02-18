@@ -1,37 +1,63 @@
 Commands:
-  > pwd : Print the working directory.  
-  > ls : List the contents of the current directory.
-      ->> ls -l : List the contents of the current directory in long format.
-      ->> ls -a : List all files including hidden files.
-      ->> ls -lh : List the contents of the current directory in long format with human readable file sizes.
-      ->> ls -R : List all files in the current directory and all subdirectories.
-      ->> ls -t : List the contents of the current directory sorted by modification time.
-      ->> ls -S : List the contents of the current directory sorted by file size.
-      ->> ls -r : List the contents of the current directory in reverse order.
-      ->> ls -lu : List the contents of the current directory sorted by access time.
-      ->> ls -lt : List the contents of the current directory in long format sorted by modification time.
-      ->> ls -lc : List the contents of the current directory sorted by change time.
-      ->> Original ls command without the alias: \ls.
-  > cd : Change the current directory.
-  > du : Display the disk usage of files and directories.
-      ->> du -h : Display the disk usage of files and directories in human readable format.
-      ->> du -s : Display the total disk usage of the specified files and directories.
-      ->> du -a : Display the disk usage of individual files and directories.
-      ->> du -sh : Display the total disk usage of the specified files and directories in human readable format.
-  > df : Display the amount of disk space available on the file system.
-  
-
-
+    > pwd : Print the working directory.  
+    > ls : List the contents of the current directory.
+        ->> ls -l : List the contents of the current directory in long format.
+        ->> ls -a : List all files including hidden files.
+        ->> ls -lh : List the contents of the current directory in long format with human readable file sizes.
+        ->> ls -R : List all files in the current directory and all subdirectories.
+        ->> ls -t : List the contents of the current directory sorted by modification time.
+        ->> ls -S : List the contents of the current directory sorted by file size.
+        ->> ls -r : List the contents of the current directory in reverse order.
+        ->> ls -lu : List the contents of the current directory sorted by access time.
+        ->> ls -lt : List the contents of the current directory in long format sorted by modification time.
+        ->> ls -lc : List the contents of the current directory sorted by change time.
+        ->> Original ls command without the alias: \ls.
+    > cd : Change the current directory.
+    > du : Display the disk usage of files and directories.
+        ->> du -h : Display the disk usage of files and directories in human readable format.
+        ->> du -s : Display the total disk usage of the specified files and directories.
+        ->> du -a : Display the disk usage of individual files and directories.
+        ->> du -sh : Display the total disk usage of the specified files and directories in human readable format.
+    > df : Display the amount of disk space available on the file system.
+        ->> df -h : Display the amount of disk space available on the file system in human readable format.
+        ->> df -T : Display the file system type.
+        ->> df -i : Display the inode usage.
+    > touch : Create an empty file.
+        ->> touch -a : Change the access time of the file only.
+        ->> touch -m : Change the modification time of the file only.
+        ->> touch -c : Do not create the file if it does not exist.
+        ->> touch -t : Use a specific time instead of the current time.
+    > cat : Concatenate and display the content of files.
+        ->> cat -n : Number all output lines.
+        ->> cat -b : Number non-blank output lines.
+        ->> cat -s : Squeeze multiple adjacent blank lines.
+        ->> cat file1 > file2 : Copy the content of file1 to file2.
+        ->> cat file1 < file2 : Copy the content of file2 to file1.
+        ->> cat file1 >> file2 : Append the content of file1 to file2.
+        ->> cat file1 file2 > file3 : Concatenate file1 and file2 and save the output to file3.
+    > less : Display the content of files.
+        ->> less -N : Display line numbers.
+        ->> less -X : Do not clear the screen on exit.
+        ->> less -S : Chop long lines. 
+        ->> / <pattern> : Search for a pattern in the file.
+        ->> ? <pattern> : Search backward for a pattern in the file.
 KeyBoard Shortcuts:
-  > ctrl + alt + t : Opens terminal.
-  > ctrl + c : Stops the current command.
-  > ctrl + z : Puts the current command in background OR suspends the currently running command.
-  > ctrl + d : Logs out of current session OR closes the terminal.
-  > ctrl + r : Searches the command history.
-  > ctrl + l : Clears the screen.
-  > ctrl + a : Moves the cursor to the beginning of the line.
-  > ctrl + e : Moves the cursor to the end of the line.
-  > ctrl + u : Deletes the characters to the left of the cursor.
-  > ctrl + k : Deletes the characters to the right of the cursor.
-  > ctrl + w : Deletes the word before the cursor.
-  > ctrl + y : Pastes the most recently deleted text.
+    > ctrl + alt + t : Opens terminal.
+    > ctrl + c : Stops the current command.
+    > ctrl + z : Puts the current command in background OR suspends the currently running command.
+    > ctrl + d : Logs out of current session OR closes the terminal.
+    > ctrl + r : Searches the command history.
+    > ctrl + l : Clears the screen.
+    > ctrl + a : Moves the cursor to the beginning of the line.
+    > ctrl + e : Moves the cursor to the end of the line.
+    > ctrl + u : Deletes the characters to the left of the cursor.
+    > ctrl + k : Deletes the characters to the right of the cursor.
+    > ctrl + w : Deletes the word before the cursor.
+    > ctrl + y : Pastes the most recently deleted text.
+    > ctrl + f : Moves the cursor forward one character.
+    > ctrl + b : Moves the cursor backward one character.
+    > shift + > : Moves to the end of the file.
+    > shift + < : Moves to the beginning of the file.
+    > n : Moves to the next occurrence of the search pattern.
+    > N : Moves to the previous occurrence of the search pattern.
+    > q : Quits the less command.

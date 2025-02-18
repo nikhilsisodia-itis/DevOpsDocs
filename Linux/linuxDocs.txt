@@ -243,7 +243,7 @@ Start date - 03-Feb-2025.
         > Viewing file(part 2):
             -> less command: Display the contents of a file page by page.
             -> less -N option: Display the line numbers.
-            -> less -X option: Clear the screen before displaying the file.
+            -> less -X option: Do not clear the screen on exit.
             -> less -S option: Truncate long lines.
             -> ctrl + f: Move forward one page.
             -> ctrl + b: Move backward one page.
