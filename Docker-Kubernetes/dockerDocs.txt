@@ -1,0 +1,5 @@
+Course Description:
+  
+  > Course name: Docker & Kubernetes: The Practical Guide.
+  > Course instructor: Maximilian Schwarzmüller.
+  > Start date: 18-Feb-2025.
