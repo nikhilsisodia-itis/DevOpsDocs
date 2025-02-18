@@ -22,4 +22,18 @@ Course Description:
     >>> It includes the code, runtime, system tools, system libraries, and settings.
     >>> Always give the exact same application and execution behavior, regardless of the environment.
   
-  
+> Module 3-
+
+  >> What is the use of Containers in software development?
+    >>> Containers are used to package software applications and their dependencies.
+    >>> They provide a consistent environment for development, testing, and deployment.
+    >>> They help in isolating applications from the underlying system.
+    >>> They make it easy to deploy applications across different environments.
+
+> Module 4- 
+
+  >> Difference between Containers & Virtual Machines.
+    >>> Containers are lightweight and use the host OS, whereas VMs are heavyweight and have their OS.
+    >>> Containers start up quickly, whereas VMs take time to boot.
+    >>> Containers use fewer resources than VMs.
+    >>> Containers are portable, whereas VMs are not.
