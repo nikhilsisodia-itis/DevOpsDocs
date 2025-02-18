@@ -3,3 +3,23 @@ Course Description:
   > Course name: Docker & Kubernetes: The Practical Guide.
   > Course instructor: Maximilian Schwarzmüller.
   > Start date: 18-Feb-2025.
+
+
+> Module 1- 
+
+  >> Course introduction.
+  >> Course prerequisites.
+  >> Course content.
+
+> Module 2- 
+
+  >> What is Docker?
+    >>> Docker is container technology.
+    >>> It is a tool used for creating and managing containers.
+
+  >> What is a container?
+    >>> A container is a lightweight, standalone, executable package of software that includes everything needed to run an application.
+    >>> It includes the code, runtime, system tools, system libraries, and settings.
+    >>> Always give the exact same application and execution behavior, regardless of the environment.
+  
+  
