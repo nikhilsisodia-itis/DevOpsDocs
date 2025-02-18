@@ -65,6 +65,30 @@ Commands:
         ->> rm -f <file> : Force removal without prompting.
         ->> rm -i <file> : Prompt before every removal.
         ->> rm -v <file> : Explain what is being done.
+    > locate <file_name> : Find file(s) by name.
+        ->> locate -i <file_name> : Perform a case-insensitive search.
+        ->> locate -c <file_name> : Display the number of matching entries.
+    > cmp : Compare two files byte by byte.
+        ->> cmp -l : Output byte numbers and values of all differing bytes.
+        ->> cmp -s : Output nothing; only set the exit status.
+    > diff <file1> <file2> : Compare files line by line.
+        ->> diff -c <file1> <file2> : Output three lines of context around each difference.
+        ->> diff -u <file1> <file2> : Output unified context.
+        ->> diff -y <file1> <file2> : Output in two columns.
+    > tar : Manipulate tape archives.
+        ->> tar -c <file1> <file2> : Create a new archive.
+        ->> tar -x <file1> <file2> : Extract files from an archive.
+        ->> tar -t <file1> <file2> : List the contents of an archive.
+        ->> tar -r <file1> <file2> : Append files to the end of an archive.
+        ->> tar -u <file1> <file2> : Append files to an archive if they are newer than the copy in the archive.
+        ->> tar -d <file1> <file2> : Delete files from an archive.
+        ->> tar -A <file1> <file2> : Concatenate archives.
+        ->> tar -f <file> : Specify the filename of the archive.
+        ->> tar -v : Explain what is being done.
+        ->> tar -z : Compress the archive with gzip.
+        ->> tar -j : Compress the archive with bzip2.
+        ->> tar -J : Compress the archive with xz.
+        ->> tar -W : Verify a tape archive.
         
 KeyBoard Shortcuts:
     > ctrl + alt + t : Opens terminal.
