@@ -91,3 +91,23 @@ Course Description:
   >> You need to create a new image with the changes.
   >> It happens because the image takes a snapshot, when we create it. 
   >> To update the image, you need to create a new image with the changes.
+
+> Module 10-
+  >> Docker images are layer based.
+  >> Each instruction in the Dockerfile creates a new layer.
+  >> Layers are cached, and only the changed layers are rebuilt.
+  >> This makes the build process faster.
+  >> Layer-based architecture:
+    >>> Layer 1: Base image.
+    >>> Layer 2: Copy files.
+    >>> Layer 3: Run command.
+    >>> Layer 4: Expose port.
+    >>> Layer 5: CMD.
+  > When, one layer is changed, subsequent layers are rebuilt or re-executed.
+
+> Module 11-
+  >> A container is based on an image.
+  >> An image is a read-only template used to create containers.
+  >> Containers are running instances of images.
+  >> Containers can be started, stopped, and deleted.
+  >> Containers are isolated from each other and the host system.
