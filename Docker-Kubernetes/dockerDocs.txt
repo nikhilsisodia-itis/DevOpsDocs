@@ -111,3 +111,31 @@ Course Description:
   >> Containers are running instances of images.
   >> Containers can be started, stopped, and deleted.
   >> Containers are isolated from each other and the host system.
+
+> Module 12-
+  >> docker --help : List all the available commands.
+  >> docker <command> --help : Get help for a specific command.
+  >> docker ps : List all the running containers.
+  >> docker ps -a : List all the containers.
+  >> docker start <container_id> OR <container_name> : Restart a stopped container.
+
+> Module 13- 
+  >> docker run <container_id> VS docker start <container_id> : Docker run creates a new container, whereas docker start restarts a stopped container.
+  >> docker run creates a new container every time you run it.
+  >> docker start restarts a stopped container.
+  >> docker run <container_id> : Runs the container in attached mode.
+  >> docker start <container_id> : Runs the terminal in detached mode.
+  >> Attached mode will show the output(s) in the terminal.
+  >> Detached mode will not show the output(s) in the terminal.
+
+  >> Run a container in detached mode:
+    >>> docker -p <host_port>:<container_port> -d <image_id> : Run the container in detached mode.
+
+  >> Attach to a running container:
+    >>> docker attach <container_id> : This command attaches the user to a running container.
+  
+  >> docker logs <container_id> : View the logs of a container.
+  >> docker logs -f <container_id> : View the logs of a container in real-time. This command attaches the user to the container.
+
+  >> Start a stopped container in attached mode:
+    >>> docker start -a <container_id> : Start a stopped container in attached mode.
