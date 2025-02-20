@@ -139,3 +139,12 @@ Course Description:
 
   >> Start a stopped container in attached mode:
     >>> docker start -a <container_id> : Start a stopped container in attached mode.
+
+> Module 14-
+  >> docker run -i <image_id> : Run the container in interactive mode. This command let you interact with the container.
+  >> This command keep the Standard Input (stdin) open, even if the user is not attached to the container.
+  >> docker run -it <image_id> : Run the container in interactive mode with a terminal.
+  >> This command allows the user to interact with the container, as if they were using a terminal.
+  
+  >> docker start -a -i <container_id> : Start a stopped container in attached and interactive mode.
+  >> This command attaches the user to the container and allows them to interact with it.
