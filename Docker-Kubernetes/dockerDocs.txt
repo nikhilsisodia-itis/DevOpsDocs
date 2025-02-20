@@ -77,4 +77,17 @@ Course Description:
   
 > Module 8-
   >> After creating your first docker image.
-  >> Execute the : docker build command in the terminal.
+  >> Execute the docker build command in the terminal: docker build . 
+  >> "." to build the docker image in the current directory.
+  >> After you build the docker image, an image ID will be generated.
+  >> docker run <image_id> : Used to run the docker image.
+  >> docker ps : List all the running containers.
+  >> docker ps -a : List all the containers.
+  >> docker stop <container_id> : Stop the running container.
+  >> docker run -p <host_port>:<container_port> <image_id> : Run the container with port mapping.
+
+> Module 9- 
+  >> Once you create an image, you cannot change it or any changes will not be reflected in the image.
+  >> You need to create a new image with the changes.
+  >> It happens because the image takes a snapshot, when we create it. 
+  >> To update the image, you need to create a new image with the changes.

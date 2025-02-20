@@ -1,0 +1,40 @@
+Cloning a GitHub repo using SSH:
+
+Step 1- Generate SSH keys:
+  >> Open Git Bash.
+  >> Run the command: ssh-keygen -t ed25519 -C "your_email@example.com"
+  >> Command explanation:
+    >>> ssh-keygen : Command to generate SSH keys.
+    >>> -t ed25519 : Specifies the type of encryption algorithm.
+    >>> -C "  " : Adds a comment to the SSH key.
+  >> The, press Enter to save the key in the default location.
+  >> Enter a secure passphrase when prompted.
+  >> The public and private keys will be generated in the ~/.ssh directory.
+  >> The public key will have a .pub extension.
+  >> The private key will not have any extension.
+  >> The public key is shared with the server, and the private key is kept secure.
+
+Step 2- Add SSH key to GitHub:
+  >> cat ~/.ssh/<public_key_id>.pub
+  >> Copy the public key to the clipboard.
+  >> Go to GitHub and navigate to Settings -> SSH and GPG keys.
+  >> Click on New SSH key.
+  >> Paste the public key in the key field.
+  >> Give a suitable title to the key.
+  >> Click on Add SSH key.
+  >> The SSH key will be added to your GitHub account.
+
+Step 3- Check the SSH connection:
+  >> Run the command: ssh -T
+  >> You will see a message confirming the successful connection to GitHub.
+  >> If you see a warning message: "The key is not known by any other names. Are you sure you want to continue connecting?", type "yes" and press Enter.
+  >> You will see a message confirming the successful connection to GitHub.
+  >> If the system asks you for a passphrase, enter the passphrase you set during key generation.
+
+Step 4- Clone the GitHub repo using SSH:
+  >> Go to the GitHub repository you want to clone.
+  >> Click on the "Code" button and select "SSH" from the dropdown.
+  >> Copy the SSH URL of the repository.
+  >> Open Git Bash or any terminal, and go to the directory or location where you want to clone the repo.
+  >> Run the command: git clone <SSH_URL> .
+  >> The repository will be cloned to your local system using SSH.
