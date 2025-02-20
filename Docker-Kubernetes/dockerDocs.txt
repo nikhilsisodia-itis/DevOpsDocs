@@ -39,14 +39,42 @@ Course Description:
     >>> Containers are portable, whereas VMs are not.
 
 > Module 5- 
+
   >> Docker installation.
     >>> Download Docker from the official website.
     >>> Install Docker on your system.
     >>> Verify the installation by running the `docker --version` command.
 
 > Module 6- 
+
   >> Images & Containers.
     >>> Images are read-only templates used to create containers.
     >>> Containers are running instances of images.
     >>> Images are built using a Dockerfile.
     >>> Containers can be started, stopped, and deleted.
+
+> Module 7-
+
+  >> Creating a docker image:
+    >>> FROM <image_name> : Base image.
+    >>> WORKDIR <directory> : Specify the working directory.
+    >>> COPY <directory> : Copy files from the host to the container.
+      ->> COPY .. : Copy files from the host to the container.
+      ->> First dot "." in COPY Commands copies all the folders and files from the current directory to the container.
+      ->> Second dot ".." in COPY Commands copies all the folders and files from the parent directory to the container.
+    
+    OR 
+    
+    >>> COPY . </directory> : Copy files from the container to the specific directory.
+
+    OR 
+
+    >>> COPY . ./<directory> : Copy files from the container to the specific directory.
+
+    >>> RUN <command> : Run a command in the container.
+    >>> EXPOSE <port> : Expose a port in the container.
+    >>> CMD ["executable"] : Run the specified command when the container starts.
+  
+> Module 8-
+  >> After creating your first docker image.
+  >> Execute the : docker build command in the terminal.
