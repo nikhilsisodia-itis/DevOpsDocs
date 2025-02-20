@@ -148,3 +148,19 @@ Course Description:
   
   >> docker start -a -i <container_id> : Start a stopped container in attached and interactive mode.
   >> This command attaches the user to the container and allows them to interact with it.
+  
+> Module 15- 
+  >> docker rm <container_id> : Remove a container.
+  >> docker container prune : Remove all stopped containers.
+  >> In order to remove a container(s) it should not be in running stage.
+  >> Remove multiple containers at once:
+    >>> docker rm <container_id1> <container_id2> <container_id3> : Remove multiple containers at once.
+
+  >> docker images : Lists all the images created.
+  >> docker rmi <image_id> : Remove an image.
+  >> docker image prune : Remove all dangling images.
+  >> An image(s) can only be removed if there are no containers running from that image.
+  >> If there are any container running or stopped container based on an image, then the image cannot be removed and the container should be removed first. 
+  >> Remove multiple images at once:
+    >>> docker rmi <image_id1> <image_id2> <image_id3> : Remove multiple images at once.
+  >> docker image prune : Remove all dangling images.
