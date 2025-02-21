@@ -1,0 +1,38 @@
+> Dockerfile basic format:
+  
+  >> FROM <base_image> : This command is used to specify the base image.
+  >> WORKDIR <directory> : This command is used to specify the working directory.
+  >> COPY <source> <destination> : This command is used to copy files from the host to the container.
+  >> RUN <command> : This command is used to run a command in the container.
+  >> EXPOSE <port> : This command is used to expose a port in the container.
+  >> CMD ["executable"] : This command is used to run the specified command when the container starts.
+
+> DOCKER image and container commands:
+
+  >> docker build . : This command is used to build the docker image in the current directory.
+  >> docker run <image_id> : This command is used to run the docker image.
+  >> docker ps : This command is used to list all the running containers.
+  >> docker ps -a : This command is used to list all the containers.
+  >> docker stop <container_id> : This command is used to stop the running container.
+  >> docker run -p <host_port>:<container_port> <image_id> : This command is used to run the container with port mapping.
+  >> docker start <container_id> : This command is used to start the stopped container.
+  >> docker run -it <image_id> : This command is used to run the container in interactive mode.
+  >> docker run -d <image_id> : This command is used to run the container in detached mode.
+  >> docker run -a <image_id> : This command is used to attach the container to the terminal.
+  >> docker logs -f <container_id> : This command is used to view the logs of the container.
+  >> docker start -i -a <container_id> : This command is used to start the container in interactive mode and attach it to the terminal.
+  >> docker rm <container_id> : This command is used to remove the container.
+  >> docker rmi <image_id> : This command is used to remove the image.
+  >> docker container prune : This command is used to remove all the stopped containers.
+  >> docker image prune : This command is used to remove all the dangling images.
+  >> docker --rm <image_id> : This command is used to remove the container after it stops running.
+  >> docker inspect <image_id> : This command is used to inspect the image.
+  >> docker cp <directory or file> <container_id>:<directory> : This command is used to copy files from the host to the container.
+  >> docker cp <container_id>:<directory or file> <directory> : This command is used to copy files from the container to the host.
+  >> docker run --name <container_name> <image_id> : This command is used to specify the name of the container.
+  >> docker build -t <image_name>:<image_tag> . : This command is used to build the docker image with a name and tag.
+  >> docker tag <image_id> <image_name>:<image_tag> : This command creates a target image that refers to the source image.
+  >> docker login : This command is used to log in to the docker hub.
+  >> docker push <image_name>:<image_tag> : This command is used to push the image to the docker hub.
+  >> docker pull <image_name>:<image_tag> : This command is used to pull the image from the docker hub.
+  >> docker logout : This command is used to log out from the docker hub.
