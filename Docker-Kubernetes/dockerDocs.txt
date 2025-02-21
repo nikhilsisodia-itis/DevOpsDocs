@@ -165,9 +165,8 @@ Course Description:
     >>> docker rmi <image_id1> <image_id2> <image_id3> : Remove multiple images at once.
 
 > Module 16-
-  >> docker --rm <image_id> : Remove the container after it stops running.
-  >> This command removes the container after it stops running.
   >> docker run --rm <image_id> : Remove the container after it stops running.
+  >> This command removes the container after it stops running.
 
 > Module 17-
   >> docker image inspect <image_id> : Inspect an image.
@@ -196,3 +195,17 @@ Course Description:
   >> Running a docker container based on an image using a tag:
     >>> docker run <repository_name>:<tag> : Run the container based on the image with the specified tag.
   >> docker image prune command only removes images with no repository and tags.
+
+> Module 20- 
+  >> Sharing docker images:
+    >>> Sharing via Docker Hub.
+    >>> Sharing via a Private Registry.
+  >> Rename a docker image:
+    >>> docker tag <image_id> <repository_name>:<tag> : Tag the image with a new name.
+    >>> Rename of an image, does not delete or remove the original image.
+    >>> The original image will still be available, and a clone of the original image will be created with the new name.
+
+  >> docker login : Login to the Docker Hub.
+  >> docker push <repository_name>:<tag> : Push the image to the Docker Hub.
+  >> docker pull <repository_name>:<tag> : Pull the image from the Docker Hub.
+  >> docker logout : Logout from the Docker Hub.
