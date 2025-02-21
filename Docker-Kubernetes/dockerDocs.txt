@@ -163,4 +163,17 @@ Course Description:
   >> If there are any container running or stopped container based on an image, then the image cannot be removed and the container should be removed first. 
   >> Remove multiple images at once:
     >>> docker rmi <image_id1> <image_id2> <image_id3> : Remove multiple images at once.
-  >> docker image prune : Remove all dangling images.
+
+> Module 16-
+  >> docker --rm <image_id> : Remove the container after it stops running.
+  >> This command removes the container after it stops running.
+  >> docker run --rm <image_id> : Remove the container after it stops running.
+
+> Module 17-
+  >> docker image inspect <image_id> : Inspect an image.
+  >> This command provides detailed information about the image.
+
+> Module 18- 
+  >> docker cp <directory or file> <container_id>:<directory> : Copy files from the host to the container.
+  >> docker cp <container_id>:<directory or file> <directory> : Copy files from the container to the host.
+  >> This command is used to copy files between the host and the container.
