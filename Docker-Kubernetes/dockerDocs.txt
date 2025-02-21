@@ -177,3 +177,22 @@ Course Description:
   >> docker cp <directory or file> <container_id>:<directory> : Copy files from the host to the container.
   >> docker cp <container_id>:<directory or file> <directory> : Copy files from the container to the host.
   >> This command is used to copy files between the host and the container.
+
+> Module 19-
+  >> docker run --name <container_name> <image_id> : Run the container with a specific name.
+  >> This command allows to give specific name to a container.
+  >> Docker images tag:
+    >>> Docker images are tagged with a repository name and a tag.
+    >>> The repository name is the name of the image.
+    >>> The tag is the version of the image.
+    >>> docker build -t <repository_name>:<tag> . : Tag the image while building it.
+    >>> Image tag consist of two parts: 
+      ->> Repository name.
+      ->> Tag.
+    >>> Syntax: <repository_name>:<tag>
+    >>> Example: docker build -t nginx:latest .
+    >>> Example: docker build -t python:3.8 .
+  >> All the tags related to a repository can be found on the Docker Hub.
+  >> Running a docker container based on an image using a tag:
+    >>> docker run <repository_name>:<tag> : Run the container based on the image with the specified tag.
+  >> docker image prune command only removes images with no repository and tags.
