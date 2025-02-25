@@ -219,3 +219,21 @@ Course Description:
     >> Volumes are used to persist(maintain or keep) data.
     >> Volumes are used to share data between the host machine and the container.
     >> When a volume is added to a container, it does not removed when a container is stopped or removed.
+
+> Module 22-
+  >> Add VOLUME ["/data"] to the Dockerfile.
+  >> This command creates a volume in the container.
+  
+> Module 23- 
+  >> Typess of external data storage:
+    >>> Volumes: Managed by docker.
+    >>> Bind mounts: Managed by the user.
+  >> Type of Volumes:
+    >>> Named volumes: Created and managed by docker.
+    >>> Anonymous volumes: Managed by docker.
+  >> docker volume ls: List all the volumes.
+  >> Named volumes: 
+    >>> Named volumes are not attached to a container.
+    >>> How to use named volumes:
+      ->> docker run -v <volume_name>:<directory> <image_id> : Run the container with a named volume.
+      
