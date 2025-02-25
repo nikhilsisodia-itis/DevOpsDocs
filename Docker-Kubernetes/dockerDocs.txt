@@ -209,3 +209,13 @@ Course Description:
   >> docker push <repository_name>:<tag> : Push the image to the Docker Hub.
   >> docker pull <repository_name>:<tag> : Pull the image from the Docker Hub.
   >> docker logout : Logout from the Docker Hub.
+
+> Module 21-
+  >> Volumes: 
+    >> Folders on host machine's stroage unit(s) that are mounted into the container.
+    >> Neither present in the image nor in the container.
+    >> Used to connect to a folder inside the container to a folder on the host machine.
+    >> Changes in any of the folders will be reflected in both the container and the host machine.
+    >> Volumes are used to persist(maintain or keep) data.
+    >> Volumes are used to share data between the host machine and the container.
+    >> When a volume is added to a container, it does not removed when a container is stopped or removed.
