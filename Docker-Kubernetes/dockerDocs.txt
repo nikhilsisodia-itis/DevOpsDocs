@@ -268,6 +268,28 @@ Course Description:
       ->> VOLUME ["/directory"] : Create a volume in the container.
       ->> This command creates a volume in the container and prevents the bind from overwriting the contents of the container.
 
+> Module 26-
+  >> Quick overview:
+    >>> docker run -v /app/data <image_id> : Run the container with an anonymous volume.
+    >>> Data in the anonymous volume will be removed when the container is stopped or removed.
+    >>> Data cannot be shared across containers.
+    >>> docker run -v data:/app/data <image_id> : Run the container with a named volume.
+    >>> Data in the named volume will not be removed when the container is stopped or removed.
+    >>> Data can be shared across containers.
+    >>> docker run -v "/host_directory:/container_directory" <image_id> : Run the container with a bind mount.
+    >>> Data in the bind mount will not be removed when the container is stopped or removed.
+    >>> Data can be shared across containers and host.
+    >>> docker run -v "/host_directory:/container_directory" -v data <image_id> : Run the container with a bind mount and an anonymous volume.
+    >>> VOLUME ["/directory"] : Create a volume in the container.
+    >>> docker volume ls : List all the volumes.
+
+> Module 27-
+  >> Read only mode:
+    >>> docker run -v /app/data:ro <image_id> : Run the container in read-only mode.
+    >>> This command runs the container in read-only mode.
+    >>> Data in the volume cannot be modified.
+    >>> Data in the volume can only be read.
+    >>> Data in the volume can be shared across containers.
 
 
       
