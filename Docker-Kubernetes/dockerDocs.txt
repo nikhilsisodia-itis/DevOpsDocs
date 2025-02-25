@@ -221,9 +221,8 @@ Course Description:
     >> When a volume is added to a container, it does not removed when a container is stopped or removed.
 
 > Module 22-
-  >> Add VOLUME ["/data"] to the Dockerfile.
-  >> This command creates a volume in the container.
-  
+  >> VOLUME ["/directory"] : Create a volume in the container.
+  >> The data in the speicified directory, will not be removed when the container is stopped or removed.
 > Module 23- 
   >> Typess of external data storage:
     >>> Volumes: Managed by docker.
@@ -236,4 +235,18 @@ Course Description:
     >>> Named volumes are not attached to a container.
     >>> How to use named volumes:
       ->> docker run -v <volume_name>:<directory> <image_id> : Run the container with a named volume.
+
+> Module 24-
+  >> Bind Mounts: 
+    >>> Managed by the host.
+    >>> Used to connect a folder on the host machine to a folder inside the container.
+    >>> Changes in any of the folders will be reflected in both the container and the host machine.
+    >>> Bind mounts are used to share data between the host machine and the container.
+    >>> Bind mounts are also used to persist data.
+    >>> User defines the path of the folder to be mounted.
+  >> docker run -v "<host_directory>:<container_directory>" <image_id> : Run the container with a bind mount.
+  >> Use double quotes incase the directory or file contains special character(s) or space(s).
+  >> In the <host_directory> and <container_directory>:
+    >>> <host_directory> : Path of the folder on the host machine which you want to mount.
+    >>> <container_directory> : Path of the folder inside the container where you want to mount the host folder.
       
