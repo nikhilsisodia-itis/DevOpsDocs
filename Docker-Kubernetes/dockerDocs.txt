@@ -249,4 +249,25 @@ Course Description:
   >> In the <host_directory> and <container_directory>:
     >>> <host_directory> : Path of the folder on the host machine which you want to mount.
     >>> <container_directory> : Path of the folder inside the container where you want to mount the host folder.
+
+> Module 25-
+  >> How container and volumes interact?
+    >>> Volumes are connected to specific folder(s) inside the container.
+    >>> They are mounted or connected to specified directory OR folder OR files inside the container with the directory OR folders OR files on the host machine.
+
+  >> How binds work?
+    >>> Binds are also connected to specific folder(s) inside the container.
+    >>> They are created and managed by the user.
+
+  >> Prevent binds from overwriting the contents of the container:
+    >>> docker run -v <host_directory>:<container_directory> -v <directory_name> <image_id> : Create an anonymous volume. 
+    >>> This command creates an anonymous volume and prevents the bind from overwriting the contents of the container.
+
+    OR 
+    >>> Add the volume command in the Dockerfile: 
+      ->> VOLUME ["/directory"] : Create a volume in the container.
+      ->> This command creates a volume in the container and prevents the bind from overwriting the contents of the container.
+
+
+
       
