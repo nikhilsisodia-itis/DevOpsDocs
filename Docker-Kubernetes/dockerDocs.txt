@@ -308,14 +308,49 @@ Course Description:
   >> The .dockerignore file should be in the same directory as the Dockerfile.
 
 Module 30-
-  >> Arguments & Environment variables:
+  >> Environment variables:
     >>> Environment variables are used to pass data to the container.
-    >>> Arguments are used to pass data to the container at runtime.
     >>> Environment variables are set in the Dockerfile.
-    >>> Arguments are set in the docker run command.
-    >>> Environment variables are set using the ENV command in the Dockerfile.
-    >>> Arguments are set using the --env flag in the docker run command.
+    >>> Environment variables are set using the ENV command in the Dockerfile or by using the --env flag in the docker run command.
   >> .env file is used to store environment variables.
   >> .env file should be in the same directory as the Dockerfile.
   >> Use --env-file flag to pass environment variables from the .env file to the container.
   >> Syntax: --env-file ./.env
+
+> Module 31-
+  >> Arguments:
+    >>> Arguments are used to pass data to the container.
+    >>> Arguments are set in the Dockerfile.
+    >>> Arguments are set using the ARG command in the Dockerfile or by using the --build-arg flag in the docker build command.
+  >> ARG <variable_name> : Define an argument in the Dockerfile.
+  >> --build-arg <variable_name>=<value> : Pass an argument
+  >> ARG and ENV are similar, but ARG is used during the build process, whereas ENV is used during the run process.
+
+> Module 32-
+  >> Connect to a host machine from a container:
+    >>> Use host.docker.internal inside the source code to connect to the host machine from the container.
+    >>> Apply this in the url or the connection string.
+    >>> Example: Url to the postgresql address-
+    >>> postgresql://host.docker.internal:5432/dbname
+
+  >> Connect to a container from another container:
+    >>> Use docker inspect <container_name> to get the details of the container.
+    >>> Under the network settings, get the IP address of the container.
+    >>> Use the IP address to connect to the container from another container.
+    >>> Example: Url to the postgresql address-
+    >>> postgresql://<container_ip_address>:5432/dbname
+
+> Module 33-
+  >> docker network --help : List all the available network commands.
+  >> docker network ls : List all the networks.
+  >> docker network create <network_name> : Create a network.
+  >> docker network inspect <network_name> : Inspect a network.
+  >> docker network connect <network_name> <container_name> : Connect a container to a network.
+  >> docker network disconnect <network_name> <container_name> : Disconnect a container from a network.
+  >> docker network prune : Remove all unused networks.
+  >> A network is not automatically created by docker, it needed to be created manually using the docker create <network_name> command.
+
+  >> Another way to make a container connect to another container is by using the name of the container in the connection string.
+  >> Example: Url to the postgresql address-
+  >> postgresql://<container_name>:5432/dbname
+  >> It only works when both or multiple containers are connected to the same network.
