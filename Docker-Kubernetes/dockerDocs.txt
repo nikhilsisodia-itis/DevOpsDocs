@@ -291,5 +291,31 @@ Course Description:
     >>> Data in the volume can only be read.
     >>> Data in the volume can be shared across containers.
 
+> Module 28-
+  >> docker volume --help : List all the available volume commands.
+  >> docker volume create <volume_name> : Create a named volume.
+  >> docker volume ls : List all the volumes.
+  >> docker volume inspect <volume_name> : Inspect a volume.
+  >> docker volume rm <volume_name> : Remove a volume.
+  >> docker volume prune : Remove all unused volumes.
+  >> Bind mount is used in the development environment.
+  >> It is used to make changes in a running container.
+  >> Bind mount is mostly not used in the production environment.
 
-      
+> Module 29-
+  >> .dockerignore : File used to ignore files and directories while building the image.
+  >> This file is used to exclude files and directories from the image.
+  >> The .dockerignore file should be in the same directory as the Dockerfile.
+
+Module 30-
+  >> Arguments & Environment variables:
+    >>> Environment variables are used to pass data to the container.
+    >>> Arguments are used to pass data to the container at runtime.
+    >>> Environment variables are set in the Dockerfile.
+    >>> Arguments are set in the docker run command.
+    >>> Environment variables are set using the ENV command in the Dockerfile.
+    >>> Arguments are set using the --env flag in the docker run command.
+  >> .env file is used to store environment variables.
+  >> .env file should be in the same directory as the Dockerfile.
+  >> Use --env-file flag to pass environment variables from the .env file to the container.
+  >> Syntax: --env-file ./.env
