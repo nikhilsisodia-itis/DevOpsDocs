@@ -392,11 +392,25 @@ Module 30-
     version: "<version of docker-compose you want to use.>"
     services:
       <service_name>:
-        image: <image_name>
+        container_name: <container_name>
+
+        image: <image_name> # This are the images that are pulled from the docker hub.
+        
+
+        OR 
+
+        build: # Used to build the image from the Dockerfile.
+          context: . # Location of the Dockerfile.
+          dockerfile: Dockerfile
+          args :
+            - ARG_NAME=value
+
         ports:
           - "host_port:container_port"
+
         volumes:
           - "host_directory:container_directory"
+
         environment:
           - ENV_VARIABLE=value
 
@@ -409,10 +423,25 @@ Module 30-
         
         networks:
           - network_name   
+
         stdin_open: true
+
         tty: true
+        
+        depnds_on:
+          - service_name
+
+    volumes:
+      <volume_name>:
+      <volume_name1>:
+      <volume_name2>:
+
+      # Add all the named volumes in the volumes section.
+      # Only for named volumes.
 
   >> docker compose up : Build and run the services.
   >> docker compose down : Stop and remove the services.
   >> docker compose ps : List all the services.
   >> docker compose logs : View the logs of the services.
+  >> docker compose up --build : Rebuild the services.
+  >> docker compose build : Build the services.
