@@ -364,3 +364,15 @@ Module 30-
     >>> This command sets the username as user and the password as password for the postgresql container.
     >>> Than to allow another container use the database container, use the connection string with the username and password.
     >>> Example: postgresql://user:password@<container_name>:5432/dbname
+
+> Module 35-
+  >> Automatically add the values of Environment variables in a connection string:
+    >>> Declare the variables and their values in the Dockerfile.
+    >>> Example: 
+    >>> ENV DB_USER=user
+    >>> ENV DB_PASSWORD=password
+    >>> Use ${DB_USER} and ${DB_PASSWORD} in the connection string.
+    >>> Enter the connection string between ` ` to add the values of the environment variables.
+    >>> Use the process.env.DB_USER and process.env.DB_PASSWORD in the connection string to get the values of the environment variables.
+    >>> Example: `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@<container_name>:5432/dbname`
+  >> Make sure the environment variables name are same as the connection string variables.
