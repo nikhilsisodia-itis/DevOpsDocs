@@ -376,3 +376,12 @@ Module 30-
     >>> Use the process.env.DB_USER and process.env.DB_PASSWORD in the connection string to get the values of the environment variables.
     >>> Example: `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@<container_name>:5432/dbname`
   >> Make sure the environment variables name are same as the connection string variables.
+
+> Module 36-
+  >> Docker Compose: 
+    >>> It is a tool.
+    >>> Allows to define and manage multi-container Docker applications.
+    >>> It uses a docker-compose.yml file to define the services, networks, and volumes.
+    >>> It does not replaces dockerfile, it just work with it.
+    >>> It also does not replaces images or containers, rather make it easy to build and run them.
+    >>> Not suitable for managing multiple containers on multiple servers.
