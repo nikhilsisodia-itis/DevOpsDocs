@@ -354,3 +354,13 @@ Module 30-
   >> Example: Url to the postgresql address-
   >> postgresql://<container_name>:5432/dbname
   >> It only works when both or multiple containers are connected to the same network.
+  >> --network <network_name> : Connect the container to a network.
+  >> Use the --network flag with the network name during the docker run command to connect the container to the specified network.
+
+> Module 34-
+  >> Setting up username & password for a database container:
+    >>> Use the POSTGRES_USER and POSTGRES_PASSWORD environment variables to set the username and password for the postgresql container.
+    >>> Example: docker run -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password postgres:latest
+    >>> This command sets the username as user and the password as password for the postgresql container.
+    >>> Than to allow another container use the database container, use the connection string with the username and password.
+    >>> Example: postgresql://user:password@<container_name>:5432/dbname
