@@ -385,3 +385,34 @@ Module 30-
     >>> It does not replaces dockerfile, it just work with it.
     >>> It also does not replaces images or containers, rather make it easy to build and run them.
     >>> Not suitable for managing multiple containers on multiple servers.
+
+> Module 37-
+  >> docker-compose.yaml file structure:
+    
+    version: "<version of docker-compose you want to use.>"
+    services:
+      <service_name>:
+        image: <image_name>
+        ports:
+          - "host_port:container_port"
+        volumes:
+          - "host_directory:container_directory"
+        environment:
+          - ENV_VARIABLE=value
+
+        OR 
+
+        env_file:
+          - ./.env 
+          
+          # Location of the .env file. The path should be absolute or relative to the docker-compose file.
+        
+        networks:
+          - network_name   
+        stdin_open: true
+        tty: true
+
+  >> docker compose up : Build and run the services.
+  >> docker compose down : Stop and remove the services.
+  >> docker compose ps : List all the services.
+  >> docker compose logs : View the logs of the services.
