@@ -445,3 +445,12 @@ Module 30-
   >> docker compose logs : View the logs of the services.
   >> docker compose up --build : Rebuild the services.
   >> docker compose build : Build the services.
+
+> Module 38-
+  >> Utility containers: 
+    >>> They are used to perform a specific task(s) and then removed.
+  >> docker exec command : Allows to run or execute a command in a running container.
+  >> docker exec -it <container_name> <command> : Run a command in a running container.
+
+  >> Another way to execute a command in a container:
+    >>> docker run -it <image_name> <command> : Run a command in a new container.    
