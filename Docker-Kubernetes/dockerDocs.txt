@@ -453,4 +453,6 @@ Module 30-
   >> docker exec -it <container_name> <command> : Run a command in a running container.
 
   >> Another way to execute a command in a container:
-    >>> docker run -it <image_name> <command> : Run a command in a new container.    
+    >>> docker run -it <image_name> <command> : Run a command in a new container.
+  >> EXECUTABLE [ "command to run" ] : Run the specified command when the container starts.
+  >> Any command that is executed and the modification by the executed command will be appended, and will not replace the existing command and contents of the container.
