@@ -405,6 +405,10 @@ Module 30-
           args :
             - ARG_NAME=value
 
+        working_dir: <directory> # Specify the working directory.
+
+        entrypoint: ["executable"] # Run the specified command when the container starts.
+
         ports:
           - "host_port:container_port"
 
