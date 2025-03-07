@@ -1,0 +1,17 @@
+> What is a Network?
+  >> A network is a collection of different types of devices. 
+  >> Connected together to allow sharing of data.
+
+> What is Internet?
+  >> Collection of different types of networks.
+  >> Connected together to allow sharing of data.
+
+> What is a protocol?
+  >> A protocol is a set of rules.
+  >> Governs the communication between devices.
+
+> What is WWW?
+  >> World Wide Web.
+  >> A collection of web pages.
+  >> Web pages are stored on web servers.
+  >> Web pages are accessed over the internet using the web browser.
