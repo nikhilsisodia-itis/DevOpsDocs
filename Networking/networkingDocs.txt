@@ -86,3 +86,49 @@
   >> Unguided media:
       >> Media in which data is transmitted through the air.
       >> Example: Radio waves, Microwaves, Infrared waves.
+
+> Types of networks based on size.
+  >> LAN: Local Area Network.
+  >> Example: Home network, Office network.
+
+  >> MAN: Metropolitan Area Network.
+  >> Example: City network.
+
+  >> WAN: Wide Area Network.
+  >> Example: Across the countries.
+
+> Modem: Modulator-Demodulator.
+  >> A device that converts the digital signals to analog signals.
+
+> Router:
+  >> A device that connects multiple networks.
+  >> Forwards the data packets between the networks based on IP addresses.
+
+> Topology:
+  >> The arrangement of the devices in a network.
+  >> Example: Bus, Star, Ring, Mesh.
+
+> Types of Topology:
+  >> Bus Topology:
+      >> All the devices are connected to a single cable.
+      >> Data is transmitted in both directions.
+      >> Example: Ethernet.
+
+  >> Star Topology:
+      >> All the devices are connected to a central hub.
+      >> Data is transmitted through the hub.
+      >> Example: Ethernet.
+
+  >> Ring Topology:
+      >> All the devices are connected in a circular manner.
+      >> Data is transmitted in one direction.
+      >> Example: Token Ring.
+
+  >> Tree Topology:
+      >> Combination of bus and star topology.
+      >> Example: Internet.
+
+  >> Mesh Topology:
+      >> All the devices are connected to each other.
+      >> Data is transmitted through multiple paths.
+      >> Example: Internet.
