@@ -67,3 +67,22 @@
 
 > Port number 49152 to 65535.
   >> Dynamic ports.
+
+> Upload and download speed.
+  >> Upload speed is the speed at which data is sent from the device to the internet.
+  >> Download speed is the speed at which data is received from the internet to the device.
+
+> Difference between 'b' and 'B'.
+  >> 'b' stands for bits.
+  >> 'B' stands for bytes.
+  >> Example: 
+      >> 1kb/s = 1000 bits per second.
+      >> 1KB/s = 8000 bits per second. (1 byte = 8 bits)
+
+> Guided and unguided media.
+  >> Guided media: 
+      >> Media in which data is transmitted through a physical medium.
+      >> Example: Twisted pair cable, Coaxial cable, Fiber optic cable.
+  >> Unguided media:
+      >> Media in which data is transmitted through the air.
+      >> Example: Radio waves, Microwaves, Infrared waves.
