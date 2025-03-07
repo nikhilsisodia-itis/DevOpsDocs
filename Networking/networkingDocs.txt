@@ -15,3 +15,27 @@
   >> A collection of web pages.
   >> Web pages are stored on web servers.
   >> Web pages are accessed over the internet using the web browser.
+
+> What is a Web Browser?
+  >> A web browser is a software application.
+  >> Used to access the web pages over the internet.
+
+> What is Search Engine?
+  >> A search engine is a software application.
+  >> Used to search for information on the internet.
+
+> What is a URL?
+  >> URL stands for Uniform Resource Locator.
+  >> It is the address of a web page on the internet.
+
+> Who sets the protocols?
+  >> Protocols are set by the ISOC (Internet Society).
+
+> Client & Server.
+  >> Client: A device that requests data.
+  >> Server: A device that provides data.
+
+> What is a Server?
+  >> A server is a central hub or unit.
+  >> Stores data and provides data to the clients.
+  
