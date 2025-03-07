@@ -39,3 +39,31 @@
   >> A server is a central hub or unit.
   >> Stores data and provides data to the clients.
   
+> Define ISP.
+  >> ISP stands for Internet Service Provider.
+  >> Provides internet services to the users.
+
+> What is IP?
+  >> IP stands for Internet Protocol.
+  >> It is a set of rules.
+  >> Governs the communication between devices over the internet.
+
+> What are Ports?
+  >> Ports are the endpoints of communication.
+  >> Used to identify the applications.
+  >> Each application has a unique port number.
+
+> Total amount of ports available on a device?
+  >> 65535 ports are available on a device.
+  >> 0 to 65535.  
+
+> What are reserved ports?
+  >> Ports 0 to 1023 are reserved ports.
+  >> Used by the system applications.
+
+> Port number 1024 to 49151.
+  >> Registered ports.
+  >> Used by specfic applications.
+
+> Port number 49152 to 65535.
+  >> Dynamic ports.
