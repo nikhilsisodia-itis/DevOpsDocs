@@ -140,29 +140,29 @@
 
   >> Application layer:
       >> Provides the interface between the application and the network.
-      >> Example: HTTP, FTP.
+      >> HTTP, FTP.
   
   >> Presentation layer:
       >> Converts the data into a format that can be understood by the application.
-      >> Example: Encryption, Decryption. 
+      >> Encryption, Decryption. 
 
   >> Session layer:
       >> Establishes, maintains, and terminates the connection between the devices.
-      >> Example: NetBIOS.
+      >> NetBIOS.
       >> Session layer data is divided into packets or segments.
       >> Segments consists of the data, source port, destination port, and sequence number.
 
   >> Transport layer:
       >> Provides end-to-end communication.
-      >> Example: TCP, UDP.
+      >> TCP, UDP.
 
   >> Network layer:
       >> Routes the data packets between the devices.
-      >> Example: IP.
+      >> IP.
 
   >> Data link layer:
       >> Provides the error detection and correction.
-      >> Example: Ethernet.
+      >> Ethernet.
     
   >> Frames:
       >> Data link layer data is divided into frames.
@@ -172,8 +172,30 @@
       >> Media Access Control address.
       >> A unique address assigned to the network devices.
       >> 48 bits long.
-      >> Example: 00:1A:2B:3C:4D:5E.
+      >> 00:1A:2B:3C:4D:5E.
 
   >> Physical layer:
       >> Transmits the data over the physical medium.
-      >> Example: Ethernet cable.
+      >> Ethernet cable.
+
+> The TCP / IP Model:
+  >> TCP stands for Transmission Control Protocol.
+  >> IP stands for Internet Protocol.
+  >> A reference model.
+  >> Divides the network communication into 4 layers.
+
+  >> Application layer:
+      >> Provides the interface between the application and the network.
+      >> HTTP, FTP.
+
+  >> Transport layer:
+      >> Provides end-to-end communication.
+      >> TCP, UDP.
+
+  >> Internet layer:
+      >> Routes the data packets between the devices.
+      >> IP.
+
+  >> Network access layer:
+      >> Transmits the data over the physical medium.
+      >> Ethernet cable.
