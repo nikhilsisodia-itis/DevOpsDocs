@@ -199,3 +199,50 @@
   >> Network access layer:
       >> Transmits the data over the physical medium.
       >> Ethernet cable.
+
+> Status codes:
+  >> 1xx: Informational.
+  >> 2xx: Success.
+  >> 3xx: Redirection.
+  >> 4xx: Client error.
+  >> 5xx: Server error.
+
+> Cookie:
+  >> A small piece of data.
+  >> Stored on the client's device.
+  >> Used to store the user's information.
+
+> Define and explain DNS:
+  >> DNS stands for Domain Name System.
+  >> Converts the domain name into an IP address.
+
+> Layers in-depth:
+  >> Application layer:
+      >> Client(s) OR User(s) interact with this layer.
+      >> It is basically the application that is used to communicate.
+      >> Lies on the device.
+      >> Example: Web browser, Email client.
+      >> Consist of HTTP, FTP, SMTP, POP3, IMAP.
+      >> DNS is also a part of the application layer.
+  >> Transport layer:
+      >> Provides end-to-end communication.
+      >> This layer transport the data from the network layer to the application layer and vice versa.
+      >> Consist of TCP, UDP.
+      >> TCP is connection-oriented.
+      >> UDP is connectionless.
+  >> Network layer:
+      >> Routes the data packets between the devices.
+      >> This layer is responsible for the logical addressing and routing.
+      >> Consist of IP.
+  >> Data link layer:
+      >> Provides the error detection and correction.
+      >> This layer is responsible for the physical addressing.
+      >> Consist of Ethernet.
+  >> Physical layer:
+      >> Transmits the data over the physical medium.
+      >> This layer is responsible for the physical connection.
+      >> Consist of Ethernet cable.
+
+> DHCP (Dynamic Host Configuration Protocol):
+  >> A protocol.
+  >> Assigns the IP address to the devices automatically.
