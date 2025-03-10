@@ -1,0 +1,9 @@
+> What is Ansible?
+  >> Ansible is an IT automation tool.
+  >> Maintained by Red Hat.
+  >> It is written in Python.
+
+> Need of Ansible?
+  >> To automate the tasks.
+  >> To manage the servers.
+  >> To deploy the applications.
