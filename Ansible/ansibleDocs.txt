@@ -7,3 +7,12 @@
   >> To automate the tasks.
   >> To manage the servers.
   >> To deploy the applications.
+
+> Advantages of Ansible?
+  >> Uses simple and easy to learn language- YAML.
+  >> Agentless: No need to install any agent on the remote machine.
+  >> Configuration Management: To manage the configurations of the servers.
+  >> Scalability: Can manage multiple servers at a time.
+  >> Idempotent: Can run the same playbook multiple times without any issues.
+  >> Open Source: Free to use.
+  >> Integration: Can be integrated with other tools like Jenkins, Docker, etc.
