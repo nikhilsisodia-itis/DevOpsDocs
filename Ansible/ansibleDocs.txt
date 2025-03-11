@@ -23,14 +23,47 @@
   >> Inventory: List of servers on which the tasks need to be completed.
   >> Roles: Collection of playbooks.
 
+> Ansible Playbook:
+  >> Playbook is a collection of tasks.
+  >> Playbook is written in YAML format.
+  >> Playbook is executed on the remote machine.
+  >> Playbook is executed using the command: ansible-playbook <absolute path to the playbook OR .yml file>.
+
 > Creating first playbook:
   >> Create a file with .yml extension.
   >> --- is the starting of the file.
   >> - is the starting of the task.
   >> name: is the name of the task.
   >> hosts: is the server on which the task needs to be executed.
-  >> tasks: is the list of tasks that needs to be executed
+  >> hosts: all : Task needs to be executed on all the servers.
+  >> tasks: is the list of tasks that needs to be executed.
+    >>> - name: is the name of the task.
+  
+    >>> debug : is the module that is used to print the message.
+    >>> msg: is the message that needs to be printed.
+  
+    >>> Install a service:
+          tasks:
+            - name: "Install <Service_name>"
+              <package_manager_name>:
+                name: <service_name>
+                state: present
+
   >> ansible-playbook <absolute path to the playbook OR .yml file> : Command to run the playbook.
   >> ansible-playbook --syntax-check <absolute path to the playbook OR .yml file> : Command to check the syntax of the playbook.
+
   >> Tasks are performed sequentially.
   >> The task that is written first, will be executed and completed first followed by the next task.
+
+> Ansible Inventory:
+  >> Inventory is the list of servers on which the tasks need to be executed.
+  >> Inventory can be written in two ways:
+    >>> Static Inventory: List of servers written in a file.
+    >>> Dynamic Inventory: List of servers generated dynamically.
+
+> Creating first inventory:
+  >> Create a file with .ini extension.
+  >> Add the list of servers in the file.
+  >> ansible-playbook <absolute path to the playbook OR .yml file> -i <absolute path to the inventory file> : Command to run the playbook with the inventory file.
+
+  >> ansible-inventory --list : Command to list the servers in the inventory file.
