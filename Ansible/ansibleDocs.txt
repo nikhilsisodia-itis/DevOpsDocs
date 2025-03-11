@@ -16,3 +16,20 @@
   >> Idempotent: Can run the same playbook multiple times without any issues.
   >> Open Source: Free to use.
   >> Integration: Can be integrated with other tools like Jenkins, Docker, etc.
+
+> Componenets of Ansible:
+  >> Modules: Predefined tasks that can be executed on the remote machine.
+  >> Playbooks: Collection of tasks that can be executed on the remote machine.
+  >> Inventory: List of servers on which the tasks need to be completed.
+  >> Roles: Collection of playbooks.
+
+> Creating first playbook:
+  >> Create a file with .yml extension.
+  >> --- is the starting of the file.
+  >> - is the starting of the task.
+  >> name: is the name of the task.
+  >> hosts: is the server on which the task needs to be executed.
+  >> tasks: is the list of tasks that needs to be executed
+  >> ansible-playbook <absolute path to the playbook OR .yml file> : Command to run the playbook.
+  >> ansible-playbook --syntax-check <absolute path to the playbook OR .yml file> : Command to check the syntax of the playbook.
+  
