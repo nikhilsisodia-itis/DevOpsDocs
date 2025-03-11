@@ -32,4 +32,5 @@
   >> tasks: is the list of tasks that needs to be executed
   >> ansible-playbook <absolute path to the playbook OR .yml file> : Command to run the playbook.
   >> ansible-playbook --syntax-check <absolute path to the playbook OR .yml file> : Command to check the syntax of the playbook.
-  
+  >> Tasks are performed sequentially.
+  >> The task that is written first, will be executed and completed first followed by the next task.
