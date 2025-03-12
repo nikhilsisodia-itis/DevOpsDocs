@@ -58,6 +58,7 @@
               owner: <owner_name>
               group: <group_name>
               mode: <permission> # Can be octal or symbolic.
+              backup: yes # To take the backup of the file.
 
   >> ansible-playbook <absolute path to the playbook OR .yml file> : Command to run the playbook.
   >> ansible-playbook --syntax-check <absolute path to the playbook OR .yml file> : Command to check the syntax of the playbook.
@@ -77,3 +78,60 @@
   >> ansible-playbook <absolute path to the playbook OR .yml file> -i <absolute path to the inventory file> : Command to run the playbook with the inventory file.
 
   >> ansible-inventory --list : Command to list the servers in the inventory file.
+
+> Ansible File Modules:
+  >> Creating a new file at a specific location:
+    >>> createFile.yml
+        ---
+        - name: "Create a new file"
+          hosts: <local OR remote>
+
+          tasks:
+            - name: "Create a new file"
+              file:
+                path: <path_where_the_file_needs_to_be_created>
+                state: touch
+
+    >>> createDirectory.yml
+        ---
+        - name: "Create a new directory"
+          hosts: <local OR remote>
+
+          tasks:
+            - name: "Create a new directory"
+              file:
+                path: <path_where_the_directory_needs_to_be_created>
+                state: directory
+    
+    >>> deleteFile.yml
+        ---
+        - name: "Delete a file"
+          hosts: <local OR remote>
+
+          tasks:
+            - name: "Delete a file"
+              file:
+                path: <path_where_the_file_needs_to_be_deleted>
+                state: absent
+
+    >>> deleteDirectory.yml
+        ---
+        - name: "Delete a directory"
+          hosts: <local OR remote>
+
+          tasks:
+            - name: "Delete a directory"
+              file:
+                path: <path_where_the_directory_needs_to_be_deleted>
+                state: absent
+
+    >>> changePermission.yml
+        ---
+        - name: "Change the permission of a file"
+          hosts: <local OR remote>
+
+          tasks:
+            - name: "Change the permission of a file"
+              file:
+                path: <path_where_the_file_is_present>
+                mode: <permission> # Can be octal or symbolic
