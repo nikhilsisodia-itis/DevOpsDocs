@@ -135,3 +135,15 @@
               file:
                 path: <path_where_the_file_is_present>
                 mode: <permission> # Can be octal or symbolic
+
+> Run scripts using Ansible:
+  >> Run a script on the remote machine:
+    >>> runScript.yml
+        ---
+        - name: "Run a script"
+          hosts: <remote>
+
+          tasks:
+            - name: "Run a script"
+              script:
+                src: <path_to_the_script>
