@@ -207,7 +207,15 @@
             - name: "Create a new user"
               user:
                 name: <user_name>
-                password: <password>
+                comment: <comment>
+                password: "{{ '<password>' | password_hash('sha512') }}"
+                home: <home_directory> # Default is /home/<user_name>
+                shell: <shell_name> # Default is /bin/bash
+                group: <group_name> # Default is <user_name>
+                
+                OR
+
+                groups: <group_name> # To add the user to multiple groups.
                 state: present
 
   >> Delete a user:
@@ -232,7 +240,7 @@
             - name: "Change the password of a user"
               user:
                 name: <user_name>
-                password: <new_password>
+                password: "{{ '<password>' | password_hash('sha512') }}"
                 state: present
 
   >> Change the shell of a user:
