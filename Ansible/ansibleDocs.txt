@@ -48,6 +48,16 @@
               <package_manager_name>:
                 name: <service_name>
                 state: present
+    
+    >>> Copy a file:
+          tasks:
+          - name: "Copy <content_name>"
+            copy: # Module to copy the file.
+              src: <source_file_path>
+              dest: <destination_file_path>
+              owner: <owner_name>
+              group: <group_name>
+              mode: <permission> # Can be octal or symbolic.
 
   >> ansible-playbook <absolute path to the playbook OR .yml file> : Command to run the playbook.
   >> ansible-playbook --syntax-check <absolute path to the playbook OR .yml file> : Command to check the syntax of the playbook.
