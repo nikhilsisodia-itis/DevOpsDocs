@@ -194,3 +194,56 @@
               shell: echo $<environment_variable_name>
               environment:
                 <environment_variable_name>: <value>
+              state: absent # To remove the environment variable.        
+
+> User Management:
+  >> Create a new user:
+    >>> createUser.yml
+        ---
+        - name: "Create a new user"
+          hosts: <remote>
+
+          tasks:
+            - name: "Create a new user"
+              user:
+                name: <user_name>
+                password: <password>
+                state: present
+
+  >> Delete a user:
+    >>> deleteUser.yml
+        ---
+        - name: "Delete a user"
+          hosts: <remote>
+
+          tasks:
+            - name: "Delete a user"
+              user:
+                name: <user_name>
+                state: absent
+
+  >> Change the password of a user:
+    >>> changePassword.yml
+        ---
+        - name: "Change the password of a user"
+          hosts: <remote>
+
+          tasks:
+            - name: "Change the password of a user"
+              user:
+                name: <user_name>
+                password: <new_password>
+                state: present
+
+  >> Change the shell of a user:
+    >>> changeShell.yml
+        ---
+        - name: "Change the shell of a user"
+          hosts: <remote>
+
+          tasks:
+            - name: "Change the shell
+              user:
+                name: <user_name>
+                shell: <shell_name>
+                state: present
