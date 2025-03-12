@@ -147,3 +147,21 @@
             - name: "Run a script"
               script:
                 src: <path_to_the_script>
+
+> Running cron jobs:
+  >> Run a cron job on the remote machine:
+    >>> runCronJob.yml
+        ---
+        - name: "Run a cron job"
+          hosts: <remote>
+
+          tasks:
+            - name: "Run a cron job"
+              cron:
+                name: <name_of_the_cron_job>
+                minute: <minute>
+                hour: <hour>
+                day: <day>
+                month: <month>
+                weekday: <weekday>
+                job: <command_to_be_executed>
