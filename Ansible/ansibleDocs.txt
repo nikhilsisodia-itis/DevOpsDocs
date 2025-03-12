@@ -165,3 +165,32 @@
                 month: <month>
                 weekday: <weekday>
                 job: <command_to_be_executed>
+
+> Remove a cron job:
+  >> Remove a cron job on the remote machine:
+    >>> removeCronJob.yml
+        ---
+        - name: "Remove a cron job"
+          hosts: <remote>
+
+          tasks:
+            - name: "Remove a cron job"
+              cron:
+                name: <name_of_the_cron_job> # Name of the cron job should be exact as the name of the cron job that needs to be removed.
+                state: absent
+
+> Disable a cronjob:
+  >> Simple add the "disable: yes" in the cron job.
+
+> Using environment variables:
+  >> Use the environment variable in the playbook:
+    >>> useEnvironmentVariable.yml
+        ---
+        - name: "Use the environment variable"
+          hosts: <remote>
+
+          tasks:
+            - name: "Use the environment variable"
+              shell: echo $<environment_variable_name>
+              environment:
+                <environment_variable_name>: <value>
