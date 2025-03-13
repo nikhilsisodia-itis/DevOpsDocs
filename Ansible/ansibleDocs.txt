@@ -255,3 +255,25 @@
                 name: <user_name>
                 shell: <shell_name>
                 state: present
+
+> Kill a process:
+  >>> killProcess.yml
+      ---
+      - name: "Kill a process"
+        hosts: <remote>
+
+        tasks:
+          - name: "Kill a process"
+            shell: kill -9 <process_id>
+
+> Stop a service:
+  >>> stopService.yml
+      ---
+      - name: "Stop a service"
+        hosts: <remote>
+
+        tasks:
+          - name: "Stop a service"
+            service:
+              name: <service_name>
+              state: stopped
