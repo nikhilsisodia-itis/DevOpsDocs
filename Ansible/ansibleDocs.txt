@@ -344,3 +344,22 @@
             - name: "Handler"
               debug:
                 msg: "This is the handler that will be executed
+
+> Conditions in playbooks:
+  >> Conditions are used to execute the task based on the condition.
+  >> Conditions are defined using the when keyword.
+  
+  >> Define the conditions in the playbook:
+    >>> conditionsInPlaybook.yml
+        ---
+        - name: "Define the conditions in the playbook"
+          hosts: <remote>
+
+          tasks:
+            - name: "Define the conditions in the playbook"
+              debug:
+                msg: "This is the task that will be executed
+              when: <condition>
+
+  >> Use ansible <host> -m setup to get the facts of the host.
+  >> Use the facts to define the conditions.
