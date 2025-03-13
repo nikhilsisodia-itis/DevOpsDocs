@@ -363,3 +363,22 @@
 
   >> Use ansible <host> -m setup to get the facts of the host.
   >> Use the facts to define the conditions.
+
+> Using loops in playbooks:
+  >> Loops are used to execute the task multiple times.
+  >> Loops are defined using the with_items keyword.
+  
+  >> Define the loops in the playbook:
+    >>> loopsInPlaybook.yml
+        ---
+        - name: "Define the loops in the playbook"
+          hosts: <remote>
+
+          tasks:
+            - name: "Define the loops in the playbook"
+              debug:
+                msg: "{{ item }}"
+              loop:
+                - <item1>
+                - <item2>
+                - <item3>
