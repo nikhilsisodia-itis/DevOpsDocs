@@ -382,3 +382,15 @@
                 - <item1>
                 - <item2>
                 - <item3>
+  >> Another way of defining the loops:
+    >>> loopsInPlaybook.yml
+        ---
+        - name: "Define the loops in the playbook"
+          hosts: <remote>
+          vars: [list_of_items: [<item1>, <item2>, <item3>]]
+
+          tasks:
+            - name: "Define the loops in the playbook"
+              debug:
+                msg: "{{ item }}"
+              loop: "{{ list_of_items }}"
