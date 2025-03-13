@@ -305,3 +305,42 @@
 
   >>> Run the: ansible-playbook <playbook_name.yml> with the --ask-become-pass flag to provide the password for the sudo user.
   >>> ansbible-playbook --ask-become-pass <playbook_name.yml>
+
+> Variables in playbooks:
+  
+  >> Define the variables in the playbook:
+    >>> variablesInPlaybook.yml
+        ---
+        - name: "Define the variables in the playbook"
+          hosts: <remote>
+
+          vars:
+            <variable_name>: <value>
+
+          tasks:
+            - name: "Define the variables in the playbook"
+              debug:
+                msg: "{{ <variable_name> }}"
+  
+> Handlers in playbooks:
+  >> Handlers are the tasks that are executed only when the task is notified.
+  >> Handlers are defined at the end of the playbook.
+  >> Handlers are notified using the notify keyword.
+  >> Handlers are executed using the meta module.
+  
+  >> Define the handlers in the playbook:
+    >>> handlersInPlaybook.yml
+        ---
+        - name: "Define the handlers in the playbook"
+          hosts: <remote>
+
+          tasks:
+            - name: "Define the handlers in the playbook"
+              debug:
+                msg: "This is the task that will notify the handler."
+              notify: "Handler"
+
+          handlers:
+            - name: "Handler"
+              debug:
+                msg: "This is the handler that will be executed
