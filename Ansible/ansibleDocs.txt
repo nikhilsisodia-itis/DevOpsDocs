@@ -277,3 +277,31 @@
             service:
               name: <service_name>
               state: stopped
+
+> Download a file:
+  >>> downloadFile.yml
+      ---
+      - name: "Download a file"
+        hosts: <remote>
+
+        tasks:
+          - name: "Download a file"
+            get_url:
+              url: <url_of_the_file>
+              dest: <destination_path>
+
+> Perform a task with sudo previleges:
+  >>> gainSudoPrivileges.yml
+      ---
+      - name: "Perform a task with sudo previleges"
+        hosts: <remote>
+
+        tasks:
+          - name: "Perform a task with sudo previleges"
+            command: <command>
+            become: yes
+            become_user: <user_name>
+            become_method: sudo
+
+  >>> Run the: ansible-playbook <playbook_name.yml> with the --ask-become-pass flag to provide the password for the sudo user.
+  >>> ansbible-playbook --ask-become-pass <playbook_name.yml>
