@@ -79,3 +79,37 @@
     >> A table is a collection of data stored in rows and columns.
     >> It is used to store and retrieve data in a structured format.
     >> It is used to establish a relationship between data.
+
+> Module 5- Basic Database Operations:
+  
+  > Creating, connecting, listing, & dropping a database:
+    >> Create a Database: CREATE DATABASE database_name;
+    >> Connect to a Database: \c database_name;
+    >> List Databases: \l;
+    >> Drop a Database: DROP DATABASE database_name;
+
+  > Listing down the existing database:
+    >> Execute the following Query using the Query tool in PgAdmin OR from the psql shell: 
+      >>> SELECT datname FROM pg_database;
+      >>> datname is the column name that contains the database names.
+      >>> pg_database is the system catalog table that contains the database information.
+
+    OR
+
+    >> Run the following command from the psql shell:
+      >>> \l
+      >>> The \l command is used to list down the existing databases.
+  
+  *NOTE*: Uppercase and lowercase can be used for queries in PostgreSQL.
+  *NOTE*: Semicolon is used to terminate the query in PostgreSQL.
+  *NOTE*: The backslash (\) is used to execute the psql shell commands.
+  *NOTE*: The psql shell commands are case-insensitive.
+  *NOTE*: Uppercase is preferred & used for more readability.
+
+  > Switch to a different database:
+    >> Syntax: \c database_name;
+    >> Example: \c testdb;
+
+  > Delete a database:
+    >> Syntax: DROP DATABASE database_name;
+    >> Example: DROP DATABASE testdb;
