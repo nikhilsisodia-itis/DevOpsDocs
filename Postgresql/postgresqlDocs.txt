@@ -222,3 +222,51 @@
     >> It is used to retrieve a specific number of rows from the result set.
     >> Syntax: SELECT * FROM table_name LIMIT number;
     >> Example: SELECT * FROM employees LIMIT 5;
+
+> Module 9- Logical Operators:
+
+  > Logical Operators:
+    >> Logical operators are used to combine multiple conditions in an SQL statement.
+    >> Logical operators are used to filter rows based on multiple conditions.
+    >> Common logical operators in PostgreSQL are AND, OR, and NOT.
+
+  > AND Operator:
+    >> The AND operator is used to retrieve rows that meet all specified conditions.
+    >> Syntax: SELECT * FROM table_name WHERE condition1 AND condition2;
+    >> Example: SELECT * FROM employees WHERE age > 30 AND department = 'IT';
+
+  > OR Operator:
+    >> The OR operator is used to retrieve rows that meet at least one of the specified conditions.
+    >> Syntax: SELECT * FROM table_name WHERE condition1 OR condition2;
+    >> Example: SELECT * FROM employees WHERE age > 30 OR department = 'HR';
+
+  > NOT Operator:
+    >> The NOT operator is used to retrieve rows that do not meet the specified condition.
+    >> Syntax: SELECT * FROM table_name WHERE NOT condition;
+    >> Example: SELECT * FROM employees WHERE NOT age > 30;
+
+  > IN & NOT IN Operators:
+    >> The IN operator is used to retrieve rows where a column value matches any value in a list.
+    >> The NOT IN operator is used to retrieve rows where a column value does not match any value in a list.
+    >> Syntax: SELECT * FROM table_name WHERE column_name IN (value1, value2, ...);
+    >> Example: SELECT * FROM employees WHERE department IN ('IT', 'HR');
+
+  > BETWEEN AND Operator:
+    >> The BETWEEN AND operator is used to retrieve rows where a column value is within a specified range.
+    >> Syntax: SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;
+    >> Example: SELECT * FROM employees WHERE age BETWEEN 25 AND 35;
+
+  > LIKE Operator:
+    >> The LIKE operator is used to retrieve rows based on a specified pattern.
+    >> It is used to perform pattern matching on text data.
+    >> Syntax: SELECT * FROM table_name WHERE column_name LIKE pattern;
+    >> Example: SELECT * FROM employees WHERE name LIKE 'J%';
+
+      >>> Symbols used in the LIKE operator:
+        >>> %: Represents zero or more characters.
+        >>> _: Represents a single character.
+
+      >>> Using % before and after the pattern matches any string that contains the pattern.
+      >>> Using % before the pattern matches any string that ends with the pattern.
+      >>> Using % after the pattern matches any string that starts with the pattern.
+      >>> Using % before & after the pattern matches any string that contains the pattern.
