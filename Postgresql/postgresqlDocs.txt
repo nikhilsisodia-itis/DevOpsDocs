@@ -186,3 +186,39 @@
   > Adding constraints to a table:
     >> Syntax: CREATE TABLE table_name (column1 datatype CONSTRAINT constraint_name constraint_type, ...);
     >> Example: CREATE TABLE employees (id INT PRIMARY KEY, name VARCHAR(50) NOT NULL, age INT CHECK (age >= 18));
+
+> Module 8- Data Refining:
+
+  > Data Refining:
+    >> Data refining is the process of cleaning and transforming raw data into useful information.
+    >> It is used to improve the quality and accuracy of the data.
+    >> Data refining involves data cleaning, data transformation, and data enrichment.
+  
+  > Clause:
+    >> A clause is a part of an SQL statement that specifies conditions for the query.
+    >> Clauses are used to filter, sort, group, and limit the data returned by a query.
+    >> Common clauses in PostgreSQL are WHERE, ORDER BY, GROUP BY, and LIMIT.
+
+  > WHERE Clause:
+    >> The WHERE clause is used to filter rows based on a specified condition.
+    >> It is used to retrieve rows that meet the specified condition.
+    >> Syntax: SELECT * FROM table_name WHERE condition;
+    >> Example: SELECT * FROM employees WHERE age > 30;
+
+  > Distinct Keyword:
+    >> The DISTINCT keyword is used to retrieve unique values from a column.
+    >> It is used to remove duplicate values from the result set.
+    >> Syntax: SELECT DISTINCT column_name FROM table_name;
+    >> Example: SELECT DISTINCT department FROM employees;
+
+  > ORDER BY Clause:
+    >> The ORDER BY clause is used to sort the result set based on one or more columns.
+    >> It is used to sort the rows in ascending or descending order.
+    >> Syntax: SELECT * FROM table_name ORDER BY column_name [ASC|DESC];
+    >> Example: SELECT * FROM employees ORDER BY age DESC;
+
+  > LIMIT Clause:
+    >> The LIMIT clause is used to limit the number of rows returned by a query.
+    >> It is used to retrieve a specific number of rows from the result set.
+    >> Syntax: SELECT * FROM table_name LIMIT number;
+    >> Example: SELECT * FROM employees LIMIT 5;
