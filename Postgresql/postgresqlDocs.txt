@@ -62,3 +62,20 @@
   > Switch to a Database:
     >> Syntax: \c database_name;
     >> Example: \c testdb;
+
+> Module 4- Database VS Schema VS Table:
+
+  > Database:
+    >> A database is a collection of related data stored in an organized manner.
+    >> It is used to store and retrieve data for various applications.
+    >> It can contain multiple schemas and tables.
+
+  > Schema:
+    >> A schema is a collection of database objects like tables, views, indexes, etc.
+    >> It is used to organize and manage the database objects.
+    >> It can be used to group related database objects together.
+
+  > Table:
+    >> A table is a collection of data stored in rows and columns.
+    >> It is used to store and retrieve data in a structured format.
+    >> It is used to establish a relationship between data.
