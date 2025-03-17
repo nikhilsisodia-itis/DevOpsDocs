@@ -113,3 +113,45 @@
   > Delete a database:
     >> Syntax: DROP DATABASE database_name;
     >> Example: DROP DATABASE testdb;
+
+> Module 6- Basic Table Operations:
+
+  > CRUD Operations:
+    >> CRUD stands for Create, Read, Update, and Delete.
+    >> It is used to perform various operations on the database.
+    >> It is used to insert, update, delete, and select data from the database.
+
+  > What is a Table?
+    >> A table is a collection of data stored in rows and columns.
+    >> It is used to store and retrieve data in a structured format.
+    >> It is used to establish a relationship between data.
+
+  > Creating a table:
+    >> Syntax: CREATE TABLE table_name (column1 datatype, column2 datatype, ...);
+    >> Example: CREATE TABLE employees (id INT, name VARCHAR(50), age INT);
+  
+  > Display the table structure:
+    >> Syntax: \d table_name;
+      >>> \d is a psql shell command used to display the table structure.
+    >> Example: \d employees;
+
+  > Inserting data into a table:
+    >> Syntax: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+    >> Example: INSERT INTO employees (id, name, age) VALUES (1, 'John Doe', 30);
+
+  > Reading data from a table:
+    > Display all rows from a table:
+      >> Syntax: SELECT * FROM table_name;
+      >> Example: SELECT * FROM employees;
+    
+    > Display individual columns from a table:
+      >> Syntax: SELECT column1, column2, ... FROM table_name;
+      >> Example: SELECT id, name FROM employees;
+    
+  > Updating data in a table:
+    >> Syntax: UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+    >> Example: UPDATE employees SET age = 35 WHERE id = 1;
+
+  > Deleting data from a table:
+    >> Syntax: DELETE FROM table_name WHERE condition;
+    >> Example: DELETE FROM employees WHERE id = 1;
