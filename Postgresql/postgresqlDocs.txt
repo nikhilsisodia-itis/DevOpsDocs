@@ -1,36 +1,53 @@
 > Module 1:
 
-> What is a Database?
-  >> A database is a collection of data stored in an organized OR pre-specified manner.
-  >> It is used to store and retrieve data for various applications.
-  >> A database can be of different types like SQL, NoSQL, etc.
-  >> Used to perform various operations like insert, update, delete, and select data.
+  > What is a Database?
+    >> A database is a collection of data stored in an organized OR pre-specified manner.
+    >> It is used to store and retrieve data for various applications.
+    >> A database can be of different types like SQL, NoSQL, etc.
+    >> Used to perform various operations like insert, update, delete, and select data.
 
-> Database VS DBMS:
-  >> Database: It is a storage unit.
-  >> DBMS: It is a software that is used to manage the database.
-  >> Database is a collection of related data whereas DBMS is a collection of programs that are used to manage the database.
+  > Database VS DBMS:
+    >> Database: It is a storage unit.
+    >> DBMS: It is a software that is used to manage the database.
+    >> Database is a collection of related data whereas DBMS is a collection of programs that are used to manage the database.
 
-> What is RDDMS?
-  >> RDBMS stands for Relational Database Management System.
-  >> It is a type of DBMS that stores data in a structured format.
-  >> It is used to store data in tables and rows.
-  >> It is used to establish a relationship between tables.
+  > What is RDDMS?
+    >> RDBMS stands for Relational Database Management System.
+    >> It is a type of DBMS that stores data in a structured format.
+    >> It is used to store data in tables and rows.
+    >> It is used to establish a relationship between tables.
 
-> What is SQL?
-  >> SQL stands for Structured Query Language.
-  >> It is used to communicate with the database.
-  >> It is used to perform various operations like insert, update, delete, and select data.
-  >> It is used to create and modify the database schema. 
+  > What is SQL?
+    >> SQL stands for Structured Query Language.
+    >> It is used to communicate with the database.
+    >> It is used to perform various operations like insert, update, delete, and select data.
+    >> It is used to create and modify the database schema. 
 
-> What is PostgreSQL?
-  >> PostgreSQL is an open-source RDBMS.
-  >> It is used to store and retrieve data for various applications.
-  >> It is used to perform various operations like insert, update, delete, and select data.
-  >> It is used to create and modify the database schema.
+  > What is PostgreSQL?
+    >> PostgreSQL is an open-source RDBMS.
+    >> It is used to store and retrieve data for various applications.
+    >> It is used to perform various operations like insert, update, delete, and select data.
+    >> It is used to create and modify the database schema.
 
-> SQL VS PostgreSQL:
-  >> SQL: It is a language used to communicate with the database.
-  >> PostgreSQL: It is an open-source RDBMS.
-  >> SQL is used to perform various operations like insert, update, delete, and select data.
-  >> PostgreSQL is used to store and retrieve data for various applications.
+  > SQL VS PostgreSQL:
+    >> SQL: It is a language used to communicate with the database.
+    >> PostgreSQL: It is an open-source RDBMS.
+    >> SQL is used to perform various operations like insert, update, delete, and select data.
+    >> PostgreSQL is used to store and retrieve data for various applications.
+
+> Module 2:
+
+  > How to install PostgreSQL?
+    >> Step 1: Download the PostgreSQL installer from the official website.
+    >> Step 2: Run the installer and follow the installation steps.
+    >> Step 3: Set the password for the default user.
+    >> Step 4: Start the PostgreSQL service.
+    >> Step 5: Access the PostgreSQL database using the command line or GUI tools.
+
+  > How to use the psql shell on Ubuntu?
+    >> Step 1: Open the terminal.
+    >> Step 2: Type the command "sudo -i -u postgres" to switch to the postgres user.
+      >>> The -i option is used to start a login shell.
+      >>> The -u option is used to specify the user.
+    >> Step 3: Type the command "psql" to access the PostgreSQL shell.
+    >> Step 4: You can now run SQL queries in the psql shell.
