@@ -155,3 +155,34 @@
   > Deleting data from a table:
     >> Syntax: DELETE FROM table_name WHERE condition;
     >> Example: DELETE FROM employees WHERE id = 1;
+
+> Module 7- Datatypes & Constraints:
+  
+  > Datatypes:
+    >> Datatypes are used to define the type of data that can be stored in a column.
+    >> PostgreSQL supports various datatypes like integer, text, boolean, etc.
+    >> Datatypes are used to enforce data integrity and consistency.
+
+  > Constraints:
+    >> Constraints are used to enforce rules on the data stored in a table.
+    >> Constraints are used to maintain data integrity and consistency.
+    >> PostgreSQL supports various constraints like NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, etc.
+
+  > Common Datatypes:
+    >> INTEGER: Used to store whole numbers.
+    >> TEXT: Used to store variable-length character strings.
+    >> BOOLEAN: Used to store true or false values.
+    >> DATE: Used to store date values.
+    >> TIMESTAMP: Used to store date and time values.
+    >> SERIAL: Used to create auto-incrementing columns.
+
+  > Common Constraints:
+    >> NOT NULL: Ensures that a column cannot have NULL values.
+    >> UNIQUE: Ensures that all values in a column are unique.
+    >> PRIMARY KEY: Ensures that each row in a table is unique.
+    >> FOREIGN KEY: Ensures that values in a column match values in another table.
+    >> CHECK: Ensures that values in a column meet a specific condition.
+
+  > Adding constraints to a table:
+    >> Syntax: CREATE TABLE table_name (column1 datatype CONSTRAINT constraint_name constraint_type, ...);
+    >> Example: CREATE TABLE employees (id INT PRIMARY KEY, name VARCHAR(50) NOT NULL, age INT CHECK (age >= 18));
