@@ -307,3 +307,14 @@
     >> It is used to find the largest value in a column.
     >> Syntax: SELECT MAX(column_name) FROM table_name;
     >> Example: SELECT MAX(salary) FROM employees;
+
+> Module 11- Group By clause:
+
+  > Group By Clause:
+    >> The GROUP BY clause is used to group rows based on a specified column.
+    >> It is used to group rows that have the same values in a column.
+    >> The GROUP BY clause is used with aggregate functions to summarize data.
+
+  > Syntax:
+    >> SELECT column1, aggregate_function(column2) FROM table_name GROUP BY column1;
+    >> Example: SELECT department, AVG(salary) FROM employees GROUP BY department;
