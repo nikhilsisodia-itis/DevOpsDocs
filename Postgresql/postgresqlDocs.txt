@@ -318,3 +318,88 @@
   > Syntax:
     >> SELECT column1, aggregate_function(column2) FROM table_name GROUP BY column1;
     >> Example: SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+> Module 12- String Functions:
+
+  > String Functions:
+    >> String functions are used to manipulate and format text data.
+    >> Common string functions in PostgreSQL are CONCAT, LENGTH, UPPER, LOWER, and SUBSTRING.
+    >> String functions are used to perform operations on text data.
+
+  > CONCAT Function:
+    >> The CONCAT function is used to concatenate two or more strings.
+    >> It is used to combine multiple strings into a single string.
+    >> Syntax: SELECT CONCAT(string1, string2, ...) FROM table_name;
+    >> Example: SELECT CONCAT(first_name, ' ', last_name) FROM employees;
+
+  > CONCAT_WS Function:
+    >> The CONCAT_WS function is used to concatenate two or more strings with a separator.
+    >> It is used to combine multiple strings into a single string with a specified separator.
+    >> Syntax: SELECT CONCAT_WS(separator, string1, string2, ...) FROM table_name;
+    >> Example: SELECT CONCAT_WS(' ', first_name, last_name) FROM employees;
+
+  > LENGTH Function:
+    >> The LENGTH function is used to calculate the length of a string.
+    >> It is used to find the number of characters in a string.
+    >> Syntax: SELECT LENGTH(string) FROM table_name;
+    >> Example: SELECT LENGTH(email) FROM employees;
+
+    >> Using operators with the LENGTH function:
+      >> The LENGTH function can be used with the WHERE clause to filter rows based on the length of a string.
+      >> Syntax: SELECT * FROM table_name WHERE LENGTH(string) condition;
+      >> Example: SELECT * FROM employees WHERE LENGTH(email) > 10;
+
+  > UPPER Function:
+    >> The UPPER function is used to convert a string to uppercase.
+    >> It is used to change the case of characters in a string to uppercase.
+    >> Syntax: SELECT UPPER(string) FROM table_name;
+    >> Example: SELECT UPPER(first_name) FROM employees;
+
+  > LOWER Function:
+    >> The LOWER function is used to convert a string to lowercase.
+    >> It is used to change the case of characters in a string to lowercase.
+    >> Syntax: SELECT LOWER(string) FROM table_name;
+    >> Example: SELECT LOWER(last_name) FROM employees;
+
+  > SUBSTRING Function:
+    >> The SUBSTRING function is used to extract a substring from a string.
+    >> It is used to retrieve a portion of a string based on a specified position and length.
+    >> Syntax: SELECT SUBSTRING(string FROM start FOR length) FROM table_name;
+    >> Example: SELECT SUBSTRING(email FROM 1 FOR 5) FROM employees;
+
+  > REPLACE Function:
+    >> The REPLACE function is used to replace a substring in a string with another substring.
+    >> It is used to search for a substring in a string and replace it with another substring.
+    >> Syntax: SELECT REPLACE(string, old_substring, new_substring) FROM table_name;
+    >> Example: SELECT REPLACE(email, '@', '_') FROM employees;
+
+  > TRIMMING Functions:
+    >> The TRIM function is used to remove leading and trailing spaces from a string.
+    >> It is used to remove spaces from the beginning and end of a string.
+    >> Syntax: SELECT TRIM(string) FROM table_name;
+    >> Example: SELECT TRIM(' John Doe ') FROM employees;
+
+    >> The LTRIM function is used to remove leading spaces from a string.
+    >> It is used to remove spaces from the beginning of a string.
+    >> Syntax: SELECT LTRIM(string) FROM table_name;
+    >> Example: SELECT LTRIM(' John Doe ') FROM employees;
+
+    >> The RTRIM function is used to remove trailing spaces from a string.
+    >> It is used to remove spaces from the end of a string.
+    >> Syntax: SELECT RTRIM(string) FROM table_name;
+    >> Example: SELECT RTRIM(' John Doe ') FROM employees;
+
+> Module 13- Using Aliases:
+
+  > Aliases:
+    >> Aliases are used to give a table or column a temporary name.
+    >> Aliases are used to make the SQL query more readable and concise.
+    >> Aliases are used to rename a table or column in the result set.
+
+  > Table Alias:
+    >> Syntax: SELECT column_name FROM table_name AS alias_name;
+    >> Example: SELECT e.name, d.name FROM employees AS e, departments AS d;
+
+  > Column Alias:
+    >> Syntax: SELECT column_name AS alias_name FROM table_name;
+    >> Example: SELECT first_name AS fname, last_name AS lname FROM employees;
