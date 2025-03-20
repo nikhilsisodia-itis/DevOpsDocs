@@ -422,3 +422,11 @@
   > Dropping a column from a table:
     >> Syntax: ALTER TABLE table_name DROP COLUMN column_name;
     >> Example: ALTER TABLE employees DROP COLUMN email;
+
+  > Rename a column in a table:
+    >> Syntax: ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
+    >> Example: ALTER TABLE employees RENAME COLUMN name TO full_name;
+
+  > Rename a table:
+    >> Syntax: ALTER TABLE old_table_name RENAME TO new_table_name;
+    >> Example: ALTER TABLE employees RENAME TO staff;
