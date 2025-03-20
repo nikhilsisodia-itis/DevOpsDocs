@@ -403,3 +403,22 @@
   > Column Alias:
     >> Syntax: SELECT column_name AS alias_name FROM table_name;
     >> Example: SELECT first_name AS fname, last_name AS lname FROM employees;
+
+> Module 14- Altering tables:
+  
+  > Altering Tables:
+    >> Altering tables is used to modify the structure of an existing table.
+    >> It is used to add, modify, or drop columns in a table.
+    >> Altering tables is used to change the data type, constraints, or default values of columns.
+
+  > Adding a column to a table:
+    >> Syntax: ALTER TABLE table_name ADD column_name datatype;
+    >> Example: ALTER TABLE employees ADD email VARCHAR(50);
+
+  > Modifying a column in a table:
+    >> Syntax: ALTER TABLE table_name ALTER COLUMN column_name SET DATA TYPE datatype;
+    >> Example: ALTER TABLE employees ALTER COLUMN age SET DATA TYPE INT;
+
+  > Dropping a column from a table:
+    >> Syntax: ALTER TABLE table_name DROP COLUMN column_name;
+    >> Example: ALTER TABLE employees DROP COLUMN email;
