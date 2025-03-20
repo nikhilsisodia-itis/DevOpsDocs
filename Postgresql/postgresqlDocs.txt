@@ -445,3 +445,18 @@
   > Dropping a CHECK constraint from a column:
     >> Syntax: ALTER TABLE table_name DROP CONSTRAINT constraint_name;
     >> Example: ALTER TABLE employees DROP CONSTRAINT check_age;
+
+> Module 16- Named Constraints:
+  
+  > Named Constraints:
+    >> Named constraints are constraints that are given a specific name when they are created.
+    >> Named constraints are used to identify and manage constraints easily.
+    >> Named constraints are used to enforce data integrity and consistency.
+
+  > Adding a named constraint to a column:
+    >> Syntax: ALTER TABLE table_name ADD CONSTRAINT constraint_name constraint_type (column_name);
+    >> Example: ALTER TABLE employees ADD CONSTRAINT pk_id PRIMARY KEY (id);
+
+  > Dropping a named constraint from a column:
+    >> Syntax: ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+    >> Example: ALTER TABLE employees DROP CONSTRAINT pk_id;
