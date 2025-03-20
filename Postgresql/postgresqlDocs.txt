@@ -430,3 +430,18 @@
   > Rename a table:
     >> Syntax: ALTER TABLE old_table_name RENAME TO new_table_name;
     >> Example: ALTER TABLE employees RENAME TO staff;
+
+> Module 15- Check Constraint:
+  
+  > Check Constraint:
+    >> The CHECK constraint is used to specify a condition that must be met for a row to be inserted or updated.
+    >> It is used to enforce data integrity and consistency.
+    >> The CHECK constraint is used to limit the values that can be stored in a column.
+
+  > Adding a CHECK constraint to a column:
+    >> Syntax: ALTER TABLE table_name ADD CONSTRAINT constraint_name CHECK (condition);
+    >> Example: ALTER TABLE employees ADD CONSTRAINT check_age CHECK (age >= 18);
+
+  > Dropping a CHECK constraint from a column:
+    >> Syntax: ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+    >> Example: ALTER TABLE employees DROP CONSTRAINT check_age;
