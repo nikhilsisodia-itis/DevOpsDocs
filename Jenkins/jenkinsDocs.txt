@@ -1,0 +1,17 @@
+> Module 1- Basic introduction to Jenkins:
+  >> Jenkins is an open-source automation tool. 
+  >> Written in Java. 
+  >> Automates various parts of the software development process.
+  >> Like: building, testing, and delivering or deploying software.
+  >> Jenkins is a continuous integration and continuous delivery tool.
+  >> Features:
+    1. CI/CD: Continuous Integration and Continuous Delivery.
+    2. Easy installation.
+    3. Easy configuration.
+    4. Plugins.
+    5. Extensible.
+    6. Distributed.
+    7. Free.
+    8. Open-source.
+    9. Scalable.
+    10. Secure.
