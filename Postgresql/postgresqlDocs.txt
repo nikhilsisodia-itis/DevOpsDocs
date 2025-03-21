@@ -460,3 +460,42 @@
   > Dropping a named constraint from a column:
     >> Syntax: ALTER TABLE table_name DROP CONSTRAINT constraint_name;
     >> Example: ALTER TABLE employees DROP CONSTRAINT pk_id;
+
+> Module 17- CASE Statement:
+
+  > CASE Statement:
+    >> The CASE statement is used to perform conditional logic in an SQL query.
+    >> It is used to evaluate multiple conditions and return a value based on the first condition that is true.
+    >> The CASE statement is used to replace multiple IF-ELSE statements in an SQL query.
+
+  > Simple CASE Statement:
+    >> Syntax: 
+      >>> CASE expression
+      >>>   WHEN value1 THEN result1
+      >>>   WHEN value2 THEN result2
+      >>>   ELSE default_result
+      >>> END
+    >> Example: 
+      >>> SELECT 
+      >>>   CASE department
+      >>>     WHEN 'IT' THEN 'Information Technology'
+      >>>     WHEN 'HR' THEN 'Human Resources'
+      >>>     ELSE 'Other'
+      >>>   END AS department_name
+      >>> FROM employees;
+
+  > Searched CASE Statement:
+    >> Syntax: 
+      >>> CASE
+      >>>   WHEN condition1 THEN result1
+      >>>   WHEN condition2 THEN result2
+      >>>   ELSE default_result
+      >>> END
+    >> Example: 
+      >>> SELECT 
+      >>>   CASE
+      >>>     WHEN age > 30 THEN 'Senior'
+      >>>     WHEN age > 20 THEN 'Junior'
+      >>>     ELSE 'Other'
+      >>>   END AS experience
+      >>> FROM employees;
