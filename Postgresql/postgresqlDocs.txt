@@ -499,3 +499,24 @@
       >>>     ELSE 'Other'
       >>>   END AS experience
       >>> FROM employees;
+
+> Module 18- Relationship:
+  
+  > Relationship:
+    >> A relationship is a connection between two or more tables based on a common column.
+    >> Relationships are used to establish connections between tables and retrieve related data.
+    >> Relationships are used to maintain data integrity and consistency.
+
+  > Types of Relationships:
+    >> One-to-One Relationship: Each row in one table is related to only one row in another table.
+    >> One-to-Many Relationship: Each row in one table is related to multiple rows in another table.
+    >> Many-to-Many Relationship: Multiple rows in one table are related to multiple rows in another table.
+
+  > Foreign Key:
+    >> A foreign key is a column or a set of columns that establishes a connection between two tables.
+    >> It is used to enforce referential integrity between tables.
+    >> A foreign key in one table points to the primary key in another table.
+
+  > Creating a Foreign Key while creating a new table:
+    >> Syntax: CREATE TABLE table_name (column1 datatype, column2 datatype, ..., CONSTRAINT constraint_name FOREIGN KEY (column_name) REFERENCES parent_table (parent_column));
+    >> Example: CREATE TABLE employees (id INT PRIMARY KEY, name VARCHAR(50), department_id INT, CONSTRAINT fk_department_id FOREIGN KEY (department_id) REFERENCES departments (id));
