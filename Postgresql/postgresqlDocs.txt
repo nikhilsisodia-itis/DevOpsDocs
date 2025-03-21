@@ -551,3 +551,18 @@
     >> It is used to retrieve all rows from both tables regardless of the match.
     >> Syntax: SELECT columns FROM table1 FULL JOIN table2 ON table1.column_name = table2.column_name;
     >> Example: SELECT e.name, d.name FROM employees e FULL JOIN departments d ON e.department_id = d.id;
+
+> Module 20- VIEW:
+  
+  > VIEW:
+    >> A VIEW is a virtual table that is based on the result set of an SQL query.
+    >> It is used to simplify complex queries and provide a logical representation of the data.
+    >> A VIEW does not store data physically but retrieves data from the underlying tables.
+
+  > Creating a VIEW:
+    >> Syntax: CREATE VIEW view_name AS SELECT columns FROM table_name;
+    >> Example: CREATE VIEW employee_details AS SELECT e.name, d.name FROM employees e INNER JOIN departments d ON e.department_id = d.id;
+
+  > Dropping a VIEW:
+    >> Syntax: DROP VIEW view_name;
+    >> Example: DROP VIEW employee_details;
