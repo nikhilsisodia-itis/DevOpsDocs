@@ -48,4 +48,15 @@
       5. Password parameter.
     >> Select one or multiple parameters as per the requirement.
     >> Build the job with the parameters.
+
+> Module 5- Automatic build triggering in Jenkins:
+  >> Automatic build triggering:
+    >> Trigger the Jenkins job automatically.
+    >> Types of triggers:
+      1. Poll SCM.
+      2. Build after other projects are built.
+      3. Build periodically.
+      4. GitHub hook trigger for GITScm polling.
+    >> Select one or multiple triggers as per the requirement.
+    >> Build the job with the triggers.
     
