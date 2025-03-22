@@ -15,3 +15,17 @@
     8. Open-source.
     9. Scalable.
     10. Secure.
+
+> Module 2- What is CI & CD?
+  >> Continuous Integration:
+    >> Build: Compile the code.
+    >> Test: Run the tests.
+    >> Merge: Merge the code changes.
+  
+  >> Continuous Delivery:
+    >> Deliver: Deliver the code to the staging environment.
+    >> Automatically release to the main branch.
+
+  >> Continuous Deployment:
+    >> Deploy: Deploy the code to the production environment.
+    >> Automatically deploy to the production environment.
