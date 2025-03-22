@@ -36,3 +36,16 @@
   >> Step 3: Configure the job.
   >> Step 4: Build the job.
   >> Step 5: Check the build status.
+
+> Module 4- Using Parameters in Jenkins:
+  >> Parameters:
+    >> Parameters are used to pass the values to the Jenkins job.
+    >> Types of parameters:
+      1. String parameter.
+      2. Boolean parameter.
+      3. Choice parameter.
+      4. File parameter.
+      5. Password parameter.
+    >> Select one or multiple parameters as per the requirement.
+    >> Build the job with the parameters.
+    
