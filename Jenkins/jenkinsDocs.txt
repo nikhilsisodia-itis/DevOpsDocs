@@ -29,3 +29,10 @@
   >> Continuous Deployment:
     >> Deploy: Deploy the code to the production environment.
     >> Automatically deploy to the production environment.
+
+> Module 3- Creating first Jenkins job:
+  >> Step 1: Install Jenkins.
+  >> Step 2: Create a new job.
+  >> Step 3: Configure the job.
+  >> Step 4: Build the job.
+  >> Step 5: Check the build status.
