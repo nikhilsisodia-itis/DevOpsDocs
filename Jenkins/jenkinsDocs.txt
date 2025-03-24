@@ -69,5 +69,11 @@
     >> Build the job.
     >> Check the build status.
 
-
-  
+> Module 7- Using Jenkins to perform tasks on a remote server:
+  >> Using Jenkins to perform tasks on a remote server:
+    >> Use SSH plugin in Jenkins.
+    >> Add the remote server details.
+    >> Add the remote server credentials.
+    >> Add the build steps.
+    >> Build the job.
+    >> Check the build status.
