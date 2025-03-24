@@ -60,3 +60,14 @@
     >> Select one or multiple triggers as per the requirement.
     >> Build the job with the triggers.
     
+> Module 6- Working with GitHub:
+  >> Working with GitHub:
+    >> Use GitHub plugin in Jenkins.
+    >> Paste the GitHub repository URL.
+    >> Add the GitHub credentials.
+    >> Select the branch.
+    >> Build the job.
+    >> Check the build status.
+
+
+  
