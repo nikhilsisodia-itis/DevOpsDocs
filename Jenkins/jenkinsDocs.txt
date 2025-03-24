@@ -77,3 +77,11 @@
     >> Add the build steps.
     >> Build the job.
     >> Check the build status.
+
+> Module 8- Using Jenkins with Ansible:
+  >> Using Jenkins with Ansible:
+    >> Use Ansible plugin in Jenkins.
+    >> Add the Ansible playbook.
+    >> Add the build steps.
+    >> Build the job.
+    >> Check the build status.
