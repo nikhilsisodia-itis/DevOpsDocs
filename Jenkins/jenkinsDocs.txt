@@ -70,7 +70,6 @@
     >> Check the build status.
 
 > Module 7- Using Jenkins to perform tasks on a remote server:
-  >> Using Jenkins to perform tasks on a remote server:
     >> Use SSH plugin in Jenkins.
     >> Add the remote server details.
     >> Add the remote server credentials.
@@ -79,7 +78,6 @@
     >> Check the build status.
 
 > Module 8- Using Jenkins with Ansible:
-  >> Using Jenkins with Ansible:
     >> Use Ansible plugin in Jenkins.
     >> Add the Ansible playbook.
     >> Add the build steps.
@@ -87,9 +85,28 @@
     >> Check the build status.
 
 > Module 9- User Management in Jenkins:
-  >> User Management in Jenkins:
     >> Create a new user.
     >> Assign the roles to the user.
     >> Manage the user roles.
     >> Manage the user permissions.
     >> Manage the user credentials.
+
+> Module 10- Using Environment Variables in Jenkins:
+    >> Set the environment variables in Manage Jenkins > System > Global properties > Environment variable(s).
+    >> Use the environment variables in the Jenkins job.
+    >> Build the job.
+    >> Check the build status.
+
+> Module 11- Setting Credentials in Jenkins:
+    >> Set the credentials in Jenkins in Manage Jenkins > Manage credentials > Global credentials > Add credentials.
+    >> Use the credentials in the Jenkins job.
+    >> Build the job.
+    >> Check the build status.
+
+> Module 12- Using 'pipeline-syntax' in the Jenkins URL:
+    >> Use the 'pipeline-syntax' in the URL to generate the pipeline script.
+    >> Select the required steps.
+    >> Generate the pipeline script.
+    >> Use the pipeline script in the Jenkins job.
+    >> Build the job.
+    >> Check the build status.
