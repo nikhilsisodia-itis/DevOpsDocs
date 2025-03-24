@@ -85,3 +85,11 @@
     >> Add the build steps.
     >> Build the job.
     >> Check the build status.
+
+> Module 9- User Management in Jenkins:
+  >> User Management in Jenkins:
+    >> Create a new user.
+    >> Assign the roles to the user.
+    >> Manage the user roles.
+    >> Manage the user permissions.
+    >> Manage the user credentials.
